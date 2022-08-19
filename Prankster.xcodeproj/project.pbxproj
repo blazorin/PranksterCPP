@@ -1,0 +1,3696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+		5E618435888B9D49F8540165 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Qt Qmake";
+			shellPath = "/bin/sh";
+			shellScript = "make -C /Users/alberto/Documents/WorkSpace/Felgo/Prankster -f Prankster.xcodeproj/qt_makeqmake.mak";
+			showEnvVarsInLog = "0";
+		};
+		D81D7AD9FF5700DD658EDCC3 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/main.cpp";
+			name = "main.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		1026E6D5E3250EB3E508281A = {
+			fileRef = "D81D7AD9FF5700DD658EDCC3";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		57C9AD940337937E12110CB4 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Http/Source/Http.cpp";
+			name = "Http.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		5061D23D29B52CCD4DEDA4B6 = {
+			fileRef = "57C9AD940337937E12110CB4";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		4B2D99B6F048DA6A1C2D37A7 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Http/Impl/HttpClient.cpp";
+			name = "HttpClient.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		5C34A9F3EFA0A13F0E10D80E = {
+			fileRef = "4B2D99B6F048DA6A1C2D37A7";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		A6A6B628EB7718317D3E3E7B = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/ChunkedReaderImpl.cpp";
+			name = "ChunkedReaderImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		7F157E6F2303841A6150FA6D = {
+			fileRef = "A6A6B628EB7718317D3E3E7B";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		D43B5322497F0034382A5AD6 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/ChunkedWriterImpl.cpp";
+			name = "ChunkedWriterImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		DE583577554509944916B2BA = {
+			fileRef = "D43B5322497F0034382A5AD6";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		19B9A2EF1677E4E461AFBA8C = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/ConnectionPoolImpl.cpp";
+			name = "ConnectionPoolImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		4CB0960CD447F819CCB175BB = {
+			fileRef = "19B9A2EF1677E4E461AFBA8C";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		B453AABC799CFDA49F810EE7 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/DataReaderStream.cpp";
+			name = "DataReaderStream.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		D0AB99FBD3FAA871FD576ED3 = {
+			fileRef = "B453AABC799CFDA49F810EE7";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		500DAA1151099738DD861968 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/IoReaderImpl.cpp";
+			name = "IoReaderImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		454FAE29ABC3FDA24DE9E88D = {
+			fileRef = "500DAA1151099738DD861968";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		1FE57B85A6EA5BF54BC2CFF3 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/IoWriterImpl.cpp";
+			name = "IoWriterImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		7F357E310CFB0EDF697A2BB0 = {
+			fileRef = "1FE57B85A6EA5BF54BC2CFF3";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		8FA56E846FC8E9B32714BC65 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/NoBodyReaderImpl.cpp";
+			name = "NoBodyReaderImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		A70168317E4E3BF86D527127 = {
+			fileRef = "8FA56E846FC8E9B32714BC65";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		B34BE834F7BE928C43496F85 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/PlainReaderImpl.cpp";
+			name = "PlainReaderImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		69BA1EA18AAEA29F43F0771E = {
+			fileRef = "B34BE834F7BE928C43496F85";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C3796D2577565640F413AFBD = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/PlainWriterImpl.cpp";
+			name = "PlainWriterImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		C5FFC3045EBC428B436AA9F3 = {
+			fileRef = "C3796D2577565640F413AFBD";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		E389EB2799532C9A270E7733 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/ReplyImpl.cpp";
+			name = "ReplyImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		DA0DBCA23D92C7B9472FA9B1 = {
+			fileRef = "E389EB2799532C9A270E7733";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		67441B01FB20C318B9294290 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/RequestBodyFileImpl.cpp";
+			name = "RequestBodyFileImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		1C3AB72FB584E4EB4F4A66C2 = {
+			fileRef = "67441B01FB20C318B9294290";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		85DDD53A79EAC6C36D34318C = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/RequestBodyStringImpl.cpp";
+			name = "RequestBodyStringImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E442F4748BEA18CC95E437DB = {
+			fileRef = "85DDD53A79EAC6C36D34318C";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		88ADA0EEF7C795280FCB738F = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/RequestImpl.cpp";
+			name = "RequestImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		6AF01A96F4664D786A81517F = {
+			fileRef = "88ADA0EEF7C795280FCB738F";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		68142D5BFAF8CC973B914A66 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/RestClientImpl.cpp";
+			name = "RestClientImpl.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		2F1E2EBFD1029715964CFC29 = {
+			fileRef = "68142D5BFAF8CC973B914A66";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		A25825811FC9D0FF69A9735B = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/Url.cpp";
+			name = "Url.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		8EEF39F54EDF13787A4FAF2C = {
+			fileRef = "A25825811FC9D0FF69A9735B";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		327CDD3B64B92D5FC48578F5 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rest-cpp/src/url_encode.cpp";
+			name = "url_encode.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		779088BE9FF9FF983A142A9F = {
+			fileRef = "327CDD3B64B92D5FC48578F5";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		A816DD9230F8CAE63502DD05 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Lottie/qtlottiedrawengine_rlottie.cpp";
+			name = "qtlottiedrawengine_rlottie.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0AD67B47129CE2DEA0475C6B = {
+			fileRef = "A816DD9230F8CAE63502DD05";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		DBB2A59421406A9BC17D347F = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Lottie/qtlottiedrawenginefactory.cpp";
+			name = "qtlottiedrawenginefactory.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		DD3AA310CFE15B9F78203A04 = {
+			fileRef = "DBB2A59421406A9BC17D347F";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		FA0171F3C4364F681BAF2933 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Lottie/qtlottieitem.cpp";
+			name = "qtlottieitem.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		D902B1860DAE5FFEAA0BD16D = {
+			fileRef = "FA0171F3C4364F681BAF2933";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F51EA04E8E66A8758F996050 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Lottie/qtlottiewidget.cpp";
+			name = "qtlottiewidget.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		027CC0F8F3003C071A1F2502 = {
+			fileRef = "F51EA04E8E66A8758F996050";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		989581D2CB8F4D99E32E4086 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/prankster_plugin_import.cpp";
+			name = "prankster_plugin_import.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0A011C91643A1E8D1875D5D7 = {
+			fileRef = "989581D2CB8F4D99E32E4086";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F9920CF82AC22952EBEC85FD = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/prankster_qml_plugin_import.cpp";
+			name = "prankster_qml_plugin_import.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		2648CE0987C9FF6DB49C5633 = {
+			fileRef = "F9920CF82AC22952EBEC85FD";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		8FF1EDBFFF39DD3B526F9304 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/qrc_resources_user.cpp";
+			name = "qrc_resources_user.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		B731F7F5F9C614A1C3041109 = {
+			fileRef = "8FF1EDBFFF39DD3B526F9304";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C4C6ECF763D005CFE95E83F9 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/moc_HttpClient.cpp";
+			name = "moc_HttpClient.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		C177A986798D814C8F69B114 = {
+			fileRef = "C4C6ECF763D005CFE95E83F9";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		2F740E800E809141BAB3E03C = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/moc_qtlottiedrawengine_rlottie.cpp";
+			name = "moc_qtlottiedrawengine_rlottie.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0ED3C015D63A75038175171B = {
+			fileRef = "2F740E800E809141BAB3E03C";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		84CB72B31790B0E1CFA44922 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/moc_qtlottiedrawengine.cpp";
+			name = "moc_qtlottiedrawengine.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		724B075C7FDFA7BA58FD51AC = {
+			fileRef = "84CB72B31790B0E1CFA44922";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		38B5E09BC100D07EE0FDB255 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/moc_qtlottieitem.cpp";
+			name = "moc_qtlottieitem.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		BCD3989056701A098817BBEF = {
+			fileRef = "38B5E09BC100D07EE0FDB255";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		EB958CD1C3EBE9F4FC9EC617 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/moc_qtlottiewidget.cpp";
+			name = "moc_qtlottiewidget.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		D444B2BBD98E5BE41C368446 = {
+			fileRef = "EB958CD1C3EBE9F4FC9EC617";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		709F25CE8E182C14C8D35719 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Http/Source/Http.h";
+			name = "Http.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		DEA1EF98846FC18C59E4E151 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Http/Impl/HttpClient.h";
+			name = "HttpClient.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		F87013167F6F255E876976AD = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Lottie/qtlottie_global.h";
+			name = "qtlottie_global.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		1BA3FAB30CA2F3DB8A3936FB = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Lottie/qtlottiedrawengine_rlottie.h";
+			name = "qtlottiedrawengine_rlottie.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		C319A219A13B2FF631C6F066 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Lottie/qtlottiedrawengine.h";
+			name = "qtlottiedrawengine.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		A25B723F95D03657D5A2E507 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Lottie/qtlottiedrawenginefactory.h";
+			name = "qtlottiedrawenginefactory.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		C409338287D0B371FD6608D6 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Lottie/qtlottieitem.h";
+			name = "qtlottieitem.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		03E8C98779369412B2602C99 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Cpp/Lottie/qtlottiewidget.h";
+			name = "qtlottiewidget.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		5C6DFAF6AB395292E9DBC901 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Felgo/Felgo/ios/mkspecs/common/felgo/resources_user.qrc";
+			name = "resources_user.qrc";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "text";
+		};
+		1A4C6C03FBA970DD0DA051F5 = {
+			fileRef = "5C6DFAF6AB395292E9DBC901";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		399E402D66B127BA6EA3BB69 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Prankster.pro";
+			name = "Prankster.pro";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "text";
+		};
+		795B623102EE747D7D9F3F65 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/.qmake.stash";
+			name = ".qmake.stash";
+			sourceTree = "<absolute>";
+		};
+		25B08E2869634E9BCBA333A2 = {
+			isa = PBXGroup;
+			children = (
+				"989581D2CB8F4D99E32E4086",
+				"F9920CF82AC22952EBEC85FD",
+				"8FF1EDBFFF39DD3B526F9304",
+				"C4C6ECF763D005CFE95E83F9",
+				"2F740E800E809141BAB3E03C",
+				"84CB72B31790B0E1CFA44922",
+				"38B5E09BC100D07EE0FDB255",
+				"EB958CD1C3EBE9F4FC9EC617");
+			name = "Generated Sources";
+			sourceTree = "<group>";
+		};
+		7197F3ED0D81878ACBDB1E3A = {
+			isa = PBXGroup;
+			children = (
+				"DFE6D40FE368D802A5384FE1",
+				"AB27AC0C991DAB5CA65450D3");
+			name = "Cpp";
+			sourceTree = "<group>";
+		};
+		DFE6D40FE368D802A5384FE1 = {
+			isa = PBXGroup;
+			children = (
+				"38DC6027BB54246279CE7343",
+				"B2E38A068B6DC6681F1A2652");
+			name = "Http";
+			sourceTree = "<group>";
+		};
+		B2E38A068B6DC6681F1A2652 = {
+			isa = PBXGroup;
+			children = (
+				"4B2D99B6F048DA6A1C2D37A7",
+				"DEA1EF98846FC18C59E4E151");
+			name = "Impl";
+			sourceTree = "<group>";
+		};
+		38DC6027BB54246279CE7343 = {
+			isa = PBXGroup;
+			children = (
+				"57C9AD940337937E12110CB4",
+				"709F25CE8E182C14C8D35719");
+			name = "Source";
+			sourceTree = "<group>";
+		};
+		AB27AC0C991DAB5CA65450D3 = {
+			isa = PBXGroup;
+			children = (
+				"A816DD9230F8CAE63502DD05",
+				"DBB2A59421406A9BC17D347F",
+				"FA0171F3C4364F681BAF2933",
+				"F51EA04E8E66A8758F996050",
+				"F87013167F6F255E876976AD",
+				"1BA3FAB30CA2F3DB8A3936FB",
+				"C319A219A13B2FF631C6F066",
+				"A25B723F95D03657D5A2E507",
+				"C409338287D0B371FD6608D6",
+				"03E8C98779369412B2602C99");
+			name = "Lottie";
+			sourceTree = "<group>";
+		};
+		64D0AB1D89CB2143C6EA1ED2 = {
+			isa = PBXGroup;
+			children = (
+				"08052394D241D40F997E9BB0");
+			name = "Include";
+			sourceTree = "<group>";
+		};
+		08052394D241D40F997E9BB0 = {
+			isa = PBXGroup;
+			children = (
+				"50BF49D86866D9E875234C27");
+			name = "rest-cpp";
+			sourceTree = "<group>";
+		};
+		50BF49D86866D9E875234C27 = {
+			isa = PBXGroup;
+			children = (
+				"A6A6B628EB7718317D3E3E7B",
+				"D43B5322497F0034382A5AD6",
+				"19B9A2EF1677E4E461AFBA8C",
+				"B453AABC799CFDA49F810EE7",
+				"500DAA1151099738DD861968",
+				"1FE57B85A6EA5BF54BC2CFF3",
+				"8FA56E846FC8E9B32714BC65",
+				"B34BE834F7BE928C43496F85",
+				"C3796D2577565640F413AFBD",
+				"E389EB2799532C9A270E7733",
+				"67441B01FB20C318B9294290",
+				"85DDD53A79EAC6C36D34318C",
+				"88ADA0EEF7C795280FCB738F",
+				"68142D5BFAF8CC973B914A66",
+				"A25825811FC9D0FF69A9735B",
+				"327CDD3B64B92D5FC48578F5");
+			name = "src";
+			sourceTree = "<group>";
+		};
+		87DF60DE337FB58864343E39 = {
+			isa = PBXGroup;
+			children = (
+				"5C6DFAF6AB395292E9DBC901");
+			name = "Resources";
+			sourceTree = "<group>";
+		};
+		2EB56BE3C2D93CDAB0C52E67 = {
+			isa = PBXGroup;
+			children = (
+				"D81D7AD9FF5700DD658EDCC3",
+				"7197F3ED0D81878ACBDB1E3A",
+				"64D0AB1D89CB2143C6EA1ED2");
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		74B182DB50CB5611B5C1C297 = {
+			isa = PBXGroup;
+			children = (
+				"399E402D66B127BA6EA3BB69",
+				"795B623102EE747D7D9F3F65");
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EF0942E79C014DCEC8976BC = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Qt Preprocessors";
+			shellPath = "/bin/sh";
+			shellScript = "make -C /Users/alberto/Documents/WorkSpace/Felgo/Prankster -f Prankster.xcodeproj/qt_preprocess.mak";
+			showEnvVarsInLog = "0";
+		};
+		F7E50F631C51CD5B5DC0BC43 = {
+			buildActionMask = 2147483647;
+			files = (
+				"1026E6D5E3250EB3E508281A",
+				"5061D23D29B52CCD4DEDA4B6",
+				"5C34A9F3EFA0A13F0E10D80E",
+				"7F157E6F2303841A6150FA6D",
+				"DE583577554509944916B2BA",
+				"4CB0960CD447F819CCB175BB",
+				"D0AB99FBD3FAA871FD576ED3",
+				"454FAE29ABC3FDA24DE9E88D",
+				"7F357E310CFB0EDF697A2BB0",
+				"A70168317E4E3BF86D527127",
+				"69BA1EA18AAEA29F43F0771E",
+				"C5FFC3045EBC428B436AA9F3",
+				"DA0DBCA23D92C7B9472FA9B1",
+				"1C3AB72FB584E4EB4F4A66C2",
+				"E442F4748BEA18CC95E437DB",
+				"6AF01A96F4664D786A81517F",
+				"2F1E2EBFD1029715964CFC29",
+				"8EEF39F54EDF13787A4FAF2C",
+				"779088BE9FF9FF983A142A9F",
+				"0AD67B47129CE2DEA0475C6B",
+				"DD3AA310CFE15B9F78203A04",
+				"D902B1860DAE5FFEAA0BD16D",
+				"027CC0F8F3003C071A1F2502",
+				"0A011C91643A1E8D1875D5D7",
+				"2648CE0987C9FF6DB49C5633",
+				"B731F7F5F9C614A1C3041109",
+				"C177A986798D814C8F69B114",
+				"0ED3C015D63A75038175171B",
+				"724B075C7FDFA7BA58FD51AC",
+				"BCD3989056701A098817BBEF",
+				"D444B2BBD98E5BE41C368446");
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Compile Sources";
+		};
+		716800DD0029E08B5AF4EB50 = {
+			isa = PBXFileReference;
+			name = "boost_system";
+			path = "/Users/alberto/EssentialLibs/boost/stage/ios/lib/libboost_system.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D25684D59EC99912A17C98D7 = {
+			fileRef = "716800DD0029E08B5AF4EB50";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		B687A5EF00195AAB9884CFD5 = {
+			isa = PBXFileReference;
+			name = "boost_thread";
+			path = "/Users/alberto/EssentialLibs/boost/stage/ios/lib/libboost_thread.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		A04D68177236C7F37216CF3E = {
+			fileRef = "B687A5EF00195AAB9884CFD5";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		757E8FC7129961E6AE982977 = {
+			isa = PBXFileReference;
+			name = "boost_filesystem";
+			path = "/Users/alberto/EssentialLibs/boost/stage/ios/lib/libboost_filesystem.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		34416EF015DCEB83A1311752 = {
+			fileRef = "757E8FC7129961E6AE982977";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		415E860391117B52D034BD01 = {
+			isa = PBXFileReference;
+			name = "boost_context";
+			path = "/Users/alberto/EssentialLibs/boost/stage/ios/lib/libboost_context.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		3F12EC9CC15401E6687C96D9 = {
+			fileRef = "415E860391117B52D034BD01";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		EC59CC9669C6235646AF0372 = {
+			isa = PBXFileReference;
+			name = "boost_coroutine-mt";
+			path = "/Users/alberto/EssentialLibs/boost/stage/ios/lib/libboost_coroutine-mt.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		B73DBF211F05A6A62000CCFC = {
+			fileRef = "EC59CC9669C6235646AF0372";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		C114B0AA6616CAE502A1D493 = {
+			isa = PBXFileReference;
+			name = "ssl";
+			path = "/Users/alberto/EssentialLibs/OpenSSL/iphoneos/lib/libssl.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D43D325448B824F1F4A2D520 = {
+			fileRef = "C114B0AA6616CAE502A1D493";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		B6BD21564FEECAC29D23B910 = {
+			isa = PBXFileReference;
+			name = "crypto";
+			path = "/Users/alberto/EssentialLibs/OpenSSL/iphoneos/lib/libcrypto.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		532E87DB6213074924D85E78 = {
+			fileRef = "B6BD21564FEECAC29D23B910";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		6F945E6D2C3242F31876349C = {
+			isa = PBXFileReference;
+			name = "rlottie";
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rlottie/ios/librlottie.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		769EF9F820BB41EB28A21F3A = {
+			fileRef = "6F945E6D2C3242F31876349C";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		55756E812C11CEFDCA00A13B = {
+			isa = PBXFileReference;
+			name = "Felgo";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libFelgo.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D2F2450B8E4E98DA817D5381 = {
+			fileRef = "55756E812C11CEFDCA00A13B";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		CF27DA584C2D8714BF3774CF = {
+			isa = PBXFileReference;
+			name = "AddressBook.framework";
+			path = "/System/Library/Frameworks/AddressBook.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		7167D10E380E2516806FA9E8 = {
+			fileRef = "CF27DA584C2D8714BF3774CF";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BD5FCA7D802D96BED4D98BB2 = {
+			isa = PBXFileReference;
+			name = "Photos.framework";
+			path = "/System/Library/Frameworks/Photos.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		608694C2F85C903B08FF61AE = {
+			fileRef = "BD5FCA7D802D96BED4D98BB2";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DC9DAE7B61577D466F249FCC = {
+			isa = PBXFileReference;
+			name = "CoreTelephony.framework";
+			path = "/System/Library/Frameworks/CoreTelephony.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		28E2B85E6B7E55B45C4B1FFC = {
+			fileRef = "DC9DAE7B61577D466F249FCC";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DEF4610FE3B45A108415139B = {
+			isa = PBXFileReference;
+			name = "AuthenticationServices.framework";
+			path = "/System/Library/Frameworks/AuthenticationServices.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		2C203F91CCE9FF7F4A42FC18 = {
+			fileRef = "DEF4610FE3B45A108415139B";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		447701B976D2670ADEC3922A = {
+			isa = PBXFileReference;
+			name = "qios";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/platforms/libqios$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D7B762AD9D5FF05D972C355F = {
+			fileRef = "447701B976D2670ADEC3922A";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		FF35BECBFBC37E179AF565CD = {
+			isa = PBXFileReference;
+			name = "qiosnsphotolibrarysupport";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/platforms/darwin/libqiosnsphotolibrarysupport$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		84A2E798BD12B36D79BD6232 = {
+			fileRef = "FF35BECBFBC37E179AF565CD";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		711E7F11A7C83E4C1E342194 = {
+			isa = PBXFileReference;
+			name = "qavfcamera";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/mediaservice/libqavfcamera$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		919B2156A816299417291932 = {
+			fileRef = "711E7F11A7C83E4C1E342194";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		78B88DA4E84638D4CA97C5F1 = {
+			isa = PBXFileReference;
+			name = "qavfmediaplayer";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/mediaservice/libqavfmediaplayer$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		A634B2E9F2A73F7473EAC4C2 = {
+			fileRef = "78B88DA4E84638D4CA97C5F1";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		547CCADBD1CC5050167EF948 = {
+			isa = PBXFileReference;
+			name = "CoreMedia.framework";
+			path = "/System/Library/Frameworks/CoreMedia.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		B78304F135DEF1F7A68393A6 = {
+			fileRef = "547CCADBD1CC5050167EF948";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F923F38E989CF0F61A164DD8 = {
+			isa = PBXFileReference;
+			name = "CoreVideo.framework";
+			path = "/System/Library/Frameworks/CoreVideo.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		6602E41D28CF886E694AD752 = {
+			fileRef = "F923F38E989CF0F61A164DD8";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		464EA179723879073F17AACB = {
+			isa = PBXFileReference;
+			name = "Qt5MultimediaWidgets";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5MultimediaWidgets$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		8B57B45FB1652836E0DCA41D = {
+			fileRef = "464EA179723879073F17AACB";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		1E5B624402747B83A80CC626 = {
+			isa = PBXFileReference;
+			name = "Qt5OpenGL";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5OpenGL$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		FB3C117E2C03AA51498BA906 = {
+			fileRef = "1E5B624402747B83A80CC626";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		C6527B1E1A89178DD0546F88 = {
+			isa = PBXFileReference;
+			name = "qtmedia_audioengine";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/mediaservice/libqtmedia_audioengine$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		DABB737D720261B2AA2A8683 = {
+			fileRef = "C6527B1E1A89178DD0546F88";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A57831ECE32900C14263C61A = {
+			isa = PBXFileReference;
+			name = "qtaudio_coreaudio";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/audio/libqtaudio_coreaudio$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		5CBC16FE16D88C276B452D24 = {
+			fileRef = "A57831ECE32900C14263C61A";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		21F907AB8D19BD779147A085 = {
+			isa = PBXFileReference;
+			name = "AVFoundation.framework";
+			path = "/System/Library/Frameworks/AVFoundation.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		CCA737EE379CDB10CC9A0F23 = {
+			fileRef = "21F907AB8D19BD779147A085";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BEF9DFDA6822604126A7E233 = {
+			isa = PBXFileReference;
+			name = "CoreAudio.framework";
+			path = "/System/Library/Frameworks/CoreAudio.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		35A1A39F8EAB37889EB3D397 = {
+			fileRef = "BEF9DFDA6822604126A7E233";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		B41651D473744F01A11E76D4 = {
+			isa = PBXFileReference;
+			name = "qtmultimedia_m3u";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/playlistformats/libqtmultimedia_m3u$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9C9C592C85789F350AF8B02E = {
+			fileRef = "B41651D473744F01A11E76D4";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		7EC00404ACD5AB0E97726B0E = {
+			isa = PBXFileReference;
+			name = "QuartzCore.framework";
+			path = "/System/Library/Frameworks/QuartzCore.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		B460F624007324313696BE86 = {
+			fileRef = "7EC00404ACD5AB0E97726B0E";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		3C44131FDCFEF4396B9EA2BA = {
+			isa = PBXFileReference;
+			name = "AudioToolbox.framework";
+			path = "/System/Library/Frameworks/AudioToolbox.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		4EB68D0C8182BCE33529C421 = {
+			fileRef = "3C44131FDCFEF4396B9EA2BA";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		B832E3CF2C4B5AAAA7EFD468 = {
+			isa = PBXFileReference;
+			name = "Qt5FontDatabaseSupport";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5FontDatabaseSupport$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		C0E429CC94FB681BE9F00E12 = {
+			fileRef = "B832E3CF2C4B5AAAA7EFD468";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		4FAB830AEBA786C82A9C0CFB = {
+			isa = PBXFileReference;
+			name = "qtfreetype";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libqtfreetype$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		7DE5EF703E5073064EEE16CB = {
+			fileRef = "4FAB830AEBA786C82A9C0CFB";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		C8A420D15557C3C29B1829A2 = {
+			isa = PBXFileReference;
+			name = "Qt5GraphicsSupport";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5GraphicsSupport$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		6BBA83895A4ED14135D0631D = {
+			fileRef = "C8A420D15557C3C29B1829A2";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		4A33AB10EEA2F2D981174F4F = {
+			isa = PBXFileReference;
+			name = "Qt5ClipboardSupport";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5ClipboardSupport$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		CA0544A9FE2F187037E8828D = {
+			fileRef = "4A33AB10EEA2F2D981174F4F";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		24105A375C163DC7647D723D = {
+			isa = PBXFileReference;
+			name = "qsvgicon";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/iconengines/libqsvgicon$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		2D6BC22D6C6027E26EE80E7D = {
+			fileRef = "24105A375C163DC7647D723D";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		47C258A1022ADBC4CCCEA291 = {
+			isa = PBXFileReference;
+			name = "qgif";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/imageformats/libqgif$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		3EA7D696950A7217472446F1 = {
+			fileRef = "47C258A1022ADBC4CCCEA291";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		811FA3B8DEB3AF3E9D6CCCA6 = {
+			isa = PBXFileReference;
+			name = "qicns";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/imageformats/libqicns$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		1B69D2085B91F6F3F48E2121 = {
+			fileRef = "811FA3B8DEB3AF3E9D6CCCA6";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		89F217D99845EF2009450E2D = {
+			isa = PBXFileReference;
+			name = "qico";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/imageformats/libqico$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		0CA8E5E0D0FB23AC2895F03F = {
+			fileRef = "89F217D99845EF2009450E2D";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		636B7880BC150102B375C71B = {
+			isa = PBXFileReference;
+			name = "qjpeg";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/imageformats/libqjpeg$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		C6744DFDFDE3996361F5FCB3 = {
+			fileRef = "636B7880BC150102B375C71B";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		B8EBFA6151556DEB5481A974 = {
+			isa = PBXFileReference;
+			name = "qmacheif";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/imageformats/libqmacheif$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		6347E93346A9268FECEF87DD = {
+			fileRef = "B8EBFA6151556DEB5481A974";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		6F6A958EB6CF961EA5A8D73B = {
+			isa = PBXFileReference;
+			name = "qmacjp2";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/imageformats/libqmacjp2$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		167DD25A5A02DE189065A4A5 = {
+			fileRef = "6F6A958EB6CF961EA5A8D73B";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		3A8EF9C62A8D4790CBB89CEA = {
+			isa = PBXFileReference;
+			name = "ImageIO.framework";
+			path = "/System/Library/Frameworks/ImageIO.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		61EEC397DC8556BF8C4E36A7 = {
+			fileRef = "3A8EF9C62A8D4790CBB89CEA";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		3C4E6C9B554A0B5BA665FAB6 = {
+			isa = PBXFileReference;
+			name = "qsvg";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/imageformats/libqsvg$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		C90A864C90608F8AB501B91D = {
+			fileRef = "3C4E6C9B554A0B5BA665FAB6";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		402A96A7488CD6C1D3BB4376 = {
+			isa = PBXFileReference;
+			name = "qtga";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/imageformats/libqtga$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D84E1DBDB1411F726A197998 = {
+			fileRef = "402A96A7488CD6C1D3BB4376";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F06449C5D60F46A31F8C990D = {
+			isa = PBXFileReference;
+			name = "qtiff";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/imageformats/libqtiff$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		02687D8656EFC8642595E8C0 = {
+			fileRef = "F06449C5D60F46A31F8C990D";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		1FC95BA8CF4CE3DBE6CF8F86 = {
+			isa = PBXFileReference;
+			name = "qwbmp";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/imageformats/libqwbmp$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		B39A4A6BD5B25891AD690751 = {
+			fileRef = "1FC95BA8CF4CE3DBE6CF8F86";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		21D6F6F81E21E8C9ABC917F2 = {
+			isa = PBXFileReference;
+			name = "qwebp";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/imageformats/libqwebp$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		52990B4200B96C9588AE1425 = {
+			fileRef = "21D6F6F81E21E8C9ABC917F2";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F233169221A51063E4C0C9A3 = {
+			isa = PBXFileReference;
+			name = "qmldbg_debugger";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling/libqmldbg_debugger$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		61ED44D5F4DB0D701123DD07 = {
+			fileRef = "F233169221A51063E4C0C9A3";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8239BE4F77B59CC3AF3B93DB = {
+			isa = PBXFileReference;
+			name = "qmldbg_inspector";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling/libqmldbg_inspector$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		E9D0FDCA85DA671626FAD6EC = {
+			fileRef = "8239BE4F77B59CC3AF3B93DB";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		6A61987524F9FA3E7887CC82 = {
+			isa = PBXFileReference;
+			name = "qmldbg_local";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling/libqmldbg_local$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		891DE15D86E7A23D3343B7A2 = {
+			fileRef = "6A61987524F9FA3E7887CC82";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A4CE1A5AB0E1B0BB69DDA942 = {
+			isa = PBXFileReference;
+			name = "qmldbg_messages";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling/libqmldbg_messages$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		1E13A7DDDDB2A1840C1FFF05 = {
+			fileRef = "A4CE1A5AB0E1B0BB69DDA942";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		49FF23E193C6B88331BE4612 = {
+			isa = PBXFileReference;
+			name = "qmldbg_native";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling/libqmldbg_native$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		F143055BF7DE09FC4245C63B = {
+			fileRef = "49FF23E193C6B88331BE4612";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		B5AA4E627A29AFA2EDEA5A25 = {
+			isa = PBXFileReference;
+			name = "qmldbg_nativedebugger";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling/libqmldbg_nativedebugger$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		7FEF299BB435A06F8A2C6AB8 = {
+			fileRef = "B5AA4E627A29AFA2EDEA5A25";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		4F305F96627FFA51013F605E = {
+			isa = PBXFileReference;
+			name = "qmldbg_preview";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling/libqmldbg_preview$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BE537FBB6C809C6CF51B52F5 = {
+			fileRef = "4F305F96627FFA51013F605E";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F02FF5F7AEA6E23688A24AA0 = {
+			isa = PBXFileReference;
+			name = "qmldbg_profiler";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling/libqmldbg_profiler$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BC4299F9FB82808D141A192B = {
+			fileRef = "F02FF5F7AEA6E23688A24AA0";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		89DFAD041F433212F4F3B21C = {
+			isa = PBXFileReference;
+			name = "qmldbg_quickprofiler";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling/libqmldbg_quickprofiler$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		8BB4E0889327789DD84F1AE6 = {
+			fileRef = "89DFAD041F433212F4F3B21C";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		1593CA5D40B3ABED00F20B6D = {
+			isa = PBXFileReference;
+			name = "qmldbg_server";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling/libqmldbg_server$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		CD4C3A9F4F99D13D3DBCA6E7 = {
+			fileRef = "1593CA5D40B3ABED00F20B6D";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF375FBB8E1C783B871E454F = {
+			isa = PBXFileReference;
+			name = "Qt5PacketProtocol";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5PacketProtocol$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		71D8CF7ACECD71C23EB758FD = {
+			fileRef = "BF375FBB8E1C783B871E454F";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		6F8A538158F89FB912F3BC0C = {
+			isa = PBXFileReference;
+			name = "qmldbg_tcp";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling/libqmldbg_tcp$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		ACF1026CDDC45FAA39455292 = {
+			fileRef = "6F8A538158F89FB912F3BC0C";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0969DA1C6D5DDB9F257A3FDE = {
+			isa = PBXFileReference;
+			name = "qgenericbearer";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/bearer/libqgenericbearer$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D13CC8DBA1F2B4B5502C2EFA = {
+			fileRef = "0969DA1C6D5DDB9F257A3FDE";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		3282F9DE34CB8BAC1662C841 = {
+			isa = PBXFileReference;
+			name = "qsqlite";
+			path = "/Users/alberto/Felgo/Felgo/ios/plugins/sqldrivers/libqsqlite$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		18789649A979D311AF9F5DE8 = {
+			fileRef = "3282F9DE34CB8BAC1662C841";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		1EB5F60690CC21A3A7819D50 = {
+			isa = PBXFileReference;
+			name = "Qt5Svg";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Svg$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		3CFC57811D8C0A6FD3F17A9A = {
+			fileRef = "1EB5F60690CC21A3A7819D50";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		23056BE824A5C232A53FF2ED = {
+			isa = PBXFileReference;
+			name = "modelsplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQml/Models.2/libmodelsplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		685885A4AA2EB3D3008AB0D0 = {
+			fileRef = "23056BE824A5C232A53FF2ED";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AAC2A9906378D7405E7FDB02 = {
+			isa = PBXFileReference;
+			name = "workerscriptplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQml/WorkerScript.2/libworkerscriptplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9C51FF51352BFB02E89706AE = {
+			fileRef = "AAC2A9906378D7405E7FDB02";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		429F4CCDC34BD22ED47FAA1A = {
+			isa = PBXFileReference;
+			name = "lottieqtplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/lottieqt/liblottieqtplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		3289A04C3FF0091540466719 = {
+			fileRef = "429F4CCDC34BD22ED47FAA1A";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F9E9AC41E8B2F00B613EF964 = {
+			isa = PBXFileReference;
+			name = "Qt5Bodymovin";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Bodymovin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		1A4D8EDE02B5937F749A2B0A = {
+			fileRef = "F9E9AC41E8B2F00B613EF964";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		C1E27E7D2CB739B48549E14F = {
+			isa = PBXFileReference;
+			name = "qmlplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQml/libqmlplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D689DAE75A0D47271F57CD36 = {
+			fileRef = "C1E27E7D2CB739B48549E14F";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A46CBECDA5F1634626B37DA6 = {
+			isa = PBXFileReference;
+			name = "qtgraphicaleffectsprivate";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects/private/libqtgraphicaleffectsprivate$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		EBDEA95EBCB2CBE17053AEEC = {
+			fileRef = "A46CBECDA5F1634626B37DA6";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		88B9F3D61DC8CEB493CE62C4 = {
+			isa = PBXFileReference;
+			name = "quick3dcoreplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Core/libquick3dcoreplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		5B3DA7288BDE5BEF73CB9B79 = {
+			fileRef = "88B9F3D61DC8CEB493CE62C4";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E5F0D3605FB96DBDCA91524B = {
+			isa = PBXFileReference;
+			name = "quick3drenderplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Render/libquick3drenderplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		5D3AA5EFA4CC2032B5EEAF7F = {
+			fileRef = "E5F0D3605FB96DBDCA91524B";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		40299A5E7F6E352B91F67C06 = {
+			isa = PBXFileReference;
+			name = "Qt53DQuickRender";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt53DQuickRender$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		ABE8D385CFC9DA38DFA27D95 = {
+			fileRef = "40299A5E7F6E352B91F67C06";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8AC1E3C7F4935A8046C479AF = {
+			isa = PBXFileReference;
+			name = "quick3dinputplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Input/libquick3dinputplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		839C55EB38721BCE519CBCC7 = {
+			fileRef = "8AC1E3C7F4935A8046C479AF";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8E9481F9BB09E88E82B72CD3 = {
+			isa = PBXFileReference;
+			name = "Qt53DQuickInput";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt53DQuickInput$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		867B59A07224823E2CD01935 = {
+			fileRef = "8E9481F9BB09E88E82B72CD3";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E067185B2D0A50BC2FF6A361 = {
+			isa = PBXFileReference;
+			name = "quick3dextrasplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Extras/libquick3dextrasplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		B80E627851F68305F0828A5D = {
+			fileRef = "E067185B2D0A50BC2FF6A361";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		348BB8C554CAD59D9205259D = {
+			isa = PBXFileReference;
+			name = "Qt53DQuickExtras";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt53DQuickExtras$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		4E217AB5ADAA9C6535BC9521 = {
+			fileRef = "348BB8C554CAD59D9205259D";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F040FA1C008C47BEF021CFFA = {
+			isa = PBXFileReference;
+			name = "Qt53DQuick";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt53DQuick$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		6069FACB0FEAD8383DD6F9DF = {
+			fileRef = "F040FA1C008C47BEF021CFFA";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		06AF15255C62F778305E31DA = {
+			isa = PBXFileReference;
+			name = "Qt53DExtras";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt53DExtras$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		68C1E96FABE8FE0ACE02ED95 = {
+			fileRef = "06AF15255C62F778305E31DA";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		78F2B7D02B3A58FDD79F805A = {
+			isa = PBXFileReference;
+			name = "quick3dlogicplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Logic/libquick3dlogicplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		160D0C40A1E229529DA06BE1 = {
+			fileRef = "78F2B7D02B3A58FDD79F805A";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E36E03215E524EAE2BD212BB = {
+			isa = PBXFileReference;
+			name = "qtchartsqml2";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtCharts/libqtchartsqml2$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D8D4DBE0B1AC039D14E83BA5 = {
+			fileRef = "E36E03215E524EAE2BD212BB";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		68E0BB249D648669E14D1491 = {
+			isa = PBXFileReference;
+			name = "Qt5Charts";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Charts$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		8A159ED877E4555D03BD5306 = {
+			fileRef = "68E0BB249D648669E14D1491";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		082A92CDD4986EF1100B52BC = {
+			isa = PBXFileReference;
+			name = "datavisualizationqml2";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtDataVisualization/libdatavisualizationqml2$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		0F0301C9C13807500F8C0F4E = {
+			fileRef = "082A92CDD4986EF1100B52BC";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		6A738F4D7A594322E0BE97E5 = {
+			isa = PBXFileReference;
+			name = "Qt5DataVisualization";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5DataVisualization$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		F44FE69815B1DDCB42778A07 = {
+			fileRef = "6A738F4D7A594322E0BE97E5";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DB32CEE8D0920170DC7FEE05 = {
+			isa = PBXFileReference;
+			name = "declarative_multimedia";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtMultimedia/libdeclarative_multimedia$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D71220F34066DAC530BB76FF = {
+			fileRef = "DB32CEE8D0920170DC7FEE05";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		C9D9296DF15940F79BCFD4E8 = {
+			isa = PBXFileReference;
+			name = "Qt5MultimediaQuick";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5MultimediaQuick$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		F9E8EA80872569BD257205FD = {
+			fileRef = "C9D9296DF15940F79BCFD4E8";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		7732DD4D9B96CE2F0411185D = {
+			isa = PBXFileReference;
+			name = "Qt5Multimedia";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Multimedia$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		2FE67125A9AA2498DA5433C6 = {
+			fileRef = "7732DD4D9B96CE2F0411185D";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8EF723B85DAE4809A4A1A865 = {
+			isa = PBXFileReference;
+			name = "dialogplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Dialogs/libdialogplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		C09384C5BDD8C275D56CF0D5 = {
+			fileRef = "8EF723B85DAE4809A4A1A865";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2AE72D3E9EB55BA75EF4E4A9 = {
+			isa = PBXFileReference;
+			name = "qmllocalstorageplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/LocalStorage/libqmllocalstorageplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		0D7EDE90A8D09EE5B55E1284 = {
+			fileRef = "2AE72D3E9EB55BA75EF4E4A9";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		868772AEDFB776C34240972C = {
+			isa = PBXFileReference;
+			name = "Qt5Sql";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Sql$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9B0B315A0703F3AC69749739 = {
+			fileRef = "868772AEDFB776C34240972C";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8127075B917362190D55AE02 = {
+			isa = PBXFileReference;
+			name = "particlesplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Particles.2/libparticlesplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		FF857BDFBB0F31778A97E71E = {
+			fileRef = "8127075B917362190D55AE02";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		942242865136A477557744B5 = {
+			isa = PBXFileReference;
+			name = "Qt5QuickParticles";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5QuickParticles$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D4C41386545430A77B98E5FF = {
+			fileRef = "942242865136A477557744B5";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		6F31A8088026110B3FA6DC09 = {
+			isa = PBXFileReference;
+			name = "qtquickscene3dplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Scene3D/libqtquickscene3dplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BC0FAE9A959E388F61B9F6CA = {
+			fileRef = "6F31A8088026110B3FA6DC09";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		4DA3659A2FD9A045B64F9A1D = {
+			isa = PBXFileReference;
+			name = "Qt53DAnimation";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt53DAnimation$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		6A9E1441430A189E8359712F = {
+			fileRef = "4DA3659A2FD9A045B64F9A1D";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		C05C1D20CCCDACD7E783CDEC = {
+			isa = PBXFileReference;
+			name = "Qt53DRender";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt53DRender$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		2AF3BF3373963D67C6F6D49D = {
+			fileRef = "C05C1D20CCCDACD7E783CDEC";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E6F8328B3752EE94637B2E64 = {
+			isa = PBXFileReference;
+			name = "Qt53DInput";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt53DInput$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		7447DC94EE27D7698DF13E64 = {
+			fileRef = "E6F8328B3752EE94637B2E64";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		FD4907B24FACA198F8A31A15 = {
+			isa = PBXFileReference;
+			name = "Qt53DLogic";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt53DLogic$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		DECE527A16FC54DB88CE0145 = {
+			fileRef = "FD4907B24FACA198F8A31A15";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		688E10B24405146745D488AE = {
+			isa = PBXFileReference;
+			name = "Qt53DCore";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt53DCore$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		89DBB73BC49117BDC3039BAC = {
+			fileRef = "688E10B24405146745D488AE";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		07BF8A40BD8235D2FF027F69 = {
+			isa = PBXFileReference;
+			name = "Qt5Gamepad";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Gamepad$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		4F72CE3F4CBCF2EFBBD9E141 = {
+			fileRef = "07BF8A40BD8235D2FF027F69";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		7CCC841298A7A522AD00F826 = {
+			isa = PBXFileReference;
+			name = "Qt5Concurrent";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Concurrent$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		812CCA651B8A342ABA62B472 = {
+			fileRef = "7CCC841298A7A522AD00F826";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E21E48EA955107AA078B6B75 = {
+			isa = PBXFileReference;
+			name = "qmlxmllistmodelplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/XmlListModel/libqmlxmllistmodelplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		34CE8241F8A87FDCF654FD59 = {
+			fileRef = "E21E48EA955107AA078B6B75";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		63A67CABD766AA04693A4B3E = {
+			isa = PBXFileReference;
+			name = "Qt5XmlPatterns";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5XmlPatterns$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		8788AC595EEBC7993A0CA978 = {
+			fileRef = "63A67CABD766AA04693A4B3E";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		701D3A528AA5F6EB407406A6 = {
+			isa = PBXFileReference;
+			name = "declarative_sensors";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtSensors/libdeclarative_sensors$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		931AB7248565F6E12BC3AC1F = {
+			fileRef = "701D3A528AA5F6EB407406A6";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		33367D008AFAEAA48E54BBD6 = {
+			isa = PBXFileReference;
+			name = "Qt5Sensors";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Sensors$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		6A819C12D2D109732E2CA67D = {
+			fileRef = "33367D008AFAEAA48E54BBD6";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		57382A530ED77A165DD5D48F = {
+			isa = PBXFileReference;
+			name = "declarative_qmlwebsockets";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtWebSockets/libdeclarative_qmlwebsockets$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		B7C0B00905136AC66F33A7E6 = {
+			fileRef = "57382A530ED77A165DD5D48F";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F7DF45A3B0DFC10619FBB00B = {
+			isa = PBXFileReference;
+			name = "Qt5WebSockets";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5WebSockets$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9BA49A979135977A00945ED1 = {
+			fileRef = "F7DF45A3B0DFC10619FBB00B";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0567928F4245F6DFDD3F3E4D = {
+			isa = PBXFileReference;
+			name = "declarative_webview";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtWebView/libdeclarative_webview$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		B91906EC8F2ECBE911ED2530 = {
+			fileRef = "0567928F4245F6DFDD3F3E4D";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		6C42514D5FFD1151E482A5D3 = {
+			isa = PBXFileReference;
+			name = "Qt5WebView";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5WebView$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		5F14AA3B772D05FBB2ED6FFA = {
+			fileRef = "6C42514D5FFD1151E482A5D3";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		75CC9BDB79A1857182FCF54D = {
+			isa = PBXFileReference;
+			name = "declarative_bluetooth";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtBluetooth/libdeclarative_bluetooth$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		3C03C18CED6330764A1E6EE6 = {
+			fileRef = "75CC9BDB79A1857182FCF54D";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		381EB0F3FD4F1BB4414D0929 = {
+			isa = PBXFileReference;
+			name = "Qt5Bluetooth";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Bluetooth$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		5CC94C2ECA950D028B4793B6 = {
+			fileRef = "381EB0F3FD4F1BB4414D0929";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		71E5705044D6C31AB87AEB17 = {
+			isa = PBXFileReference;
+			name = "CoreBluetooth.framework";
+			path = "/System/Library/Frameworks/CoreBluetooth.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		0870834790CEDE2D52551A52 = {
+			fileRef = "71E5705044D6C31AB87AEB17";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		B242E8C42A37CD85DCDEEDDD = {
+			isa = PBXFileReference;
+			name = "declarative_nfc";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtNfc/libdeclarative_nfc$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		8098AED14E77FCCCC55AB8E2 = {
+			fileRef = "B242E8C42A37CD85DCDEEDDD";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		1DEE642D2D6351747C0C45E9 = {
+			isa = PBXFileReference;
+			name = "Qt5Nfc";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Nfc$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		5D53A40BA47152CE3528C6F8 = {
+			fileRef = "1DEE642D2D6351747C0C45E9";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BD3C967C37A15CD856779B2C = {
+			isa = PBXFileReference;
+			name = "qmlfolderlistmodelplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/folderlistmodel/libqmlfolderlistmodelplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		64EE5D1876201BFD71DF5DF3 = {
+			fileRef = "BD3C967C37A15CD856779B2C";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E2369E40AD7E2CF18025409B = {
+			isa = PBXFileReference;
+			name = "dialogsprivateplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Dialogs/Private/libdialogsprivateplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		C24783FEED853A7F3A28D8E0 = {
+			fileRef = "E2369E40AD7E2CF18025409B";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		96A6984299D4ED854A5441E6 = {
+			isa = PBXFileReference;
+			name = "widgetsplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/PrivateWidgets/libwidgetsplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BDCF49B65247918B7736342D = {
+			fileRef = "96A6984299D4ED854A5441E6";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E798419BA82BE425229A563F = {
+			isa = PBXFileReference;
+			name = "Qt5Widgets";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Widgets$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		E2613A9E6DA34DECA421207B = {
+			fileRef = "E798419BA82BE425229A563F";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A443717A3AE8118CEF51AA9B = {
+			isa = PBXFileReference;
+			name = "declarative_location";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtLocation/libdeclarative_location$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		A0F96AEAE1DA8357AE1D18D6 = {
+			fileRef = "A443717A3AE8118CEF51AA9B";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		3BFF7F43AACC1925C0E4157E = {
+			isa = PBXFileReference;
+			name = "Qt5Location";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Location$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		691CC9DD5C5BAAB4211317C7 = {
+			fileRef = "3BFF7F43AACC1925C0E4157E";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E80B63F8F93A2352DA680E6A = {
+			isa = PBXFileReference;
+			name = "declarative_positioning";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtPositioning/libdeclarative_positioning$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		265DD51EF0DE68B8700C3036 = {
+			fileRef = "E80B63F8F93A2352DA680E6A";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BE3BA52CBA8DDD5B5273D39E = {
+			isa = PBXFileReference;
+			name = "Qt5PositioningQuick";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5PositioningQuick$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		78469FD066339B68149B43DB = {
+			fileRef = "BE3BA52CBA8DDD5B5273D39E";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		C0A884426EC11780AC4A335C = {
+			isa = PBXFileReference;
+			name = "Qt5Positioning";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Positioning$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		870D0557F5A4C8882DD6942F = {
+			fileRef = "C0A884426EC11780AC4A335C";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		20D9847287EA11FE48F26ACC = {
+			isa = PBXFileReference;
+			name = "qt_clip2tri";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libqt_clip2tri$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		4AAF2C30E0304093367B7535 = {
+			fileRef = "20D9847287EA11FE48F26ACC";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9206FE75C20863433A6D3930 = {
+			isa = PBXFileReference;
+			name = "qt_poly2tri";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libqt_poly2tri$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		2037306C2DCD7D27BF774B0F = {
+			fileRef = "9206FE75C20863433A6D3930";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		DBB37CCA793279485D0875C2 = {
+			isa = PBXFileReference;
+			name = "qt_clipper";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libqt_clipper$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		0D1F3624F098219A1A1BB8DD = {
+			fileRef = "DBB37CCA793279485D0875C2";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		B3D78E7D71BFAAAF984CA35F = {
+			isa = PBXFileReference;
+			name = "qtgraphicaleffectsplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects/libqtgraphicaleffectsplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		830083C42A9AD2514BB5A7DA = {
+			fileRef = "B3D78E7D71BFAAAF984CA35F";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		181346F232D422B7D891F7B1 = {
+			isa = PBXFileReference;
+			name = "qquicklayoutsplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Layouts/libqquicklayoutsplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		2F8A3111DA290EF515531907 = {
+			fileRef = "181346F232D422B7D891F7B1";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		45BE9327BDEFF605943B9F4C = {
+			isa = PBXFileReference;
+			name = "qmlsettingsplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/settings/libqmlsettingsplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		7878ADFCBCEDA3C553438B5E = {
+			fileRef = "45BE9327BDEFF605943B9F4C";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		D79184801B2BA30027A0CBFC = {
+			isa = PBXFileReference;
+			name = "windowplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Window.2/libwindowplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		25108CFC51967721E10AA09B = {
+			fileRef = "D79184801B2BA30027A0CBFC";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		D33B4F84A908B716796B544C = {
+			isa = PBXFileReference;
+			name = "qtquick2plugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick.2/libqtquick2plugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BE772FA3CDBCA80EFCBFAB35 = {
+			fileRef = "D33B4F84A908B716796B544C";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		B1DBAB112BECE83F3463F1F3 = {
+			isa = PBXFileReference;
+			name = "Qt5QmlWorkerScript";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5QmlWorkerScript$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		C46B25DE966397B5A3373563 = {
+			fileRef = "B1DBAB112BECE83F3463F1F3";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		1EBA7EF5FEC06A04540607A9 = {
+			isa = PBXFileReference;
+			name = "qtquicktemplates2plugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Templates.2/libqtquicktemplates2plugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		B8FEB44D84740C30832A40C0 = {
+			fileRef = "1EBA7EF5FEC06A04540607A9";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		4EBF53713597BB5CAE0E8321 = {
+			isa = PBXFileReference;
+			name = "qtquickcontrols2plugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/libqtquickcontrols2plugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		5AE2166FAC101EF6404914BC = {
+			fileRef = "4EBF53713597BB5CAE0E8321";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		554AD217D031089FFF0BD758 = {
+			isa = PBXFileReference;
+			name = "qtquickcontrols2materialstyleplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/Material/libqtquickcontrols2materialstyleplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		28A5D611459E4A4FD744139D = {
+			fileRef = "554AD217D031089FFF0BD758";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		83D967632CCE73E6177C8D71 = {
+			isa = PBXFileReference;
+			name = "qtquickcontrolsplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls/libqtquickcontrolsplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		1D5A4DF0731115CF448D602D = {
+			fileRef = "83D967632CCE73E6177C8D71";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		4302FF0E490E8A94697BE49D = {
+			isa = PBXFileReference;
+			name = "qtquickcontrols2fusionstyleplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/Fusion/libqtquickcontrols2fusionstyleplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		E28301EC0F42AE04F62EC247 = {
+			fileRef = "4302FF0E490E8A94697BE49D";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9EBDE3D3247F533E950CD50C = {
+			isa = PBXFileReference;
+			name = "qtquickcontrols2universalstyleplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/Universal/libqtquickcontrols2universalstyleplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		FE7F571119008EE06BBC15AA = {
+			fileRef = "9EBDE3D3247F533E950CD50C";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		4E385E1BA219010234C438E3 = {
+			isa = PBXFileReference;
+			name = "qtquickcontrols2imaginestyleplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/Imagine/libqtquickcontrols2imaginestyleplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		0EFB31613699B7B3953496FF = {
+			fileRef = "4E385E1BA219010234C438E3";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		CB1AAF63F71969E2981E61A9 = {
+			isa = PBXFileReference;
+			name = "Qt5QuickControls2";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5QuickControls2$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		6BBC5F620F2DFF30BF07BB42 = {
+			fileRef = "CB1AAF63F71969E2981E61A9";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		C60CDAF5E15DB7DF6175AD31 = {
+			isa = PBXFileReference;
+			name = "Qt5QuickTemplates2";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5QuickTemplates2$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		530C082E0A439F5DACAD5B0C = {
+			fileRef = "C60CDAF5E15DB7DF6175AD31";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		09DCFC64148AD96EE5CFA88C = {
+			isa = PBXFileReference;
+			name = "Qt5Quick";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Quick$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		4692AA3673EAF7096B152A67 = {
+			fileRef = "09DCFC64148AD96EE5CFA88C";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0AE60D1CAE23CA084B96A323 = {
+			isa = PBXFileReference;
+			name = "Qt5Gui";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Gui$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		7D3EA0464F27A7CCF4786F20 = {
+			fileRef = "0AE60D1CAE23CA084B96A323";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		1B2543FCC48E9436F21C4F63 = {
+			isa = PBXFileReference;
+			name = "Metal.framework";
+			path = "/System/Library/Frameworks/Metal.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		B3FE8FAC746D3D5BB24FA398 = {
+			fileRef = "1B2543FCC48E9436F21C4F63";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		1BED91223453B3E4A731548C = {
+			isa = PBXFileReference;
+			name = "qtlibpng";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libqtlibpng$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		A325F19700E96DCE6AE3ABF3 = {
+			fileRef = "1BED91223453B3E4A731548C";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D65C746F0987077CAA47424 = {
+			isa = PBXFileReference;
+			name = "qtharfbuzz";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libqtharfbuzz$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		AE7872616A0DE81968BA4C6F = {
+			fileRef = "0D65C746F0987077CAA47424";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		7D7B02101166B76FD2D4F8B4 = {
+			isa = PBXFileReference;
+			name = "CoreText.framework";
+			path = "/System/Library/Frameworks/CoreText.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		2B02D9DC58A01E45248DDBCE = {
+			fileRef = "7D7B02101166B76FD2D4F8B4";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		6AE3EC31EE5BB1FCEE84137C = {
+			isa = PBXFileReference;
+			name = "CoreGraphics.framework";
+			path = "/System/Library/Frameworks/CoreGraphics.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		0CE02722F00CAD43741297B5 = {
+			fileRef = "6AE3EC31EE5BB1FCEE84137C";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D9DA9C93181348BB73CCC57 = {
+			isa = PBXFileReference;
+			name = "Qt5QmlModels";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5QmlModels$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		DC667482B96A80088D90F091 = {
+			fileRef = "0D9DA9C93181348BB73CCC57";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		1F08D4394004B59BA9993697 = {
+			isa = PBXFileReference;
+			name = "Qt5Qml";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Qml$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		111D78A77DDC91689089970D = {
+			fileRef = "1F08D4394004B59BA9993697";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		1E74D8FFE50A7BC9F4ED455F = {
+			isa = PBXFileReference;
+			name = "Qt5Network";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Network$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D1121491D7A828F9EA291EEA = {
+			fileRef = "1E74D8FFE50A7BC9F4ED455F";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		205259EEEE2BADA5E64741E3 = {
+			isa = PBXFileReference;
+			name = "Security.framework";
+			path = "/System/Library/Frameworks/Security.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		15364689D2AB5A30E87A689F = {
+			fileRef = "205259EEEE2BADA5E64741E3";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		FF5BDAB0076F3391B219EA52 = {
+			isa = PBXFileReference;
+			name = "SystemConfiguration.framework";
+			path = "/System/Library/Frameworks/SystemConfiguration.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		D4639595C3BCF2A39D88DF6E = {
+			fileRef = "FF5BDAB0076F3391B219EA52";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		C714C1AF3FA78E2DABBC17E8 = {
+			isa = PBXFileReference;
+			name = "GSS.framework";
+			path = "/System/Library/Frameworks/GSS.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		906D4B242F504925A3CF2DBB = {
+			fileRef = "C714C1AF3FA78E2DABBC17E8";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		C6FF1C0F4749D77308879E07 = {
+			isa = PBXFileReference;
+			name = "Qt5Core";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libQt5Core$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		E07D0043BB069330B03C8B97 = {
+			fileRef = "C6FF1C0F4749D77308879E07";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		4D765E1B1EA6C757220C63E7 = {
+			isa = PBXFileReference;
+			name = "CoreFoundation.framework";
+			path = "/System/Library/Frameworks/CoreFoundation.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		F8B465CE34D8DF87AAE95913 = {
+			fileRef = "4D765E1B1EA6C757220C63E7";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		FCC237CA5AD60B9BA4447615 = {
+			isa = PBXFileReference;
+			name = "Foundation.framework";
+			path = "/System/Library/Frameworks/Foundation.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		F26454630C80841CBDCFE1CA = {
+			fileRef = "FCC237CA5AD60B9BA4447615";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0C518CB787F8719C603A9083 = {
+			isa = PBXFileReference;
+			name = "qtpcre2";
+			path = "/Users/alberto/Felgo/Felgo/ios/lib/libqtpcre2$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		AEFDB9667B4D37BCD6AD5204 = {
+			fileRef = "0C518CB787F8719C603A9083";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AF39DD055C3EF8226FBE929D = {
+			children = (
+				"716800DD0029E08B5AF4EB50",
+				"B687A5EF00195AAB9884CFD5",
+				"757E8FC7129961E6AE982977",
+				"415E860391117B52D034BD01",
+				"EC59CC9669C6235646AF0372",
+				"C114B0AA6616CAE502A1D493",
+				"B6BD21564FEECAC29D23B910",
+				"6F945E6D2C3242F31876349C",
+				"55756E812C11CEFDCA00A13B",
+				"CF27DA584C2D8714BF3774CF",
+				"BD5FCA7D802D96BED4D98BB2",
+				"DC9DAE7B61577D466F249FCC",
+				"DEF4610FE3B45A108415139B",
+				"447701B976D2670ADEC3922A",
+				"FF35BECBFBC37E179AF565CD",
+				"711E7F11A7C83E4C1E342194",
+				"78B88DA4E84638D4CA97C5F1",
+				"547CCADBD1CC5050167EF948",
+				"F923F38E989CF0F61A164DD8",
+				"464EA179723879073F17AACB",
+				"1E5B624402747B83A80CC626",
+				"C6527B1E1A89178DD0546F88",
+				"A57831ECE32900C14263C61A",
+				"21F907AB8D19BD779147A085",
+				"BEF9DFDA6822604126A7E233",
+				"B41651D473744F01A11E76D4",
+				"7EC00404ACD5AB0E97726B0E",
+				"3C44131FDCFEF4396B9EA2BA",
+				"B832E3CF2C4B5AAAA7EFD468",
+				"4FAB830AEBA786C82A9C0CFB",
+				"C8A420D15557C3C29B1829A2",
+				"4A33AB10EEA2F2D981174F4F",
+				"24105A375C163DC7647D723D",
+				"47C258A1022ADBC4CCCEA291",
+				"811FA3B8DEB3AF3E9D6CCCA6",
+				"89F217D99845EF2009450E2D",
+				"636B7880BC150102B375C71B",
+				"B8EBFA6151556DEB5481A974",
+				"6F6A958EB6CF961EA5A8D73B",
+				"3A8EF9C62A8D4790CBB89CEA",
+				"3C4E6C9B554A0B5BA665FAB6",
+				"402A96A7488CD6C1D3BB4376",
+				"F06449C5D60F46A31F8C990D",
+				"1FC95BA8CF4CE3DBE6CF8F86",
+				"21D6F6F81E21E8C9ABC917F2",
+				"F233169221A51063E4C0C9A3",
+				"8239BE4F77B59CC3AF3B93DB",
+				"6A61987524F9FA3E7887CC82",
+				"A4CE1A5AB0E1B0BB69DDA942",
+				"49FF23E193C6B88331BE4612",
+				"B5AA4E627A29AFA2EDEA5A25",
+				"4F305F96627FFA51013F605E",
+				"F02FF5F7AEA6E23688A24AA0",
+				"89DFAD041F433212F4F3B21C",
+				"1593CA5D40B3ABED00F20B6D",
+				"BF375FBB8E1C783B871E454F",
+				"6F8A538158F89FB912F3BC0C",
+				"0969DA1C6D5DDB9F257A3FDE",
+				"3282F9DE34CB8BAC1662C841",
+				"1EB5F60690CC21A3A7819D50",
+				"23056BE824A5C232A53FF2ED",
+				"AAC2A9906378D7405E7FDB02",
+				"429F4CCDC34BD22ED47FAA1A",
+				"F9E9AC41E8B2F00B613EF964",
+				"C1E27E7D2CB739B48549E14F",
+				"A46CBECDA5F1634626B37DA6",
+				"88B9F3D61DC8CEB493CE62C4",
+				"E5F0D3605FB96DBDCA91524B",
+				"40299A5E7F6E352B91F67C06",
+				"8AC1E3C7F4935A8046C479AF",
+				"8E9481F9BB09E88E82B72CD3",
+				"E067185B2D0A50BC2FF6A361",
+				"348BB8C554CAD59D9205259D",
+				"F040FA1C008C47BEF021CFFA",
+				"06AF15255C62F778305E31DA",
+				"78F2B7D02B3A58FDD79F805A",
+				"E36E03215E524EAE2BD212BB",
+				"68E0BB249D648669E14D1491",
+				"082A92CDD4986EF1100B52BC",
+				"6A738F4D7A594322E0BE97E5",
+				"DB32CEE8D0920170DC7FEE05",
+				"C9D9296DF15940F79BCFD4E8",
+				"7732DD4D9B96CE2F0411185D",
+				"8EF723B85DAE4809A4A1A865",
+				"2AE72D3E9EB55BA75EF4E4A9",
+				"868772AEDFB776C34240972C",
+				"8127075B917362190D55AE02",
+				"942242865136A477557744B5",
+				"6F31A8088026110B3FA6DC09",
+				"4DA3659A2FD9A045B64F9A1D",
+				"C05C1D20CCCDACD7E783CDEC",
+				"E6F8328B3752EE94637B2E64",
+				"FD4907B24FACA198F8A31A15",
+				"688E10B24405146745D488AE",
+				"07BF8A40BD8235D2FF027F69",
+				"7CCC841298A7A522AD00F826",
+				"E21E48EA955107AA078B6B75",
+				"63A67CABD766AA04693A4B3E",
+				"701D3A528AA5F6EB407406A6",
+				"33367D008AFAEAA48E54BBD6",
+				"57382A530ED77A165DD5D48F",
+				"F7DF45A3B0DFC10619FBB00B",
+				"0567928F4245F6DFDD3F3E4D",
+				"6C42514D5FFD1151E482A5D3",
+				"75CC9BDB79A1857182FCF54D",
+				"381EB0F3FD4F1BB4414D0929",
+				"71E5705044D6C31AB87AEB17",
+				"B242E8C42A37CD85DCDEEDDD",
+				"1DEE642D2D6351747C0C45E9",
+				"BD3C967C37A15CD856779B2C",
+				"E2369E40AD7E2CF18025409B",
+				"96A6984299D4ED854A5441E6",
+				"E798419BA82BE425229A563F",
+				"A443717A3AE8118CEF51AA9B",
+				"3BFF7F43AACC1925C0E4157E",
+				"E80B63F8F93A2352DA680E6A",
+				"BE3BA52CBA8DDD5B5273D39E",
+				"C0A884426EC11780AC4A335C",
+				"20D9847287EA11FE48F26ACC",
+				"9206FE75C20863433A6D3930",
+				"DBB37CCA793279485D0875C2",
+				"B3D78E7D71BFAAAF984CA35F",
+				"181346F232D422B7D891F7B1",
+				"45BE9327BDEFF605943B9F4C",
+				"D79184801B2BA30027A0CBFC",
+				"D33B4F84A908B716796B544C",
+				"B1DBAB112BECE83F3463F1F3",
+				"1EBA7EF5FEC06A04540607A9",
+				"4EBF53713597BB5CAE0E8321",
+				"554AD217D031089FFF0BD758",
+				"83D967632CCE73E6177C8D71",
+				"4302FF0E490E8A94697BE49D",
+				"9EBDE3D3247F533E950CD50C",
+				"4E385E1BA219010234C438E3",
+				"CB1AAF63F71969E2981E61A9",
+				"C60CDAF5E15DB7DF6175AD31",
+				"09DCFC64148AD96EE5CFA88C",
+				"0AE60D1CAE23CA084B96A323",
+				"1B2543FCC48E9436F21C4F63",
+				"1BED91223453B3E4A731548C",
+				"0D65C746F0987077CAA47424",
+				"7D7B02101166B76FD2D4F8B4",
+				"6AE3EC31EE5BB1FCEE84137C",
+				"0D9DA9C93181348BB73CCC57",
+				"1F08D4394004B59BA9993697",
+				"1E74D8FFE50A7BC9F4ED455F",
+				"205259EEEE2BADA5E64741E3",
+				"FF5BDAB0076F3391B219EA52",
+				"C714C1AF3FA78E2DABBC17E8",
+				"C6FF1C0F4749D77308879E07",
+				"4D765E1B1EA6C757220C63E7",
+				"FCC237CA5AD60B9BA4447615",
+				"0C518CB787F8719C603A9083");
+			isa = PBXGroup;
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		D1C883685E82D5676953459A = {
+			buildActionMask = 2147483647;
+			files = (
+				"D25684D59EC99912A17C98D7",
+				"A04D68177236C7F37216CF3E",
+				"34416EF015DCEB83A1311752",
+				"3F12EC9CC15401E6687C96D9",
+				"B73DBF211F05A6A62000CCFC",
+				"D43D325448B824F1F4A2D520",
+				"532E87DB6213074924D85E78",
+				"769EF9F820BB41EB28A21F3A",
+				"D2F2450B8E4E98DA817D5381",
+				"7167D10E380E2516806FA9E8",
+				"608694C2F85C903B08FF61AE",
+				"28E2B85E6B7E55B45C4B1FFC",
+				"2C203F91CCE9FF7F4A42FC18",
+				"D7B762AD9D5FF05D972C355F",
+				"84A2E798BD12B36D79BD6232",
+				"919B2156A816299417291932",
+				"A634B2E9F2A73F7473EAC4C2",
+				"B78304F135DEF1F7A68393A6",
+				"6602E41D28CF886E694AD752",
+				"8B57B45FB1652836E0DCA41D",
+				"FB3C117E2C03AA51498BA906",
+				"DABB737D720261B2AA2A8683",
+				"5CBC16FE16D88C276B452D24",
+				"CCA737EE379CDB10CC9A0F23",
+				"35A1A39F8EAB37889EB3D397",
+				"9C9C592C85789F350AF8B02E",
+				"B460F624007324313696BE86",
+				"4EB68D0C8182BCE33529C421",
+				"C0E429CC94FB681BE9F00E12",
+				"7DE5EF703E5073064EEE16CB",
+				"6BBA83895A4ED14135D0631D",
+				"CA0544A9FE2F187037E8828D",
+				"2D6BC22D6C6027E26EE80E7D",
+				"3EA7D696950A7217472446F1",
+				"1B69D2085B91F6F3F48E2121",
+				"0CA8E5E0D0FB23AC2895F03F",
+				"C6744DFDFDE3996361F5FCB3",
+				"6347E93346A9268FECEF87DD",
+				"167DD25A5A02DE189065A4A5",
+				"61EEC397DC8556BF8C4E36A7",
+				"C90A864C90608F8AB501B91D",
+				"D84E1DBDB1411F726A197998",
+				"02687D8656EFC8642595E8C0",
+				"B39A4A6BD5B25891AD690751",
+				"52990B4200B96C9588AE1425",
+				"61ED44D5F4DB0D701123DD07",
+				"E9D0FDCA85DA671626FAD6EC",
+				"891DE15D86E7A23D3343B7A2",
+				"1E13A7DDDDB2A1840C1FFF05",
+				"F143055BF7DE09FC4245C63B",
+				"7FEF299BB435A06F8A2C6AB8",
+				"BE537FBB6C809C6CF51B52F5",
+				"BC4299F9FB82808D141A192B",
+				"8BB4E0889327789DD84F1AE6",
+				"CD4C3A9F4F99D13D3DBCA6E7",
+				"71D8CF7ACECD71C23EB758FD",
+				"ACF1026CDDC45FAA39455292",
+				"D13CC8DBA1F2B4B5502C2EFA",
+				"18789649A979D311AF9F5DE8",
+				"3CFC57811D8C0A6FD3F17A9A",
+				"685885A4AA2EB3D3008AB0D0",
+				"9C51FF51352BFB02E89706AE",
+				"3289A04C3FF0091540466719",
+				"1A4D8EDE02B5937F749A2B0A",
+				"D689DAE75A0D47271F57CD36",
+				"EBDEA95EBCB2CBE17053AEEC",
+				"5B3DA7288BDE5BEF73CB9B79",
+				"5D3AA5EFA4CC2032B5EEAF7F",
+				"ABE8D385CFC9DA38DFA27D95",
+				"839C55EB38721BCE519CBCC7",
+				"867B59A07224823E2CD01935",
+				"B80E627851F68305F0828A5D",
+				"4E217AB5ADAA9C6535BC9521",
+				"6069FACB0FEAD8383DD6F9DF",
+				"68C1E96FABE8FE0ACE02ED95",
+				"160D0C40A1E229529DA06BE1",
+				"D8D4DBE0B1AC039D14E83BA5",
+				"8A159ED877E4555D03BD5306",
+				"0F0301C9C13807500F8C0F4E",
+				"F44FE69815B1DDCB42778A07",
+				"D71220F34066DAC530BB76FF",
+				"F9E8EA80872569BD257205FD",
+				"2FE67125A9AA2498DA5433C6",
+				"C09384C5BDD8C275D56CF0D5",
+				"0D7EDE90A8D09EE5B55E1284",
+				"9B0B315A0703F3AC69749739",
+				"FF857BDFBB0F31778A97E71E",
+				"D4C41386545430A77B98E5FF",
+				"BC0FAE9A959E388F61B9F6CA",
+				"6A9E1441430A189E8359712F",
+				"2AF3BF3373963D67C6F6D49D",
+				"7447DC94EE27D7698DF13E64",
+				"DECE527A16FC54DB88CE0145",
+				"89DBB73BC49117BDC3039BAC",
+				"4F72CE3F4CBCF2EFBBD9E141",
+				"812CCA651B8A342ABA62B472",
+				"34CE8241F8A87FDCF654FD59",
+				"8788AC595EEBC7993A0CA978",
+				"931AB7248565F6E12BC3AC1F",
+				"6A819C12D2D109732E2CA67D",
+				"B7C0B00905136AC66F33A7E6",
+				"9BA49A979135977A00945ED1",
+				"B91906EC8F2ECBE911ED2530",
+				"5F14AA3B772D05FBB2ED6FFA",
+				"3C03C18CED6330764A1E6EE6",
+				"5CC94C2ECA950D028B4793B6",
+				"0870834790CEDE2D52551A52",
+				"8098AED14E77FCCCC55AB8E2",
+				"5D53A40BA47152CE3528C6F8",
+				"64EE5D1876201BFD71DF5DF3",
+				"C24783FEED853A7F3A28D8E0",
+				"BDCF49B65247918B7736342D",
+				"E2613A9E6DA34DECA421207B",
+				"A0F96AEAE1DA8357AE1D18D6",
+				"691CC9DD5C5BAAB4211317C7",
+				"265DD51EF0DE68B8700C3036",
+				"78469FD066339B68149B43DB",
+				"870D0557F5A4C8882DD6942F",
+				"4AAF2C30E0304093367B7535",
+				"2037306C2DCD7D27BF774B0F",
+				"0D1F3624F098219A1A1BB8DD",
+				"830083C42A9AD2514BB5A7DA",
+				"2F8A3111DA290EF515531907",
+				"7878ADFCBCEDA3C553438B5E",
+				"25108CFC51967721E10AA09B",
+				"BE772FA3CDBCA80EFCBFAB35",
+				"C46B25DE966397B5A3373563",
+				"B8FEB44D84740C30832A40C0",
+				"5AE2166FAC101EF6404914BC",
+				"28A5D611459E4A4FD744139D",
+				"1D5A4DF0731115CF448D602D",
+				"E28301EC0F42AE04F62EC247",
+				"FE7F571119008EE06BBC15AA",
+				"0EFB31613699B7B3953496FF",
+				"6BBC5F620F2DFF30BF07BB42",
+				"530C082E0A439F5DACAD5B0C",
+				"4692AA3673EAF7096B152A67",
+				"7D3EA0464F27A7CCF4786F20",
+				"B3FE8FAC746D3D5BB24FA398",
+				"A325F19700E96DCE6AE3ABF3",
+				"AE7872616A0DE81968BA4C6F",
+				"2B02D9DC58A01E45248DDBCE",
+				"0CE02722F00CAD43741297B5",
+				"DC667482B96A80088D90F091",
+				"111D78A77DDC91689089970D",
+				"D1121491D7A828F9EA291EEA",
+				"15364689D2AB5A30E87A689F",
+				"D4639595C3BCF2A39D88DF6E",
+				"906D4B242F504925A3CF2DBB",
+				"E07D0043BB069330B03C8B97",
+				"F8B465CE34D8DF87AAE95913",
+				"F26454630C80841CBDCFE1CA",
+				"AEFDB9667B4D37BCD6AD5204");
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Link Binary With Libraries";
+		};
+		776D5E25B18ED6FE9A43064F = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)");
+			isa = PBXShellScriptBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Qt Postlink";
+			shellPath = "/bin/sh";
+			shellScript = "echo Copying application data... && mkdir -p \"$CODESIGNING_FOLDER_PATH/\" && cp -r \"/Users/alberto/Documents/WorkSpace/Felgo/Prankster/qml\" \"$CODESIGNING_FOLDER_PATH/\" && mkdir -p \"$CODESIGNING_FOLDER_PATH/\" && cp -r \"/Users/alberto/Documents/WorkSpace/Felgo/Prankster/assets\" \"$CODESIGNING_FOLDER_PATH/\"";
+			showEnvVarsInLog = "0";
+		};
+		34111D843C580A4DE3CECCA5 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Prankster.xcodeproj/Default-568h@2x.png";
+			name = "Default-568h@2x.png";
+			sourceTree = "<absolute>";
+		};
+		AA06C5489042DCAEF644A74C = {
+			fileRef = "34111D843C580A4DE3CECCA5";
+			isa = PBXBuildFile;
+		};
+		D5EF1D008FE77A702E60360C = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Prankster.xcodeproj/LaunchScreen.storyboard";
+			name = "LaunchScreen.storyboard";
+			sourceTree = "<absolute>";
+		};
+		2D2560E1DC594803FA0B87C6 = {
+			fileRef = "D5EF1D008FE77A702E60360C";
+			isa = PBXBuildFile;
+		};
+		2CE165AAA818C3E0D0437702 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios/Launch Screen.storyboard";
+			name = "Launch Screen.storyboard";
+			sourceTree = "<absolute>";
+		};
+		500871E64874CFCB3DC5655E = {
+			fileRef = "2CE165AAA818C3E0D0437702";
+			isa = PBXBuildFile;
+		};
+		AEF9EFBAC54861356F4E2906 = {
+			isa = PBXFileReference;
+			path = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios/Assets.xcassets";
+			name = "Assets.xcassets";
+			sourceTree = "<absolute>";
+		};
+		7A9BFB45828B05669053AD69 = {
+			fileRef = "AEF9EFBAC54861356F4E2906";
+			isa = PBXBuildFile;
+		};
+		858FCAB0EB1F29CF8B07677C = {
+			children = (
+				"34111D843C580A4DE3CECCA5",
+				"D5EF1D008FE77A702E60360C",
+				"2CE165AAA818C3E0D0437702",
+				"AEF9EFBAC54861356F4E2906");
+			isa = PBXGroup;
+			name = "Bundle Data";
+			sourceTree = "<group>";
+		};
+		30414803F31797EB689AE508 = {
+			buildActionMask = 2147483647;
+			files = (
+				"AA06C5489042DCAEF644A74C",
+				"2D2560E1DC594803FA0B87C6",
+				"500871E64874CFCB3DC5655E",
+				"7A9BFB45828B05669053AD69");
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Copy Bundle Resources";
+		};
+		99542592E9780B9225F24AA8 = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D3DB6ED251155064991E57 = {
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			explicitFileType = "wrapper.application";
+			path = "Prankster.app";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE0A091FDBFB3E9C31B7A1BD = {
+			children = (
+				"98D3DB6ED251155064991E57");
+			isa = PBXGroup;
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		E8C543AB96796ECAA2E65C57 = {
+			children = (
+				"2EB56BE3C2D93CDAB0C52E67",
+				"25B08E2869634E9BCBA333A2",
+				"87DF60DE337FB58864343E39",
+				"74B182DB50CB5611B5C1C297",
+				"AF39DD055C3EF8226FBE929D",
+				"858FCAB0EB1F29CF8B07677C",
+				"FE0A091FDBFB3E9C31B7A1BD");
+			isa = PBXGroup;
+			name = "Prankster";
+			sourceTree = "<group>";
+		};
+		7A7F9CB6B83C945793A58F95 = {
+			buildPhases = (
+				"5E618435888B9D49F8540165",
+				"7EF0942E79C014DCEC8976BC");
+			dependencies = (
+				);
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
+			isa = PBXAggregateTarget;
+			buildRules = (
+);
+			productName = "Qt Preprocess";
+			name = "Qt Preprocess";
+		};
+		B3187E01DA81EA13A5B5B934 = {
+			isa = PBXTargetDependency;
+			target = "7A7F9CB6B83C945793A58F95";
+		};
+		C3D285E9E01A7A9B9B9F21CE = {
+			buildPhases = (
+				"F7E50F631C51CD5B5DC0BC43",
+				"D1C883685E82D5676953459A",
+				"776D5E25B18ED6FE9A43064F",
+				"30414803F31797EB689AE508",
+				"99542592E9780B9225F24AA8");
+			dependencies = (
+				"B3187E01DA81EA13A5B5B934");
+			productReference = "98D3DB6ED251155064991E57";
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
+			isa = PBXNativeTarget;
+			buildRules = (
+);
+			productType = "com.apple.product-type.application";
+			name = "Prankster";
+			productName = "Prankster";
+		};
+		3AA6C32AC930069E80220CF1 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=iphoneos*]" = "arm64";
+				"ARCHS[sdk=iphonesimulator*]" = "x86_64";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				CODE_SIGN_ENTITLEMENTS = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios/App.entitlements";
+				COPY_PHASE_STRIP = "NO";
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				DEVELOPMENT_TEAM = "ALJLHBZ3YS";
+				ENABLE_BITCODE = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				ONLY_ACTIVE_ARCH = "YES";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertoromero.prankster";
+				PRODUCT_IDENTIFIER = "com.albertoromero.prankster";
+				PRODUCT_NAME = "Prankster";
+				PRODUCT_VERSION_CODE = "1";
+				PRODUCT_VERSION_NAME = "1.0.0";
+				QMAKE_FULL_VERSION = "1.0.0";
+				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk";
+				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk";
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform";
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform";
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = "1.0";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				INFOPLIST_FILE = "ios/Project-Info.plist";
+				SYMROOT = ".xcode";
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "11.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "12.0";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					".",
+					"../../../../Felgo/Felgo/ios/mkspecs/common/uikit",
+					"Include/rest-cpp/include",
+					"Include/rapidjson",
+					"Include/rlottie/headers",
+					"../../../../EssentialLibs/boost",
+					"../../../../EssentialLibs/OpenSSL/iphoneos/include",
+					"../../../../Felgo/Felgo/ios/include/Felgo",
+					"../../../../Felgo/Felgo/ios/include",
+					"../../../../Felgo/Felgo/ios/include/QtSvg",
+					"../../../../Felgo/Felgo/ios/include/QtWidgets",
+					"../../../../Felgo/Felgo/ios/include/QtQuick",
+					"../../../../Felgo/Felgo/ios/include/QtMultimedia",
+					"../../../../Felgo/Felgo/ios/include/QtGui",
+					"../../../../Felgo/Felgo/ios/include/QtQmlModels",
+					"../../../../Felgo/Felgo/ios/include/QtQml",
+					"../../../../Felgo/Felgo/ios/include/QtWebSockets",
+					"../../../../Felgo/Felgo/ios/include/QtNetwork",
+					"../../../../Felgo/Felgo/ios/include/QtSql",
+					"../../../../Felgo/Felgo/ios/include/QtBluetooth",
+					"../../../../Felgo/Felgo/ios/include/QtCore",
+					".",
+					"../../../../Felgo/Felgo/ios/mkspecs/macx-ios-clang");
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/alberto/EssentialLibs/boost/stage/ios/lib",
+					"/Users/alberto/EssentialLibs/OpenSSL/iphoneos/lib",
+					"/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rlottie/ios",
+					"/Users/alberto/Felgo/Felgo/ios/lib",
+					"/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios",
+					"/System/Library/Frameworks/",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/platforms",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/platforms/darwin",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/mediaservice",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/audio",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/playlistformats",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/iconengines",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/imageformats",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/bearer",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/sqldrivers",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQml/Models.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQml/WorkerScript.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/lottieqt",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQml",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects/private",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Core",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Render",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Input",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Extras",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Logic",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtCharts",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtDataVisualization",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtMultimedia",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Dialogs",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/LocalStorage",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Particles.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Scene3D",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/XmlListModel",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtSensors",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtWebSockets",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtWebView",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtBluetooth",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtNfc",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/folderlistmodel",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Dialogs/Private",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/PrivateWidgets",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtLocation",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtPositioning",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Layouts",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/settings",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Window.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Templates.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/Material",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/Fusion",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/Universal",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/Imagine");
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios");
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fobjc-nonfragile-abi",
+					"-fobjc-legacy-dispatch",
+					"-Wall",
+					"-Wextra",
+					"-fPIC",
+					"-DQT_COMPILER_SUPPORTS_SSE2",
+					"-DPRODUCT_LICENSE_KEY=\\\"667E31EFE21D078D6C1F01A2815E6316BF1D581CCEFB24ACC6261D053CE4BA2690994FE9F236E181364BFA5668B1A29A2567745AD05805F85B48F16B214D5C6E739585133C4871167B0F2956FF7ACBA699F65856CE52EC35615BB89F89212ED2B64C421FAB004441D4D940C116F58D4E17D4D54075E8A263728CD1D6FC1132D33B133441C80F22EFCFC4DBB90875FBFC2FCF4D4EF473F03972EFAA1CF89DAC050A3C6A538CDFCB538365A53BFBD6624B479CD033DF15D9136356C91F8E7B5D6D066FD4873636F017CCB8ECE692250ECD9E9FE8FB64DF1104B8E62C53BCE78CEE556A5FC4B05EB4B7E323751A5D67C0B170B3118622231985C27F8A914A24D2096E4FC26E0BCA89C919FE576E778496E16247E0053C3A81002E44D551C4B5E9BAA6E5CE01FCC32D9953A6E57F6EBC9E012151D122FCA37CA8198957625179EDF937F9FA6667073E713EA50AC346A7ADF2BCC7B7E628A1C0655344F9C3D1F7B163F77F827AAB087D326488199412D09F65D7E57F153BE8F79BB012D1B5B1C8C1BF2F557612F96773C507DB7E87F849DE0BDBA44E900F5ADDDD1433880BBFD76536ED91CAE678E34E34C516130A9BF16CD2F8936BE900BE476490388219F14B89EC80BBD9EA72F76ADC3BD11CEBB23DEED3EF138378EC7C3C90EA63F4ABCD540366B7F4FC5DD0D77325148236891692E791\\\"",
+					"-DQT_SVG_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_QUICK_LIB",
+					"-DQT_MULTIMEDIA_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_QMLMODELS_LIB",
+					"-DQT_QML_LIB",
+					"-DQT_WEBSOCKETS_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_SQL_LIB",
+					"-DQT_BLUETOOTH_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-g",
+					"-std=gnu++1z",
+					"-fobjc-nonfragile-abi",
+					"-fobjc-legacy-dispatch",
+					"-Wall",
+					"-Wextra",
+					"-fPIC",
+					"-DQT_COMPILER_SUPPORTS_SSE2",
+					"-DPRODUCT_LICENSE_KEY=\\\"667E31EFE21D078D6C1F01A2815E6316BF1D581CCEFB24ACC6261D053CE4BA2690994FE9F236E181364BFA5668B1A29A2567745AD05805F85B48F16B214D5C6E739585133C4871167B0F2956FF7ACBA699F65856CE52EC35615BB89F89212ED2B64C421FAB004441D4D940C116F58D4E17D4D54075E8A263728CD1D6FC1132D33B133441C80F22EFCFC4DBB90875FBFC2FCF4D4EF473F03972EFAA1CF89DAC050A3C6A538CDFCB538365A53BFBD6624B479CD033DF15D9136356C91F8E7B5D6D066FD4873636F017CCB8ECE692250ECD9E9FE8FB64DF1104B8E62C53BCE78CEE556A5FC4B05EB4B7E323751A5D67C0B170B3118622231985C27F8A914A24D2096E4FC26E0BCA89C919FE576E778496E16247E0053C3A81002E44D551C4B5E9BAA6E5CE01FCC32D9953A6E57F6EBC9E012151D122FCA37CA8198957625179EDF937F9FA6667073E713EA50AC346A7ADF2BCC7B7E628A1C0655344F9C3D1F7B163F77F827AAB087D326488199412D09F65D7E57F153BE8F79BB012D1B5B1C8C1BF2F557612F96773C507DB7E87F849DE0BDBA44E900F5ADDDD1433880BBFD76536ED91CAE678E34E34C516130A9BF16CD2F8936BE900BE476490388219F14B89EC80BBD9EA72F76ADC3BD11CEBB23DEED3EF138378EC7C3C90EA63F4ABCD540366B7F4FC5DD0D77325148236891692E791\\\"",
+					"-DQT_SVG_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_QUICK_LIB",
+					"-DQT_MULTIMEDIA_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_QMLMODELS_LIB",
+					"-DQT_QML_LIB",
+					"-DQT_WEBSOCKETS_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_SQL_LIB",
+					"-DQT_BLUETOOTH_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_LDFLAGS = (
+						"-stdlib=libc++",
+						"-Wl,-e,_qt_main_wrapper",
+						"-Wl,-rpath,@executable_path/Frameworks",
+						"-L/Users/alberto/EssentialLibs/boost/stage/ios/lib",
+						"-L/Users/alberto/EssentialLibs/OpenSSL/iphoneos/lib",
+						"-L/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rlottie/ios",
+						"-L/Users/alberto/Felgo/Felgo/ios/lib",
+						"-F/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios",
+						"-L/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios",
+						"-L/Users/alberto/Felgo/Felgo/ios/plugins/platforms",
+						"-framework",
+						"AssetsLibrary",
+						"-framework",
+						"MobileCoreServices",
+						"-lm",
+						"-framework",
+						"UIKit",
+						"-lz",
+						"-framework",
+						"OpenGLES");
+				ARCHS = "arm64 x86_64";
+			};
+			name = "Debug";
+		};
+		77418F46922677BB04ED38DD = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=iphoneos*]" = "arm64";
+				"ARCHS[sdk=iphonesimulator*]" = "x86_64";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				CODE_SIGN_ENTITLEMENTS = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios/App.entitlements";
+				COPY_PHASE_STRIP = "NO";
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				DEVELOPMENT_TEAM = "ALJLHBZ3YS";
+				ENABLE_BITCODE = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				ONLY_ACTIVE_ARCH = "YES";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertoromero.prankster";
+				PRODUCT_IDENTIFIER = "com.albertoromero.prankster";
+				PRODUCT_NAME = "Prankster";
+				PRODUCT_VERSION_CODE = "1";
+				PRODUCT_VERSION_NAME = "1.0.0";
+				QMAKE_FULL_VERSION = "1.0.0";
+				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk";
+				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk";
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform";
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform";
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = "1.0";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "Prankster";
+			};
+			name = "Debug";
+		};
+		339EE1B2CC4FC24589A0EA95 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=iphoneos*]" = "arm64";
+				"ARCHS[sdk=iphonesimulator*]" = "x86_64";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				CODE_SIGN_ENTITLEMENTS = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios/App.entitlements";
+				COPY_PHASE_STRIP = "NO";
+				DEVELOPMENT_TEAM = "ALJLHBZ3YS";
+				ENABLE_BITCODE = "YES";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertoromero.prankster";
+				PRODUCT_IDENTIFIER = "com.albertoromero.prankster";
+				PRODUCT_NAME = "Prankster";
+				PRODUCT_VERSION_CODE = "1";
+				PRODUCT_VERSION_NAME = "1.0.0";
+				QMAKE_FULL_VERSION = "1.0.0";
+				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk";
+				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk";
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform";
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform";
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = "1.0";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				INFOPLIST_FILE = "ios/Project-Info.plist";
+				SYMROOT = ".xcode";
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "11.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "12.0";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					".",
+					"../../../../Felgo/Felgo/ios/mkspecs/common/uikit",
+					"Include/rest-cpp/include",
+					"Include/rapidjson",
+					"Include/rlottie/headers",
+					"../../../../EssentialLibs/boost",
+					"../../../../EssentialLibs/OpenSSL/iphoneos/include",
+					"../../../../Felgo/Felgo/ios/include/Felgo",
+					"../../../../Felgo/Felgo/ios/include",
+					"../../../../Felgo/Felgo/ios/include/QtSvg",
+					"../../../../Felgo/Felgo/ios/include/QtWidgets",
+					"../../../../Felgo/Felgo/ios/include/QtQuick",
+					"../../../../Felgo/Felgo/ios/include/QtMultimedia",
+					"../../../../Felgo/Felgo/ios/include/QtGui",
+					"../../../../Felgo/Felgo/ios/include/QtQmlModels",
+					"../../../../Felgo/Felgo/ios/include/QtQml",
+					"../../../../Felgo/Felgo/ios/include/QtWebSockets",
+					"../../../../Felgo/Felgo/ios/include/QtNetwork",
+					"../../../../Felgo/Felgo/ios/include/QtSql",
+					"../../../../Felgo/Felgo/ios/include/QtBluetooth",
+					"../../../../Felgo/Felgo/ios/include/QtCore",
+					".",
+					"../../../../Felgo/Felgo/ios/mkspecs/macx-ios-clang");
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/alberto/EssentialLibs/boost/stage/ios/lib",
+					"/Users/alberto/EssentialLibs/OpenSSL/iphoneos/lib",
+					"/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rlottie/ios",
+					"/Users/alberto/Felgo/Felgo/ios/lib",
+					"/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios",
+					"/System/Library/Frameworks/",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/platforms",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/platforms/darwin",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/mediaservice",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/audio",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/playlistformats",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/iconengines",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/imageformats",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/qmltooling",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/bearer",
+					"/Users/alberto/Felgo/Felgo/ios/plugins/sqldrivers",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQml/Models.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQml/WorkerScript.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/lottieqt",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQml",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects/private",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Core",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Render",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Input",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Extras",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Logic",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtCharts",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtDataVisualization",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtMultimedia",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Dialogs",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/LocalStorage",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Particles.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Scene3D",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/XmlListModel",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtSensors",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtWebSockets",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtWebView",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtBluetooth",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtNfc",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/folderlistmodel",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Dialogs/Private",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/PrivateWidgets",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtLocation",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtPositioning",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Layouts",
+					"/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/settings",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Window.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Templates.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/Material",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/Fusion",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/Universal",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Controls.2/Imagine");
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios");
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fobjc-nonfragile-abi",
+					"-fobjc-legacy-dispatch",
+					"-Wall",
+					"-Wextra",
+					"-fPIC",
+					"-DQT_COMPILER_SUPPORTS_SSE2",
+					"-DPRODUCT_LICENSE_KEY=\\\"667E31EFE21D078D6C1F01A2815E6316BF1D581CCEFB24ACC6261D053CE4BA2690994FE9F236E181364BFA5668B1A29A2567745AD05805F85B48F16B214D5C6E739585133C4871167B0F2956FF7ACBA699F65856CE52EC35615BB89F89212ED2B64C421FAB004441D4D940C116F58D4E17D4D54075E8A263728CD1D6FC1132D33B133441C80F22EFCFC4DBB90875FBFC2FCF4D4EF473F03972EFAA1CF89DAC050A3C6A538CDFCB538365A53BFBD6624B479CD033DF15D9136356C91F8E7B5D6D066FD4873636F017CCB8ECE692250ECD9E9FE8FB64DF1104B8E62C53BCE78CEE556A5FC4B05EB4B7E323751A5D67C0B170B3118622231985C27F8A914A24D2096E4FC26E0BCA89C919FE576E778496E16247E0053C3A81002E44D551C4B5E9BAA6E5CE01FCC32D9953A6E57F6EBC9E012151D122FCA37CA8198957625179EDF937F9FA6667073E713EA50AC346A7ADF2BCC7B7E628A1C0655344F9C3D1F7B163F77F827AAB087D326488199412D09F65D7E57F153BE8F79BB012D1B5B1C8C1BF2F557612F96773C507DB7E87F849DE0BDBA44E900F5ADDDD1433880BBFD76536ED91CAE678E34E34C516130A9BF16CD2F8936BE900BE476490388219F14B89EC80BBD9EA72F76ADC3BD11CEBB23DEED3EF138378EC7C3C90EA63F4ABCD540366B7F4FC5DD0D77325148236891692E791\\\"",
+					"-DQT_SVG_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_QUICK_LIB",
+					"-DQT_MULTIMEDIA_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_QMLMODELS_LIB",
+					"-DQT_QML_LIB",
+					"-DQT_WEBSOCKETS_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_SQL_LIB",
+					"-DQT_BLUETOOTH_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-g",
+					"-std=gnu++1z",
+					"-fobjc-nonfragile-abi",
+					"-fobjc-legacy-dispatch",
+					"-Wall",
+					"-Wextra",
+					"-fPIC",
+					"-DQT_COMPILER_SUPPORTS_SSE2",
+					"-DPRODUCT_LICENSE_KEY=\\\"667E31EFE21D078D6C1F01A2815E6316BF1D581CCEFB24ACC6261D053CE4BA2690994FE9F236E181364BFA5668B1A29A2567745AD05805F85B48F16B214D5C6E739585133C4871167B0F2956FF7ACBA699F65856CE52EC35615BB89F89212ED2B64C421FAB004441D4D940C116F58D4E17D4D54075E8A263728CD1D6FC1132D33B133441C80F22EFCFC4DBB90875FBFC2FCF4D4EF473F03972EFAA1CF89DAC050A3C6A538CDFCB538365A53BFBD6624B479CD033DF15D9136356C91F8E7B5D6D066FD4873636F017CCB8ECE692250ECD9E9FE8FB64DF1104B8E62C53BCE78CEE556A5FC4B05EB4B7E323751A5D67C0B170B3118622231985C27F8A914A24D2096E4FC26E0BCA89C919FE576E778496E16247E0053C3A81002E44D551C4B5E9BAA6E5CE01FCC32D9953A6E57F6EBC9E012151D122FCA37CA8198957625179EDF937F9FA6667073E713EA50AC346A7ADF2BCC7B7E628A1C0655344F9C3D1F7B163F77F827AAB087D326488199412D09F65D7E57F153BE8F79BB012D1B5B1C8C1BF2F557612F96773C507DB7E87F849DE0BDBA44E900F5ADDDD1433880BBFD76536ED91CAE678E34E34C516130A9BF16CD2F8936BE900BE476490388219F14B89EC80BBD9EA72F76ADC3BD11CEBB23DEED3EF138378EC7C3C90EA63F4ABCD540366B7F4FC5DD0D77325148236891692E791\\\"",
+					"-DQT_SVG_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_QUICK_LIB",
+					"-DQT_MULTIMEDIA_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_QMLMODELS_LIB",
+					"-DQT_QML_LIB",
+					"-DQT_WEBSOCKETS_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_SQL_LIB",
+					"-DQT_BLUETOOTH_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_LDFLAGS = (
+						"-stdlib=libc++",
+						"-Wl,-e,_qt_main_wrapper",
+						"-Wl,-rpath,@executable_path/Frameworks",
+						"-L/Users/alberto/EssentialLibs/boost/stage/ios/lib",
+						"-L/Users/alberto/EssentialLibs/OpenSSL/iphoneos/lib",
+						"-L/Users/alberto/Documents/WorkSpace/Felgo/Prankster/Include/rlottie/ios",
+						"-L/Users/alberto/Felgo/Felgo/ios/lib",
+						"-F/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios",
+						"-L/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios",
+						"-L/Users/alberto/Felgo/Felgo/ios/plugins/platforms",
+						"-framework",
+						"AssetsLibrary",
+						"-framework",
+						"MobileCoreServices",
+						"-lm",
+						"-framework",
+						"UIKit",
+						"-lz",
+						"-framework",
+						"OpenGLES");
+				ARCHS = "arm64 x86_64";
+			};
+			name = "Release";
+		};
+		6666AA5E688052234F6758D8 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=iphoneos*]" = "arm64";
+				"ARCHS[sdk=iphonesimulator*]" = "x86_64";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				CODE_SIGN_ENTITLEMENTS = "/Users/alberto/Documents/WorkSpace/Felgo/Prankster/ios/App.entitlements";
+				COPY_PHASE_STRIP = "NO";
+				DEVELOPMENT_TEAM = "ALJLHBZ3YS";
+				ENABLE_BITCODE = "YES";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertoromero.prankster";
+				PRODUCT_IDENTIFIER = "com.albertoromero.prankster";
+				PRODUCT_NAME = "Prankster";
+				PRODUCT_VERSION_CODE = "1";
+				PRODUCT_VERSION_NAME = "1.0.0";
+				QMAKE_FULL_VERSION = "1.0.0";
+				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk";
+				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk";
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform";
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform";
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = "1.0";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "Prankster";
+			};
+			name = "Release";
+		};
+		DAC4C1AA5EDEA1C85E9CA5E6 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"3AA6C32AC930069E80220CF1",
+				"339EE1B2CC4FC24589A0EA95");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		6CC3B5D2136C7CD6A5CF5A59 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"77418F46922677BB04ED38DD",
+				"6666AA5E688052234F6758D8");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		6DB9C3763D02B1415CD9D565 = {
+			hasScannedForEncodings = 1;
+			compatibilityVersion = "Xcode 3.2";
+			isa = PBXProject;
+			mainGroup = "E8C543AB96796ECAA2E65C57";
+			productRefGroup = "FE0A091FDBFB3E9C31B7A1BD";
+			buildConfigurationList = "DAC4C1AA5EDEA1C85E9CA5E6";
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"C3D285E9E01A7A9B9B9F21CE",
+				"7A7F9CB6B83C945793A58F95");
+			attributes = {
+				TargetAttributes = {
+				};
+			};
+		};
+	};
+	rootObject = "6DB9C3763D02B1415CD9D565";
+}
