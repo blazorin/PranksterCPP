@@ -109,6 +109,8 @@ Page {
                          LottieItem {
                                id: mainLottie
 
+                               visible: preLottiesOn
+
                                source: "../../../assets/lottie/welcome" + welcomePageIndex + ".json"
                                anchors.fill: parent
                            }
@@ -333,10 +335,11 @@ Page {
               }
               else
               {
-                  var fOpts = {onDashLayout: true}
+                  var fOpts = {fromWelcome: true}
                   navStack.enableBottomToTop()
 
-                  navStack.popAllExceptFirstAndPush(dashLayoutPageComponent)
+                  navStack.popAllExceptFirstAndPush(dashLayoutPageComponent, fOpts)
+                  disposeWelcomeLottietimer.running = true
               }
 
           }
@@ -357,6 +360,7 @@ Page {
     }
 
 
+
     function setTransitionedTimeout(callback, delay)
     {
         if (transitionedTimer.running) {
@@ -367,6 +371,20 @@ Page {
         transitionedTimer.callback = callback;
         transitionedTimer.interval = delay;
         transitionedTimer.running = true;
+    }
+
+    Timer {
+        id: disposeWelcomeLottietimer
+
+        running: false
+        repeat: false
+        interval: 250
+
+        onTriggered: {
+            mainLottie.pause() // .dispose() breaks engine
+
+            console.debug("[DEBUG] Paused Welcome lottie!")
+        }
     }
 
     Component {

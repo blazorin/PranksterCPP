@@ -120,6 +120,8 @@ void QtLottieItem::pause()
 {
     if (available()) {
         m_drawEngine->pause();
+
+        //m_drawEngine->
     }
 }
 

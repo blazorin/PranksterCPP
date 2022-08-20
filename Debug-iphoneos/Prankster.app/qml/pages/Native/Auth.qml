@@ -10,7 +10,7 @@ Page {
     // Switch:
     property bool newAccountDebug: true
     property bool skipLoginDebug: true && newAccountDebug
-    property bool skipToDashboard: false && newAccountDebug
+    property bool skipToDashboard: true && newAccountDebug
 
 
     property bool appleLoginHappening
@@ -77,6 +77,9 @@ Page {
            }
 
            LottieItem {
+               visible: preLottiesOn
+               id: authLottie
+
                source: "../../../assets/lottie/sheep_auth.json"
                anchors.fill: parent
            }
@@ -143,7 +146,7 @@ Page {
           onSignInFailed: (message) => {
                 console.debug("Error with AppleLogIn: " + message)
 
-                NativeDialog.confirm("Login error", "An error ocurred while performing Apple Sign In: \n" + message, function(){}, false)
+                NativeDialog.confirm("Error de sesión", "Se ha producido un error minetras se iniciaba sesión con Apple: \n" + message, function(){}, false)
            }
 
            onSignInCompleted: {
@@ -274,6 +277,8 @@ Page {
 
               // Logic for authPage (navStack)
 
+
+
               if (!skipToDashboard)
                 navigationStack.push(welcomePageComponent)
               else
@@ -282,6 +287,8 @@ Page {
               // navStack called
               continueLoginHappening = false
               authTimer.running = false
+
+              disposeAuthLottietimer.running = true // As components keeps living, this reduces lag
               return;
           }
 
@@ -380,4 +387,19 @@ Page {
 
 
     navigationBarHidden: true
+
+    Timer {
+        id: disposeAuthLottietimer
+
+        running: false
+        repeat: false
+        interval: 250
+
+        onTriggered: {
+            authLottie.pause() // .dispose breaks engine
+
+            console.debug("[DEBUG] Paused Auth lottie!")
+        }
+    }
+
 }

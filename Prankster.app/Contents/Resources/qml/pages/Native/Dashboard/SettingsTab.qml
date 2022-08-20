@@ -298,6 +298,30 @@ Page {
               }
          }
 
+         AppListItem {
+              text: qsTr("Subscripción store")
+              textFontSize: getTextSize(15)
+
+
+              leftItem: Rectangle {
+                         color: "#F0BF5F"
+                         radius: dp(5)
+                         width: dp(26)
+                         height: width
+                         anchors.verticalCenter: parent.verticalCenter
+
+                         Icon {
+                           icon: IconType.staro
+                           anchors.centerIn: parent
+                           color: "white"
+                         }
+                       }
+
+              onSelected: {
+                  navStack.push(subscriptionsStoreExternalComponent)
+              }
+         }
+
 
          AppListItem {
               text: qsTr("Canjear código")

@@ -3,6 +3,7 @@
 .idea/
 .xcode/
 .qtc_clangd/
+Debug-iphoneos/*
 
 # C++ objects and libs
 *.slo

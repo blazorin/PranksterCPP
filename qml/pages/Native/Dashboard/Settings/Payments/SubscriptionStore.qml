@@ -1,18 +1,28 @@
-import Felgo 3.0
 import QtQuick 2.15
 import QtQuick.Controls 2.15 as QQC
+import Felgo 3.0
 
 import "../../../../../helper"
 
 Page {
     id: subscriptionStorePage
     title: qsTr("Tienda")
-    property int swipeDefaultIndex: subscriptionKind
+
+
+    property int swipeDefaultIndex: 0
+
+    //property var componentCache: Qt.createComponent("Subscription.qml")
 
     Component.onCompleted: {
       // Using this will correctly trigger the signals, but will show visual transitions
       //swipeView.currentIndex = Qt.binding(function() {return subscriptionStorePage.swipeDefaultIndex})
     }
+
+    Component.onDestruction: {
+        console.debug("[DEBUG] Destroyed subscriptionStorePage")
+    }
+
+    //clip: true
 
     QQC.SwipeView {
       id: swipeView
@@ -21,16 +31,15 @@ Page {
       anchors.fill: parent
 
       onCurrentItemChanged: {
-        //console.debug("onCurrentItemChanged")
-        // You could ignore any calls where !currentItem
-        //console.log(currentIndex)
-        //console.log(currentItem)
+          if (currentIndex == 0 && bottomToTopEnabled) {
+              navStack.disableBottomToTop()
+           }
 
       }
       onCurrentIndexChanged: {
         //console.debug("onCurrentIndexChanged")
         // You could ignore any calls where !currentItem
-        //console.log(currentIndex)
+        console.log("CI: " + currentIndex)
         subscriptionsStoreExternalIndex = currentIndex
 
         if ((currentIndex == 1 || currentIndex == 2) && !bottomToTopEnabled) {
@@ -40,58 +49,91 @@ Page {
             navStack.disableBottomToTop()
         }
 
+        //if (currentIndex == 1 && !thirdLoader.active) {
+         //   thirdLoader.active = true
+        //}
+
         //console.log(currentItem)
       }
 
+
+      Loader {
+          id: freeLoader
+
+          //source: "Subscription.qml"
+          asynchronous: true
+          visible: status == Loader.Ready
+
+          Component.onCompleted: {
+              setSource("Subscription.qml",
+                        {useCustomSubscriptionKind: true, customSubscriptionKind: 0}
+                        );
+          }
+      }
+
+
+      Loader {
+          id: premiumLoader
+          //source: "Subscription.qml"
+          asynchronous: true
+          visible: status == Loader.Ready
+
+          Component.onCompleted: {
+              setSource("Subscription.qml",
+                        {useCustomSubscriptionKind: true, customSubscriptionKind: 1, lottieVisible: false}
+                        );
+          }
+      }
+
+          Loader {
+              id: unlimitedLoader
+              //source: "Subscription.qml"
+              asynchronous: true
+              visible: status == Loader.Ready
+
+              Component.onCompleted: {
+                  setSource("Subscription.qml",
+                            {useCustomSubscriptionKind: true, customSubscriptionKind: 2, lottieVisible: false}
+                            );
+              }
+          }
+
+
+
+      Component.onDestruction: {
+         subscriptionsStoreExternalIndex = 0 // Default value
+          navStack.disableBottomToTop()
+      }
+
+
       // Call this manually after completion will trigger again with correct data
-      Component.onCompleted: currentItemChanged()
+      Component.onCompleted: {
+          //addItem(sub0)
+          //addItem(sub1)
 
-      // Sin Repeater (hace a veces que se coloque mal)
+          currentItemChanged()
+          //ld0.sourceComponent = itemComp.createObject(parentObj)
 
-            Loader {
-                active: true
-                asynchronous: false // Si es true se colocará mal // TODO: revisar en un futuro si se bugea demasiado frecuente
-                visible: status == Loader.Ready
 
-                sourceComponent: Subscription
-                {
-                    useCustomSubscriptionKind: true
-                    customSubscriptionKind: 0
-
-                    //showLottie: currentIndex == index
-                }
-            }
-
-            Loader {
-                active: true
-                asynchronous: false // Si es true se colocará mal
-                visible: status == Loader.Ready
-
-                sourceComponent: Subscription
-                {
-                    useCustomSubscriptionKind: true
-                    customSubscriptionKind: 1
-
-                    //showLottie: currentIndex == index
-                }
-            }
-
-            Loader {
-                active: true
-                asynchronous: false // Si es true se colocará mal
-                visible: status == Loader.Ready
-
-                sourceComponent: Subscription
-                {
-                    useCustomSubscriptionKind: true
-                    customSubscriptionKind: 2
-
-                    //showLottie: currentIndex == index
-                }
-            }
+      }
 
 
     }
+
+
+    /*
+    Component {
+        id: demoComponent
+
+        Subscription
+        {
+            useCustomSubscriptionKind: true
+            customSubscriptionKind: 1
+
+            lottieVisible: false
+        }
+    }
+    */
 
     /*
     Column {

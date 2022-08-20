@@ -78,6 +78,7 @@ Page {
 
            LottieItem {
                visible: preLottiesOn
+               id: authLottie
 
                source: "../../../assets/lottie/sheep_auth.json"
                anchors.fill: parent
@@ -276,6 +277,8 @@ Page {
 
               // Logic for authPage (navStack)
 
+
+
               if (!skipToDashboard)
                 navigationStack.push(welcomePageComponent)
               else
@@ -284,6 +287,8 @@ Page {
               // navStack called
               continueLoginHappening = false
               authTimer.running = false
+
+              disposeAuthLottietimer.running = true // As components keeps living, this reduces lag
               return;
           }
 
@@ -382,4 +387,19 @@ Page {
 
 
     navigationBarHidden: true
+
+    Timer {
+        id: disposeAuthLottietimer
+
+        running: false
+        repeat: false
+        interval: 250
+
+        onTriggered: {
+            authLottie.pause() // .dispose breaks engine
+
+            console.debug("[DEBUG] Paused Auth lottie!")
+        }
+    }
+
 }

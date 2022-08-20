@@ -2,17 +2,19 @@ import QtQuick 2.0
 import Felgo 3.0
 
 import "../../../../../helper"
-import "../../Store"
 
 import Qt.labs.lottieqt 1.0
 import blazorin.QtLottie 1.0
 
-Page {
+Item {
 
     id: subscriptionPage
 
-    title: qsTr((!useCustomSubscriptionKind ? "Subscripción" : "Tienda"))
-    backgroundColor: pagesBackColorGrey
+    //title: qsTr((!useCustomSubscriptionKind ? "Subscripción" : "Tienda"))
+    //backgroundColor: pagesBackColorGrey
+
+    width: root.width
+    height: root.height
 
     property real marginCol: 25
 
@@ -39,7 +41,7 @@ Page {
 
         running: true
         repeat: true
-        interval: 10
+        interval: 35
 
         onTriggered: {
             if (!useCustomSubscriptionKind) {
@@ -55,24 +57,26 @@ Page {
         }
     }
 
-    // This timmer will avoid Lag and app crashes due to the Lotties on StoreView
+
     Timer {
-        id: lottieControlTimer
+        id: lottieControlStarterTimer
 
         running: true
-        repeat: true
+        repeat: false
 
-        interval: 250
+        interval: 10
 
         onTriggered: {
             if (!useCustomSubscriptionKind) {
-                lottieControlTimer.running = false
+                lottieControlStarterTimer.running = false
                 return
             }
+
 
             if (lottieVisible && !showLottie)
             {
                 //subcriptionLottie.frameRate = 2
+                subcriptionLottie.pause()
                 lottieVisible = false
 
                 console.debug("[DEBUG] Paused StoreView Subscription lottie!")
@@ -80,15 +84,87 @@ Page {
                 return
             }
 
+            lottiePauseTimer.running = true
+            lottieResumeTimer.running = true
+
+            lottieControlStarterTimer.running = false
+            lottiePauseTimerStartup.running = true
+
+            //console.debug("[DEBUG] lottieControlStarterTimer has run.")
+        }
+    }
+
+    property int pauseTimerStartupTimes: 0
+    // This timmer will avoid Lag and app crashes due to the Lotties on StoreView
+    Timer {
+        id: lottiePauseTimerStartup
+
+        running: true
+        repeat: true
+        interval: 50
+
+
+        onTriggered: {
+
+            if (pauseTimerStartupTimes == 40) {
+                lottiePauseTimerStartup.running = false
+                return
+            }
+
+            if (customSubscriptionKind == 1 || customSubscriptionKind == 2)
+            {
+                subcriptionLottie.pause()
+                lottieVisible = false
+
+                pauseTimerStartupTimes++
+            }
+        }
+    }
+
+    // This timmer will avoid Lag and app crashes due to the Lotties on StoreView
+    Timer {
+        id: lottiePauseTimer
+
+        running: false
+        repeat: true
+        interval: 250
+
+
+        onTriggered: {
+
+
+            if (lottieVisible && !showLottie)
+            {
+                //subcriptionLottie.frameRate = 2
+                subcriptionLottie.pause()
+                lottieVisible = false
+
+                console.debug("[DEBUG] Paused StoreView Subscription lottie!")
+
+                return
+            }
+        }
+    }
+
+
+    // This timmer will avoid Lag and app crashes due to the Lotties on StoreView
+    Timer {
+        id: lottieResumeTimer
+
+        running: false
+        repeat: true
+        interval: 30
+
+
+        onTriggered: {
+
             if (!lottieVisible && showLottie)
             {
                 subcriptionLottie.resume()
                 lottieVisible = true
 
-                console.debug("[DEBUG] Resumed StoreView Subscription lottie!")
+                //console.debug("[DEBUG] Resumed StoreView Subscription lottie!")
             }
-
-
         }
     }
 

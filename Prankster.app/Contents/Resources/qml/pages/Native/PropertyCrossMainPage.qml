@@ -2,7 +2,6 @@ import QtQuick 2.0
 import QtQuick.Controls 1.2
 import Felgo 3.0
 import "Dashboard/Settings/Payments"
-import "Dashboard/Store"
 
 Page {
 
@@ -89,12 +88,16 @@ Page {
 
         function enableBottomToTop() {
           navStack.transitionDelegate = navStack.transitionDelegateAndroid
+          bottomToTopEnabled = true
+
           console.debug("[INFO] Enabled Bottom To Top transition")
           //navStack.transitionDelegateAndroid.pushTransition = externalDelegate.pushTransition
         }
 
         function disableBottomToTop() {
            navStack.transitionDelegate = navStack.transitionDelegateiOS
+           bottomToTopEnabled = false
+
            console.debug("[INFO] Disabled Bottom To Top transition")
         }
 
@@ -163,6 +166,9 @@ Page {
         SubscriptionStore {}
     }
 
+    property bool bottomToTopEnabled: false
+
+
     property int subscriptionsStoreExternalIndex: 0
 
     property var cachedSubscriptionSettingsPage: null
@@ -176,7 +182,7 @@ Page {
                 cachedSubscriptionSettingsPage.pauseSettingsLottie()
                 cachedSubscriptionSettingsLottieNeedPause = false
 
-                navStack.enableBottomToTop()
+                //navStack.enableBottomToTop()
             }
             else {
                 cachedSubscriptionSettingsPage.resumeSettingsLottie()
