@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Controls 1.2
+import QtMultimedia 5.15
 import Felgo 3.0
 import "Dashboard/Settings/Payments"
 
@@ -22,6 +23,12 @@ Page {
     readonly property string paperShadowColor: "#EBEAEA"
 
     readonly property color cuteColorSecondary: "#393B3D"
+
+    readonly property color svgColor: "#FF7064" // for SVGS trough IconScout editor
+
+    readonly property color layoutIconColor: "#B2B3B8" // Icons on DashLayout (Navigation)
+
+    readonly property color layoutIconColorActive: "#FF594B"
 
     property real topTitleMarginBig: 45
 
@@ -153,11 +160,9 @@ Page {
     }
 
     Component {
-        id: subscriptionsExternalComponent
+        id: subscriptionsSettingsExternalComponent
 
-        Subscription {}
-
-
+        SubscriptionSettings {}
     }
 
     Component {
@@ -203,6 +208,40 @@ Page {
         onTriggered: {
             adjustSubscriptionSettingsLottie()
         }
+    }
+
+
+    // Sounds used on Dashboard (store, payment)
+
+
+    Audio {
+      id: tapSound
+      source: "../../../assets/sounds/tap.wav"
+      volume: 0.5
+
+      loops: 1
+      autoPlay: false
+
+    }
+
+    Audio {
+      id: purchaseSound
+      source: "../../../assets/sounds/purchase.wav"
+      volume: 0.38
+
+      loops: 1
+      autoPlay: false
+
+    }
+
+    Audio {
+      id: upgradeSound
+      source: "../../../assets/sounds/upgrade.wav"
+      volume: 0.3
+
+      loops: 1
+      autoPlay: false
+
     }
 
 }

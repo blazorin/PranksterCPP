@@ -294,7 +294,7 @@ Page {
                        }
 
               onSelected: {
-                  navStack.push(subscriptionsExternalComponent)
+                  navStack.push(subscriptionsSettingsExternalComponent)
               }
          }
 

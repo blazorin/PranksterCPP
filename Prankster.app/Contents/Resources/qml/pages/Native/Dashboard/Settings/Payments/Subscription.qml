@@ -94,24 +94,26 @@ Item {
         }
     }
 
+
     property int pauseTimerStartupTimes: 0
-    // This timmer will avoid Lag and app crashes due to the Lotties on StoreView
+    // This timer is made for the purpose, depending on the device, the lotties could take more to load
+    // and thus dont pause the animation. So I give a 1S period for the completion to happen, so we can stop it
     Timer {
         id: lottiePauseTimerStartup
 
         running: true
         repeat: true
-        interval: 50
+        interval: 48
 
 
         onTriggered: {
 
-            if (pauseTimerStartupTimes == 40) {
+            if (pauseTimerStartupTimes == 15 || showLottie) {
                 lottiePauseTimerStartup.running = false
                 return
             }
 
-            if (customSubscriptionKind == 1 || customSubscriptionKind == 2)
+            if (!showLottie) // 1 and 2
             {
                 subcriptionLottie.pause()
                 lottieVisible = false
@@ -473,15 +475,15 @@ Item {
 
               //spacing: 0
               boldText: qsTr("Eliges" +  " ")
-              mainText: qsTr("el número saliente!")
+              mainText: qsTr("el número saliente ")
 
 
-              boldTextLeftPadding: 17
+              boldTextLeftPadding: 14
               mainTextLeftPadding: 2
 
               textSizeInt: 19
 
-              icon: IconType.locationarrow
+              icon: IconType.magic
               iconColor: "#A840FF"
 
               visible: subscriptionKindToDisplay == 2
@@ -720,6 +722,8 @@ Item {
           }
 
           onClicked: {
+              tapSound.play()
+
               // Logic
 
               if (!useCustomSubscriptionKind) {

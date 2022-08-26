@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 
 
     // COMMENT FOR FelgoLive
-    felgo.setMainQmlFileName(QStringLiteral("qml/Main.qml"));
+    //felgo.setMainQmlFileName(QStringLiteral("qml/Main.qml"));
 
 
     // use this instead of the above call to avoid deployment of the qml files and compile them into the binary with qt's resource system qrc
@@ -61,11 +61,11 @@ int main(int argc, char *argv[])
 
 
     // COMMENT FOR FelgoLive
-    engine.load(QUrl(felgo.mainQmlFileName())); // no felgoLive
+    //engine.load(QUrl(felgo.mainQmlFileName())); // no felgoLive
 
 
     // COMMENT FOR NO FelgoLive
-    //FelgoLiveClient liveClient(&engine);
+    FelgoLiveClient liveClient(&engine);
 
 
     // to start your project as Live Client, comment (remove) the lines "felgo.setMainQmlFileName ..." & "engine.load ...",

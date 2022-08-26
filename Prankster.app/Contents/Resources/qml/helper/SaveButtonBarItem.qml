@@ -35,6 +35,10 @@ TextButtonBarItem {
 
         }
 
+        onFocusChanged: {
+            console.debug("Holaaa")
+        }
+
         function registerBackButtonItem(backButtonItem, pageItem) {
             backButtonItemInternal = backButtonItem
             pageItemInternal = pageItem

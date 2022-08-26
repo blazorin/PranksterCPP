@@ -1,13 +1,14 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15 as QQC
-import Felgo 3.0
+import Felgo 3.0 as FELGO
 
 import "../../../../../helper"
 
-Page {
+FELGO.Page {
     id: subscriptionStorePage
     title: qsTr("Tienda")
 
+    backgroundColor: pagesBackColorGrey
 
     property int swipeDefaultIndex: 0
 
@@ -39,7 +40,7 @@ Page {
       onCurrentIndexChanged: {
         //console.debug("onCurrentIndexChanged")
         // You could ignore any calls where !currentItem
-        console.log("CI: " + currentIndex)
+        //console.log("CI: " + currentIndex)
         subscriptionsStoreExternalIndex = currentIndex
 
         if ((currentIndex == 1 || currentIndex == 2) && !bottomToTopEnabled) {

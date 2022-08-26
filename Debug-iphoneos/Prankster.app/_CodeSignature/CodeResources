@@ -54,7 +54,7 @@
 		</data>
 		<key>assets/.DS_Store</key>
 		<data>
-		kbbSnOMDnBbPJWEfu2he6hbOM+0=
+		vC3JFspJof5V33LJJ2aa7QpnAEI=
 		</data>
 		<key>assets/avatars/.DS_Store</key>
 		<data>
@@ -468,6 +468,18 @@
 		<data>
 		/HoFqPd/gx5B6Z2ypBub5Yjmnvk=
 		</data>
+		<key>assets/sounds/purchase.wav</key>
+		<data>
+		+kKdU4GNjyTBE8/uUUutyWPKgWA=
+		</data>
+		<key>assets/sounds/tap.wav</key>
+		<data>
+		7+Dg4m0Rxnhxi9Z3NIrZlmH7EBM=
+		</data>
+		<key>assets/sounds/upgrade.wav</key>
+		<data>
+		mbl39ojQtO/m6/YEYmeH1hwyCJI=
+		</data>
 		<key>assets/subscription/.DS_Store</key>
 		<data>
 		ElW2VSrGJw7CaDwrVyDwOwN1Ni8=
@@ -682,11 +694,15 @@
 		</data>
 		<key>qml/pages/Native/Dashboard/Settings/Payments/Subscription.qml</key>
 		<data>
-		70EhoI1jCpVHwmrLrNJhwLS1jP4=
+		WVyfpr8RFiMSXudFURvjQu8G2x8=
+		</data>
+		<key>qml/pages/Native/Dashboard/Settings/Payments/SubscriptionSettings.qml</key>
+		<data>
+		u+8OBbmqld/GF2Um58t2hn+4pHw=
 		</data>
 		<key>qml/pages/Native/Dashboard/Settings/Payments/SubscriptionStore.qml</key>
 		<data>
-		VuRO0GyyEt/8hcwkuhn1KjYmEGg=
+		GXbUY92pkK9ihqATcdML8hDFUM0=
 		</data>
 		<key>qml/pages/Native/Dashboard/Settings/Profile/AvatarSelection.qml</key>
 		<data>
@@ -698,7 +714,7 @@
 		</data>
 		<key>qml/pages/Native/Dashboard/SettingsTab.qml</key>
 		<data>
-		fqWqbxvX6WQsTNWgEb9m3iiUwvc=
+		9FK1rwYwQxFQFzMs0AxKsUj72YI=
 		</data>
 		<key>qml/pages/Native/ListingDetailPage.qml</key>
 		<data>
@@ -710,7 +726,7 @@
 		</data>
 		<key>qml/pages/Native/PropertyCrossMainPage.qml</key>
 		<data>
-		xi59GjXoRLwxO09UtFmN3qeuOUg=
+		STn973L2FUCsiYpJLeJQqRszYyI=
 		</data>
 		<key>qml/pages/Native/Welcome.qml</key>
 		<data>
@@ -1476,6 +1492,27 @@
 			SSRCxK7iDbjXmmdTMonSBm26yWla8qn76hcPu3XguME=
 			</data>
 		</dict>
+		<key>assets/sounds/purchase.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ia081fhBcDh+4sN1v3Ku/aM+1N/gn7a0Ww3bern04X8=
+			</data>
+		</dict>
+		<key>assets/sounds/tap.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3zs3z0J7guTGaf2cxwA98VZuIhTTcngnAmo6FOQoqMw=
+			</data>
+		</dict>
+		<key>assets/sounds/upgrade.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			E5S8MAjUeMzkt2J7ks5I+Rf3EadISbqlKr6zqbBTIzw=
+			</data>
+		</dict>
 		<key>assets/subscription/checkbox.svg</key>
 		<dict>
 			<key>hash2</key>
@@ -1795,14 +1832,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kvcixP4KBxewr2j1IoIwRDpyonPB3ulfFz74gxcXndI=
+			fRxLTCb1jhl0WyF6/AnXaxH9dD9iNv84YHYf182V2Pk=
+			</data>
+		</dict>
+		<key>qml/pages/Native/Dashboard/Settings/Payments/SubscriptionSettings.qml</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			031VlfdiR04RkMKS8ycJNRoKlwEX76SxP/s/hrB1QE4=
 			</data>
 		</dict>
 		<key>qml/pages/Native/Dashboard/Settings/Payments/SubscriptionStore.qml</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ILYuNq0LAHxHs4YTV9MiWLVdxVKCv8OSY5Wn6/6e+/E=
+			6RoyXgCsKFaUKhVAA1sb5/u5HccvP9lwK1k4NtU3I3k=
 			</data>
 		</dict>
 		<key>qml/pages/Native/Dashboard/Settings/Profile/AvatarSelection.qml</key>
@@ -1823,7 +1867,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oLmosA1kCvYZw3gLwTtDQgd/uFHduqGCEltxF9PJAQw=
+			St8qgvK4jgEXjYjk6xNiHR8yKSamKYjoRr4cEUZtyX0=
 			</data>
 		</dict>
 		<key>qml/pages/Native/ListingDetailPage.qml</key>
@@ -1844,7 +1888,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O3GcncMV8fMciv8bUhmCdsE9p4JFE/gekVc+3Qd879w=
+			+jh5pIt25BiBN7pff3H+ZFQt/0YOwRnxtqnPeQZbo+4=
 			</data>
 		</dict>
 		<key>qml/pages/Native/Welcome.qml</key>

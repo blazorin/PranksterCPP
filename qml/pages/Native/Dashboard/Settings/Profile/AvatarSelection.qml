@@ -7,7 +7,7 @@ Page {
     id: avatarSelectionPage
 
     title: "Elegir Avatar"
-    backgroundColor: pagesBackColorGrey
+    backgroundColor: pagesBackColorGreyExtra
 
     rightBarItem: SaveButtonBarItem {
         id: saveBtn
@@ -42,7 +42,7 @@ Page {
           anchors.fill: parent
 
           contentWidth: parent.width
-          contentHeight: contentColumn.height
+          contentHeight: contentColumn.height + (marginCol * 2)
 
           flickableDirection: Flickable.VerticalFlick
     Column {
@@ -332,7 +332,7 @@ Page {
                                    radius: 20
 
                                    color: ((tempGender == 0 ? (cachedMenAvatarIconIndex === index) :
-                                                          (cachedWomenAvatarIconIndex) === index ) ? pagesBackColorGrey : "white")
+                                                          (cachedWomenAvatarIconIndex) === index ) ? "#EDEDED" : "white")
                                    AppImage {
                                        id: avatarElemRec
 

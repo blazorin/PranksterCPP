@@ -7,7 +7,7 @@ Page {
     id: myProfilePage
 
     title: qsTr("Mi Perfil")
-    backgroundColor: pagesBackColorGrey
+    backgroundColor: pagesBackColorGreyExtra
 
     property real marginCol: 25
 
@@ -144,6 +144,8 @@ Page {
 
                  anchors.leftMargin: dp(20)
                  anchors.rightMargin: dp(20)
+
+                 style.backgroundColor: pagesBackColorGreyExtra
              }
 
              Row {

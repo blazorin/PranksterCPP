@@ -20,7 +20,7 @@ Page {
 
     id: searchPage
     title: qsTr("Search Cross")
-    backgroundColor: pagesBackColor
+    backgroundColor: pagesBackColorGrey
 
     // Truquito :)
 

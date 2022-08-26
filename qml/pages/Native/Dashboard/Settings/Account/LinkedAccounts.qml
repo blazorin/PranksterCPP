@@ -68,9 +68,9 @@ Page {
           spacing: dp(10)
 
           AppImage {
-             source: "../../../../../../assets/settings/account_linking_v2.svg"
+             source: "../../../../../../assets/settings/account_linking_v3.svg"
 
-             width: (!isTablet ? (parent.width / 2) : (parent.width / 3))
+             width: (!isTablet ? (parent.width / 1.5) : (parent.width / 2.7))
              anchors.horizontalCenter: parent.horizontalCenter
              fillMode: Image.PreserveAspectFit
 

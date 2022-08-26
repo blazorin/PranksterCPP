@@ -103,12 +103,12 @@ Item {
 
         running: true
         repeat: true
-        interval: 50
+        interval: 48
 
 
         onTriggered: {
 
-            if (pauseTimerStartupTimes == 20 || showLottie) {
+            if (pauseTimerStartupTimes == 15 || showLottie) {
                 lottiePauseTimerStartup.running = false
                 return
             }
@@ -475,15 +475,15 @@ Item {
 
               //spacing: 0
               boldText: qsTr("Eliges" +  " ")
-              mainText: qsTr("el número saliente!")
+              mainText: qsTr("el número saliente ")
 
 
-              boldTextLeftPadding: 17
+              boldTextLeftPadding: 14
               mainTextLeftPadding: 2
 
               textSizeInt: 19
 
-              icon: IconType.locationarrow
+              icon: IconType.magic
               iconColor: "#A840FF"
 
               visible: subscriptionKindToDisplay == 2
@@ -722,6 +722,8 @@ Item {
           }
 
           onClicked: {
+              tapSound.play()
+
               // Logic
 
               if (!useCustomSubscriptionKind) {

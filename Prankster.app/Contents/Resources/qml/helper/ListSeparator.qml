@@ -9,6 +9,6 @@ SimpleSection {
     property alias style: section.style
 
     Component.onCompleted: {
-        section.height = section.height / 1.4
+        section.height = section.height / 1.2
     }
 }

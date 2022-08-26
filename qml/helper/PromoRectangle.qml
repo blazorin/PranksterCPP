@@ -6,6 +6,7 @@ Rectangle {
     id: rect
 
     property alias text: freePrankText.text
+    property alias textElem: freePrankText
 
     property alias textColor: freePrankText.color
     property alias bgColor: rect.color

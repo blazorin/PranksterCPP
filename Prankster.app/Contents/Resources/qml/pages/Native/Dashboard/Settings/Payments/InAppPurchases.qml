@@ -5,8 +5,6 @@ import "../../../../../helper"
 
 Page {
 
-    id: accountDataPage
-
     title: qsTr("Compras In-App")
     backgroundColor: pagesBackColorGrey
 

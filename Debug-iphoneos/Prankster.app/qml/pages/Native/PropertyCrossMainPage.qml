@@ -153,11 +153,9 @@ Page {
     }
 
     Component {
-        id: subscriptionsExternalComponent
+        id: subscriptionsSettingsExternalComponent
 
-        Subscription {}
-
-
+        SubscriptionSettings {}
     }
 
     Component {
@@ -203,6 +201,42 @@ Page {
         onTriggered: {
             adjustSubscriptionSettingsLottie()
         }
+    }
+
+
+    // Sounds used on Dashboard (store, payment)
+
+
+    BackgroundMusic {
+      id: tapSound
+      source: "../../../assets/sounds/tap.wav"
+
+      loops: 1
+      autoPlay: false
+
+      autoLoad: true
+    }
+
+    BackgroundMusic {
+      id: purchaseSound
+      source: "../../../assets/sounds/purchase.wav"
+      volume: 0.75
+
+      loops: 1
+      autoPlay: false
+
+      autoLoad: true
+    }
+
+    BackgroundMusic {
+      id: upgradeSound
+      source: "../../../assets/sounds/upgrade.wav"
+      volume: 0.55
+
+      loops: 1
+      autoPlay: false
+
+      autoLoad: true
     }
 
 }

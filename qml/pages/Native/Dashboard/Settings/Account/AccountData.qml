@@ -8,7 +8,7 @@ Page {
     id: accountDataPage
 
     title: qsTr("Datos")
-    backgroundColor: pagesBackColorGrey
+    backgroundColor: pagesBackColorGreyExtra
 
     property real marginCol: 40
 

@@ -168,9 +168,16 @@ DISTFILES += \
     qml/pages/Native/Dashboard/Settings/Account/LinkedAccounts.qml \
     qml/pages/Native/Dashboard/Settings/Community/Privacy.qml \
     qml/pages/Native/Dashboard/Settings/Community/Visibility.qml \
+    qml/pages/Native/Dashboard/Settings/More/InfoAndHelp.qml \
+    qml/pages/Native/Dashboard/Settings/More/InviteFriend.qml \
+    qml/pages/Native/Dashboard/Settings/More/Licenses.qml \
     qml/pages/Native/Dashboard/Settings/Payments/InAppPurchases.qml \
+    qml/pages/Native/Dashboard/Settings/Payments/RedeemCode.qml \
     qml/pages/Native/Dashboard/Settings/Payments/Subscription.qml \
+    qml/pages/Native/Dashboard/Settings/Payments/SubscriptionSettings.qml \
     qml/pages/Native/Dashboard/Settings/Payments/SubscriptionStore.qml \
+    qml/pages/Native/Dashboard/Settings/Pranks/PrankNumber.qml \
+    qml/pages/Native/Dashboard/Settings/Pranks/PrankPreferences.qml \
     qml/pages/Native/Dashboard/Settings/Profile/AvatarSelection.qml \
     qml/pages/Native/Dashboard/Settings/Profile/MyProfile.qml \
     qml/pages/Native/Dashboard/SettingsTab.qml \

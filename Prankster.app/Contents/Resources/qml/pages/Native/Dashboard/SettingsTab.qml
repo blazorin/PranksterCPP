@@ -5,6 +5,8 @@ import "Settings/Profile"
 import "Settings/Community"
 import "Settings/Account"
 import "Settings/Payments"
+import "Settings/Pranks"
+import "Settings/More"
 
 Page {
 
@@ -13,6 +15,7 @@ Page {
 
     navigationBarHidden: true
     backNavigationEnabled: false // important
+
 
   AppFlickable {
         id: scroller
@@ -40,7 +43,7 @@ Page {
             bottomPadding: 10
 
             text: "Ajustes"
-            fontSize: getTextSize(45)
+            fontSize: !isTablet ? getTextSize(53) : getTextSize(50)
             font.bold: true
 
             Component.onCompleted: {
@@ -112,7 +115,7 @@ Page {
                  width: parent.width
                  height: 1
 
-                 anchors.bottom: parent.top
+                 anchors.top: parent.top
 
                  color: separatorColor
              }
@@ -293,8 +296,33 @@ Page {
                          }
                        }
 
+              rightItem: PromoRectangle {
+                  id: subscriptionRec
+
+                  text: qsTr(dataModel.getSubscriptionLottie(subscriptionKind).title.toUpperCase())
+                  textSizeInt: 9
+
+                  radius: dp(15)
+
+                  textColor: "#FFFFFF"
+                  bgColor: dataModel.getSubscriptionLottie(subscriptionKind).color
+                  bold: true
+
+                  anchors.verticalCenter: parent.verticalCenter
+
+                  Component.onCompleted: {
+
+                      // Was too big on Tablet
+                      if (isTablet)
+                      {
+                          subscriptionRec.width = subscriptionRec.textElem.width + 10
+                          subscriptionRec.height = subscriptionRec.textElem.height + 10
+                      }
+                  }
+              }
+
               onSelected: {
-                  navStack.push(subscriptionsExternalComponent)
+                  navStack.push(subscriptionsSettingsExternalComponent)
               }
          }
 
@@ -324,7 +352,7 @@ Page {
 
 
          AppListItem {
-              text: qsTr("Canjear código")
+              text: qsTr("Canjear Código")
               textFontSize: getTextSize(15)
 
 
@@ -343,6 +371,10 @@ Page {
                        }
 
              dividerLeftSpacing: 0
+
+             onSelected: {
+                 navStack.push(redeemCodeComponent)
+             }
          }
 
          ListSeparator { title: qsTr("Bromas")}
@@ -365,10 +397,14 @@ Page {
                            color: "white"
                          }
                        }
+
+              onSelected: {
+                  navStack.push(prankPreferencesComponent)
+              }
          }
 
          AppListItem {
-              text: qsTr("Número Saliente (PRO)")
+              text: qsTr("Número Saliente")
               textFontSize: getTextSize(15)
 
 
@@ -386,7 +422,38 @@ Page {
                          }
                        }
 
+              rightItem: PromoRectangle {
+                  id: unlimitedRec
+
+                  text: qsTr("UNLIMITED")
+                  textSizeInt: 9
+
+                  radius: dp(15)
+
+                  textColor: "#FFFFFF"
+                  bgColor: "#A840FF"
+                  bold: true
+
+                  anchors.verticalCenter: parent.verticalCenter
+
+                  Component.onCompleted: {
+
+                      // Was too big on Tablet
+                      if (isTablet)
+                      {
+                          unlimitedRec.width = unlimitedRec.textElem.width + 10
+                          unlimitedRec.height = unlimitedRec.textElem.height + 10
+                      }
+                  }
+              }
+
+
+
              dividerLeftSpacing: 0
+
+             onSelected: {
+                 navStack.push(prankNumberComponent)
+             }
          }
 
 
@@ -405,18 +472,18 @@ Page {
 
                       source: "../../../../assets/social/instagram_2.svg"
                   }
+
+              onSelected: {
+                  nativeUtils.openUrl("https://www.miraclia.com/t%C3%A9rminos-y-condiciones-de-uso")
+              }
          }
+
 
          AppListItem {
               text: qsTr("YouTube")
               textFontSize: getTextSize(15)
 
-
-
-
-              leftItem:
-
-                      AppImage {
+              leftItem: AppImage {
                           width: dp(26)
                           anchors.verticalCenter: parent.verticalCenter
 
@@ -425,10 +492,55 @@ Page {
                           source: "../../../../assets/social/youtube_4.svg"
                       }
 
+              onSelected: {
+                  nativeUtils.openUrl("https://www.miraclia.com/t%C3%A9rminos-y-condiciones-de-uso")
+              }
+         }
 
+         AppListItem {
+              text: qsTr("Discord")
+              textFontSize: getTextSize(15)
 
+              leftItem: AppImage {
+                          width: dp(26)
+                          anchors.verticalCenter: parent.verticalCenter
+
+                          fillMode: Image.PreserveAspectFit
+
+                          source: "../../../../assets/social/discord_3.svg"
+
+              }
+
+              rightItem: PromoRectangle {
+                  id: discordRec
+
+                  text: qsTr("¡NOVEDAD!")
+                  textSizeInt: 9
+
+                  radius: dp(15)
+
+                  textColor: "#FFFFFF"
+                  bgColor: "#4F62F1"
+                  bold: true
+
+                  anchors.verticalCenter: parent.verticalCenter
+
+                  Component.onCompleted: {
+
+                      // Was too big on Tablet
+                      if (isTablet)
+                      {
+                          discordRec.width = discordRec.textElem.width + 10
+                          discordRec.height = discordRec.textElem.height + 10
+                      }
+                  }
+              }
 
              dividerLeftSpacing: 0
+
+             onSelected: {
+                 nativeUtils.openUrl("https://www.miraclia.com/t%C3%A9rminos-y-condiciones-de-uso")
+             }
          }
 
 
@@ -452,6 +564,10 @@ Page {
                            color: "white"
                          }
                        }
+
+              onSelected: {
+                  navStack.push(infoAndHelpComponent)
+              }
          }
 
          AppListItem {
@@ -468,17 +584,24 @@ Page {
 
                          Icon {
                            icon: IconType.heart
+                           //size: 12
+
                            anchors.centerIn: parent
                            color: "white"
                          }
                        }
 
              dividerLeftSpacing: 0
+
+             onSelected: {
+                 navStack.push(inviteFriendComponent)
+             }
          }
 
         // Separador Final
         ListSeparator {
             title: qsTr("")
+
 
             Component.onCompleted: {
                style.compactStyle = true // Evitar doble linea separadora
@@ -505,6 +628,47 @@ Page {
 
         visible: Theme.isAndroid // Only for Android
     }
+
+    // Start Dash Line Helper
+    Rectangle {
+        id: dashLineHelper
+
+        width: 25
+        height: 25
+
+        radius: 15
+        color: "black"
+        visible: false
+
+        anchors.bottom: parent.bottom
+
+
+        Component.onCompleted: {
+            dashLineTimer.running = true // Start timer
+        }
+
+
+    }
+
+    Timer {
+        id: dashLineTimer
+
+        running: false
+        repeat: true
+        interval: 100
+        triggeredOnStart: true
+
+        onTriggered: {
+            lineCenterRec.y = dashLineHelper.y + (dashLineHelper.height / 2.6)
+
+            if (dashLayout.safeArea.height != dashLayout.height)
+                lineCenterRec.y -= 1
+        }
+    }
+
+    // End Dash Line Helper
+
+
 
     /** Componentes **/
 
@@ -542,5 +706,35 @@ Page {
         id: inAppPurchasesComponent
 
         InAppPurchases {}
+    }
+
+    Component {
+        id: redeemCodeComponent
+
+        RedeemCode {}
+    }
+
+    Component {
+        id: prankPreferencesComponent
+
+        PrankPreferences {}
+    }
+
+    Component {
+        id: prankNumberComponent
+
+        PrankNumber {}
+    }
+
+    Component {
+        id: infoAndHelpComponent
+
+        InfoAndHelp {}
+    }
+
+    Component {
+        id: inviteFriendComponent
+
+        InviteFriend {}
     }
 }

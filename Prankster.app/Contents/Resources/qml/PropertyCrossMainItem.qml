@@ -15,9 +15,11 @@ Item {
     property string bearerToken: ""
     property string serverUserId: ""
 
+    property int accountId: 0
+
     property string username: ""
 
-    property int subscriptionKind: 0
+    property int subscriptionKind: 1
     property string subscriptionEndDate: (new Date().toLocaleDateString('es-ES'))
 
     property int avatarColorIndex: 0
@@ -45,6 +47,14 @@ Item {
 
         // Linking
         property bool isThisDeviceLinked: false
+
+    // Pranks
+
+        // Preferences
+        property bool sharePranksAuto: false
+
+        // Outgoing Number
+        property string outgoingNumber: ""
 
 
 // END SETTINGS
