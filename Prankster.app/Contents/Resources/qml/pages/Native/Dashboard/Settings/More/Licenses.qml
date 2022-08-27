@@ -5,7 +5,7 @@ Page {
     id: licensesPage
 
     title: qsTr("Licencias")
-    backgroundColor: pagesBackColor
+    backgroundColor: pagesBackColorGrey
 
   AppFlickable {
           id: scroller
@@ -13,7 +13,7 @@ Page {
           anchors.fill: parent
 
           contentWidth: parent.width
-          contentHeight: licensesPage.height + (!isTablet ? (licensesText1.height / 1.98) : (licensesText1.height / 4.2))
+          contentHeight: licensesPage.height + (!isTablet ? (licensesText1.height / 1.92) : (licensesText1.height / 4.2))
           flickableDirection: Flickable.VerticalFlick
 
 

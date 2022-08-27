@@ -226,7 +226,9 @@ Page {
                textFontSize: getTextSize(15)
 
                backgroundColor: pagesBackColor
+
                textColor: Theme.appButton.textColor
+               selectedTextColor: Theme.appButton.textColor
 
                //dividerLeftSpacing: 15
                showDisclosure: false
@@ -255,7 +257,9 @@ Page {
                textFontSize: getTextSize(15)
 
                backgroundColor: pagesBackColor
+
                textColor: Theme.appButton.textColor
+               selectedTextColor: Theme.appButton.textColor
 
                //dividerLeftSpacing: 15
                showDisclosure: false
@@ -284,7 +288,9 @@ Page {
                textFontSize: getTextSize(15)
 
                backgroundColor: pagesBackColor
+
                textColor: Theme.appButton.textColor
+               selectedTextColor: Theme.appButton.textColor
 
                //dividerLeftSpacing: 15
                showDisclosure: false
@@ -315,7 +321,9 @@ Page {
                textFontSize: getTextSize(15)
 
                backgroundColor: pagesBackColor
+
                textColor: Theme.appButton.textColor
+               selectedTextColor: Theme.appButton.textColor
 
                //dividerLeftSpacing: 15
                showDisclosure: false

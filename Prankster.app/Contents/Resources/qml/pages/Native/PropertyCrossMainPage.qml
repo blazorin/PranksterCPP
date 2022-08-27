@@ -26,6 +26,10 @@ Page {
 
     readonly property color svgColor: "#FF7064" // for SVGS trough IconScout editor
 
+    readonly property color layoutIconColor: "#B2B3B8" // Icons on DashLayout (Navigation)
+
+    readonly property color layoutIconColorActive: "#FF594B"
+
     property real topTitleMarginBig: 45
 
     property bool preLottiesOn: true // This helps enabling/disabling auth and welcome lotties during navStack logic
@@ -238,6 +242,11 @@ Page {
       loops: 1
       autoPlay: false
 
+    }
+
+    FontLoader {
+        id: montserratFont
+        source: "../../../assets/fonts/Montserrat-VariableFont_wght.ttf"
     }
 
 }

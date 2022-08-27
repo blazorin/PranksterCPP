@@ -10,7 +10,7 @@ import "Settings/More"
 
 Page {
 
-    title: "Settings"
+    title: qsTr("Ajustes")
     backgroundColor: pagesBackColorGrey
 
     navigationBarHidden: true
@@ -42,7 +42,7 @@ Page {
             leftPadding: contentPadding
             bottomPadding: 10
 
-            text: "Ajustes"
+            text: qsTr("Ajustes")
             fontSize: !isTablet ? getTextSize(53) : getTextSize(50)
             font.bold: true
 
@@ -629,44 +629,9 @@ Page {
         visible: Theme.isAndroid // Only for Android
     }
 
-    // Start Dash Line Helper
-    Rectangle {
-        id: dashLineHelper
-
-        width: 25
-        height: 25
-
-        radius: 15
-        color: "black"
-        visible: false
-
+    DashLineColocator {
         anchors.bottom: parent.bottom
-
-
-        Component.onCompleted: {
-            dashLineTimer.running = true // Start timer
-        }
-
-
     }
-
-    Timer {
-        id: dashLineTimer
-
-        running: false
-        repeat: true
-        interval: 100
-        triggeredOnStart: true
-
-        onTriggered: {
-            lineCenterRec.y = dashLineHelper.y + (dashLineHelper.height / 2.6)
-
-            if (dashLayout.safeArea.height != dashLayout.height)
-                lineCenterRec.y -= 1
-        }
-    }
-
-    // End Dash Line Helper
 
 
 

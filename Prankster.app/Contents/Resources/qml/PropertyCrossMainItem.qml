@@ -22,6 +22,8 @@ Item {
     property int subscriptionKind: 1
     property string subscriptionEndDate: (new Date().toLocaleDateString('es-ES'))
 
+    property int callBalance: 4
+
     property int avatarColorIndex: 0
     property int avatarIconIndex: 0
 
@@ -58,6 +60,16 @@ Item {
 
 
 // END SETTINGS
+
+
+// Home Properties:
+
+    property string announcementText: "¡La nueva App de bromas telefónicas ya está aquí!"
+    property string announcemenTextColor: "#FF594B"
+    property string announcementTextUrl: ""
+
+// END Home Properties
+
 
     anchors.fill: parent
 

@@ -153,6 +153,7 @@ DISTFILES += \
     qml/helper/AnimationHelper.qml \
     qml/helper/AppSwitchListItem.qml \
     qml/helper/CuteText.qml \
+    qml/helper/DashLineColocator.qml \
     qml/helper/FeatureRow.qml \
     qml/helper/GoBackButtonBarItem.qml \
     qml/helper/ListSeparator.qml \
@@ -164,6 +165,7 @@ DISTFILES += \
     qml/model/Logic.qml \
     qml/pages/Native/Auth.qml \
     qml/pages/Native/Dashboard/DashLayoutTab.qml \
+    qml/pages/Native/Dashboard/HomeTab.qml \
     qml/pages/Native/Dashboard/Settings/Account/AccountData.qml \
     qml/pages/Native/Dashboard/Settings/Account/LinkedAccounts.qml \
     qml/pages/Native/Dashboard/Settings/Community/Privacy.qml \

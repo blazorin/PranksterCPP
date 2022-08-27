@@ -244,4 +244,9 @@ Page {
 
     }
 
+    FontLoader {
+        id: montserratFont
+        source: "../../../assets/fonts/Montserrat-VariableFont_wght.ttf"
+    }
+
 }

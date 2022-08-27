@@ -45,7 +45,7 @@ App {
        Theme.navigationTabBar.textSize = 12
        Theme.navigationTabBar.backgroundColor = "#FFFFFF"
        Theme.navigationTabBar.dividerColor = "#FFFFFF"
-       Theme.navigationTabBar.height = 70
+       Theme.navigationTabBar.height *= 1.5
        Theme.navigationTabBar.iconSize = 30
        Theme.navigationTabBar.titleColor = "#F95F5E"
 
@@ -92,6 +92,7 @@ App {
        //Theme.appButton.backgroundColorPressed = "#0000ffff"
 
    }
+
 
     PropertyCrossMainItem { } // Main initializator
 

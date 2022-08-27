@@ -25,6 +25,28 @@ Page {
         AppImage {
             source: "../../../../assets/icons/home_7.svg"
 
+            /*
+            AppText {
+                font.pixelSize: getTextSize(13)
+                color: layoutIconColor
+
+                horizontalAlignment: Text.AlignHCenter
+                anchors.top: parent.bottom
+                anchors.topMargin: 5
+
+                text: qsTr("Inicio")
+
+                ColorOverlay{
+                    anchors.fill: parent
+                    source: parent
+                    color: layoutIconColorActive
+                    transform:rotation
+                    antialiasing: true
+                    visible: navBox.currentIndex == 0
+                }
+            }
+            */
+
             ColorOverlay{
                 anchors.fill: parent
                 source: parent
@@ -86,6 +108,7 @@ Page {
                 visible: navBox.currentIndex == 4
             }
         }
+
     }
 
     Navigation {
@@ -96,23 +119,31 @@ Page {
         NavigationItem {
           iconComponent: homeIconComponent
 
-          SettingsTab {}
+          HomeTab {}
+
+          onSelected: {
+              onGreyExtraTab = true
+              console.debug("[Dash Layout] Tab changed to " + title)
+          }
         }
 
         NavigationItem {
           iconComponent: storeIconComponent
-
 
           SettingsTab {}
         }
 
         NavigationItem {
           visible: false
-          enabled: false
+          //enabled: false
+
+          // Call Tab
+          SettingsTab {}
         }
 
         NavigationItem {           
           iconComponent: chatIconComponent
+
           enabled: !disableCommunity
 
           SettingsTab {}
@@ -124,7 +155,7 @@ Page {
           SettingsTab {}
 
           onSelected: {
-              onGreyExtraTab = true
+              onGreyExtraTab = false
               console.debug("[Dash Layout] Tab changed to " + title)
           }
 
@@ -148,6 +179,14 @@ Page {
 
         anchors.horizontalCenter: parent.horizontalCenter
 
+
+        MouseArea {
+            anchors.fill: parent
+
+            onClicked: {
+                navBox.currentIndex = 2
+            }
+        }
 
         Icon {
             size: 20
@@ -174,6 +213,22 @@ Page {
 
             text: callBalance
 
+        }
+
+        Rectangle {
+
+            width: 5
+            height: 5
+
+            radius: 2.5
+
+            anchors.top: parent.bottom
+            anchors.topMargin: 5
+
+            color: Theme.navigationTabBar.titleColor
+            visible: navBox.currentIndex == 2
+
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Rectangle {
