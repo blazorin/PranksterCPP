@@ -23,7 +23,14 @@ Page {
         id: homeIconComponent
 
         AppImage {
-            source: "../../../../assets/icons/home_7.svg"
+            source: "../../../../assets/icons/home_final.svg"
+
+            width: 32
+            height: 32
+
+            Component.onCompleted: {
+                y -= 4
+            }
 
             /*
             AppText {
@@ -63,7 +70,14 @@ Page {
         id: storeIconComponent
 
         AppImage {
-            source: "../../../../assets/icons/store.svg"
+            source: "../../../../assets/icons/store_final.svg"
+
+            width: 32
+            height: 32
+
+            Component.onCompleted: {
+                y -= 4
+            }
 
             ColorOverlay{
                 anchors.fill: parent
@@ -80,7 +94,14 @@ Page {
         id: chatIconComponent
 
         AppImage {
-            source: "../../../../assets/icons/chat.svg"
+            source: "../../../../assets/icons/chat_final.svg"
+
+            width: 32
+            height: 32
+
+            Component.onCompleted: {
+                y -= 4
+            }
 
             ColorOverlay{
                 anchors.fill: parent
@@ -97,7 +118,14 @@ Page {
         id: settingsIconComponent
 
         AppImage {
-            source: "../../../../assets/icons/settings.svg"
+            source: "../../../../assets/icons/settings_final.svg"
+
+            width: 32
+            height: 32
+
+            Component.onCompleted: {
+                y -= 4
+            }
 
             ColorOverlay{
                 anchors.fill: parent
@@ -122,7 +150,7 @@ Page {
           HomeTab {}
 
           onSelected: {
-              onGreyExtraTab = true
+              //onGreyExtraTab = true
               console.debug("[Dash Layout] Tab changed to " + title)
           }
         }
@@ -130,7 +158,7 @@ Page {
         NavigationItem {
           iconComponent: storeIconComponent
 
-          SettingsTab {}
+          StoreTab {}
         }
 
         NavigationItem {
@@ -202,7 +230,7 @@ Page {
         }
 
         AppText {
-            font.pixelSize: (callBalance < 99 ? "#878282" : getTextSize(13))
+            font.pixelSize: (callBalance < 99 ? getTextSize(14) : getTextSize(13))
             color: "#FFFFFF"
 
             font.bold: true

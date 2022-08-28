@@ -183,6 +183,7 @@ DISTFILES += \
     qml/pages/Native/Dashboard/Settings/Profile/AvatarSelection.qml \
     qml/pages/Native/Dashboard/Settings/Profile/MyProfile.qml \
     qml/pages/Native/Dashboard/SettingsTab.qml \
+    qml/pages/Native/Dashboard/StoreTab.qml \
     qml/pages/Native/ListingDetailPage.qml \
     qml/pages/Native/ListingsListPage.qml \
     qml/pages/Native/PropertyCrossMainPage.qml \

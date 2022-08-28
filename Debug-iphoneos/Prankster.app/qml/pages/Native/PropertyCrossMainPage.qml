@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Controls 1.2
+import QtMultimedia 5.15
 import Felgo 3.0
 import "Dashboard/Settings/Payments"
 
@@ -22,6 +23,12 @@ Page {
     readonly property string paperShadowColor: "#EBEAEA"
 
     readonly property color cuteColorSecondary: "#393B3D"
+
+    readonly property color svgColor: "#FF7064" // for SVGS trough IconScout editor
+
+    readonly property color layoutIconColor: "#B2B3B8" // Icons on DashLayout (Navigation)
+
+    readonly property color layoutIconColorActive: "#FF594B"
 
     property real topTitleMarginBig: 45
 
@@ -112,7 +119,7 @@ Page {
                         property: "y"
                         from: (enterItem.height > 0 ? (enterItem.height - (enterItem.height * 0.4)) : enterItem.height)
                         to: 0
-                        duration: (Theme.isIos ? 193 : 230)
+                        duration: (Theme.isIos ? (!isTablet ? 130 : 180) : 230)
 
                        }
                 }
@@ -207,36 +214,39 @@ Page {
     // Sounds used on Dashboard (store, payment)
 
 
-    BackgroundMusic {
+    Audio {
       id: tapSound
       source: "../../../assets/sounds/tap.wav"
+      volume: 0.5
 
       loops: 1
       autoPlay: false
 
-      autoLoad: true
     }
 
-    BackgroundMusic {
+    Audio {
       id: purchaseSound
       source: "../../../assets/sounds/purchase.wav"
-      volume: 0.75
+      volume: 0.38
 
       loops: 1
       autoPlay: false
 
-      autoLoad: true
     }
 
-    BackgroundMusic {
+    Audio {
       id: upgradeSound
       source: "../../../assets/sounds/upgrade.wav"
-      volume: 0.55
+      volume: 0.3
 
       loops: 1
       autoPlay: false
 
-      autoLoad: true
+    }
+
+    FontLoader {
+        id: montserratFont
+        source: "../../../assets/fonts/Montserrat-VariableFont_wght.ttf"
     }
 
 }

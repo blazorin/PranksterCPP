@@ -73,6 +73,8 @@ Item {
             }
 
 
+
+
             if (lottieVisible && !showLottie)
             {
                 //subcriptionLottie.frameRate = 2
@@ -103,13 +105,17 @@ Item {
 
         running: true
         repeat: true
-        interval: 48
+        interval: 45
 
 
         onTriggered: {
 
             if (pauseTimerStartupTimes == 15 || showLottie) {
                 lottiePauseTimerStartup.running = false
+
+                if (customSubscriptionKind == 1) // prevent flash on Premium Lottie
+                    subcriptionLottie.resume()
+
                 return
             }
 
@@ -850,11 +856,23 @@ Item {
     }
 
     function resumeSettingsLottie() {
-        subcriptionLottie.resume()
-
         cachedSubscriptionSettingsPage = null
+        lottieResumerTimer.running = true
+
 
         console.debug("[DEBUG] Resumed Settings Subscription lottie!")
+    }
+
+    Timer {
+        id: lottieResumerTimer
+
+        interval: 225
+        running: false
+        repeat: false
+
+        onTriggered: {
+            subcriptionLottie.resume()
+        }
     }
 
     ScrollIndicator {

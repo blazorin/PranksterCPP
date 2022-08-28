@@ -119,7 +119,7 @@ Page {
                         property: "y"
                         from: (enterItem.height > 0 ? (enterItem.height - (enterItem.height * 0.4)) : enterItem.height)
                         to: 0
-                        duration: (Theme.isIos ? 193 : 230)
+                        duration: (Theme.isIos ? (!isTablet ? 130 : 180) : 230)
 
                        }
                 }
@@ -247,6 +247,11 @@ Page {
     FontLoader {
         id: montserratFont
         source: "../../../assets/fonts/Montserrat-VariableFont_wght.ttf"
+    }
+
+    FontLoader {
+        id: blackjackFont
+        source: "../../../assets/fonts/BlackJack.ttf"
     }
 
 }

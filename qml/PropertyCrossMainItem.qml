@@ -19,10 +19,12 @@ Item {
 
     property string username: ""
 
-    property int subscriptionKind: 1
+    property int subscriptionKind: 2
     property string subscriptionEndDate: (new Date().toLocaleDateString('es-ES'))
 
-    property int callBalance: 4
+    property int callBalance: 7
+
+    property bool hasMadeAnyPurchase: false
 
     property int avatarColorIndex: 0
     property int avatarIconIndex: 0
@@ -62,13 +64,15 @@ Item {
 // END SETTINGS
 
 
-// Home Properties:
+// Server Properties:
 
     property string announcementText: "¡La nueva App de bromas telefónicas ya está aquí!"
     property string announcemenTextColor: "#FF594B"
     property string announcementTextUrl: ""
 
-// END Home Properties
+    property bool doubleOfferEnabled: true
+
+// END Server Properties
 
 
     anchors.fill: parent

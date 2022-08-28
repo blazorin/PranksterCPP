@@ -1605,6 +1605,19 @@
 			settings = {
 			};
 		};
+		B3D78E7D71BFAAAF984CA35F = {
+			isa = PBXFileReference;
+			name = "qtgraphicaleffectsplugin";
+			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects/libqtgraphicaleffectsplugin$(QT_LIBRARY_SUFFIX).a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		830083C42A9AD2514BB5A7DA = {
+			fileRef = "B3D78E7D71BFAAAF984CA35F";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
 		88B9F3D61DC8CEB493CE62C4 = {
 			isa = PBXFileReference;
 			name = "quick3dcoreplugin";
@@ -2321,19 +2334,6 @@
 			settings = {
 			};
 		};
-		B3D78E7D71BFAAAF984CA35F = {
-			isa = PBXFileReference;
-			name = "qtgraphicaleffectsplugin";
-			path = "/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects/libqtgraphicaleffectsplugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		830083C42A9AD2514BB5A7DA = {
-			fileRef = "B3D78E7D71BFAAAF984CA35F";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
 		181346F232D422B7D891F7B1 = {
 			isa = PBXFileReference;
 			name = "qquicklayoutsplugin";
@@ -2813,6 +2813,7 @@
 				"F9E9AC41E8B2F00B613EF964",
 				"C1E27E7D2CB739B48549E14F",
 				"A46CBECDA5F1634626B37DA6",
+				"B3D78E7D71BFAAAF984CA35F",
 				"88B9F3D61DC8CEB493CE62C4",
 				"E5F0D3605FB96DBDCA91524B",
 				"40299A5E7F6E352B91F67C06",
@@ -2868,7 +2869,6 @@
 				"20D9847287EA11FE48F26ACC",
 				"9206FE75C20863433A6D3930",
 				"DBB37CCA793279485D0875C2",
-				"B3D78E7D71BFAAAF984CA35F",
 				"181346F232D422B7D891F7B1",
 				"45BE9327BDEFF605943B9F4C",
 				"D79184801B2BA30027A0CBFC",
@@ -2973,6 +2973,7 @@
 				"1A4D8EDE02B5937F749A2B0A",
 				"D689DAE75A0D47271F57CD36",
 				"EBDEA95EBCB2CBE17053AEEC",
+				"830083C42A9AD2514BB5A7DA",
 				"5B3DA7288BDE5BEF73CB9B79",
 				"5D3AA5EFA4CC2032B5EEAF7F",
 				"ABE8D385CFC9DA38DFA27D95",
@@ -3028,7 +3029,6 @@
 				"4AAF2C30E0304093367B7535",
 				"2037306C2DCD7D27BF774B0F",
 				"0D1F3624F098219A1A1BB8DD",
-				"830083C42A9AD2514BB5A7DA",
 				"2F8A3111DA290EF515531907",
 				"7878ADFCBCEDA3C553438B5E",
 				"25108CFC51967721E10AA09B",
@@ -3296,6 +3296,7 @@
 					"/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/lottieqt",
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtQml",
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects/private",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects",
 					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Core",
 					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Render",
 					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Input",
@@ -3319,7 +3320,6 @@
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/PrivateWidgets",
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtLocation",
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtPositioning",
-					"/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects",
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Layouts",
 					"/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/settings",
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Window.2",
@@ -3522,6 +3522,7 @@
 					"/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/lottieqt",
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtQml",
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects/private",
+					"/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects",
 					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Core",
 					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Render",
 					"/Users/alberto/Felgo/Felgo/ios/qml/Qt3D/Input",
@@ -3545,7 +3546,6 @@
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/PrivateWidgets",
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtLocation",
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtPositioning",
-					"/Users/alberto/Felgo/Felgo/ios/qml/QtGraphicalEffects",
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Layouts",
 					"/Users/alberto/Felgo/Felgo/ios/qml/Qt/labs/settings",
 					"/Users/alberto/Felgo/Felgo/ios/qml/QtQuick/Window.2",

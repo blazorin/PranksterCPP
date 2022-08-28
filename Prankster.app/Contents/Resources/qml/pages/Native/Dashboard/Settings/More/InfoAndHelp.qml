@@ -223,7 +223,7 @@ Page {
           AppListItem {
 
                text: qsTr("Web de Prankster")
-               textFontSize: getTextSize(15)
+               textFontSize: getTextSize(17, true)
 
                backgroundColor: pagesBackColor
 
@@ -254,7 +254,7 @@ Page {
 
           AppListItem {
                text: qsTr("Contacta con nosotros")
-               textFontSize: getTextSize(15)
+               textFontSize: getTextSize(17, true)
 
                backgroundColor: pagesBackColor
 
@@ -285,7 +285,7 @@ Page {
 
           AppListItem {
                text: qsTr("Términos y Privacidad")
-               textFontSize: getTextSize(15)
+               textFontSize: getTextSize(17, true)
 
                backgroundColor: pagesBackColor
 
@@ -318,7 +318,7 @@ Page {
                id: licensesItem
 
                text: qsTr("Licencias")
-               textFontSize: getTextSize(15)
+               textFontSize: getTextSize(17, true)
 
                backgroundColor: pagesBackColor
 
@@ -359,6 +359,10 @@ Page {
               leftPadding: licensesItem.leftPadding
           }
       }
+    }
+
+    ScrollIndicator {
+        flickable: scroller
     }
 
     Component {

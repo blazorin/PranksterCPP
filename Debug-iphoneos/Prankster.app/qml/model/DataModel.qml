@@ -31,7 +31,7 @@ Item {
             width: 256,
             name: "free",
 
-            title: qsTr("Sin Subcripción"),
+            title: "Sin Subscripción",
             color: "#35CD79",
 
             dailyPranks: "0",
@@ -45,7 +45,7 @@ Item {
             width: 370,
             name: "premium",
 
-            title: qsTr("Premium"),
+            title: "Premium",
             color: "#FDBA23",
 
             dailyPranks: "5",
@@ -59,7 +59,7 @@ Item {
             width: 225,
             name: "unlimited",
 
-            title: qsTr("Unlimited"),
+            title: "Unlimited",
             color: "#A840FF",
 
             dailyPranks: "∞",

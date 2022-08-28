@@ -45,7 +45,7 @@ App {
        Theme.navigationTabBar.textSize = 12
        Theme.navigationTabBar.backgroundColor = "#FFFFFF"
        Theme.navigationTabBar.dividerColor = "#FFFFFF"
-       Theme.navigationTabBar.height *= 1.5
+       Theme.navigationTabBar.height *= 1.3
        Theme.navigationTabBar.iconSize = 30
        Theme.navigationTabBar.titleColor = "#F95F5E"
 

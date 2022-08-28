@@ -317,6 +317,7 @@ Prankster.xcodeproj/project.pbxproj: Prankster.pro ../../../../Felgo/Felgo/ios/m
 		../../../../Felgo/Felgo/ios/qml/QtQml/WorkerScript.2/libworkerscriptplugin.prl \
 		../../../../Felgo/Felgo/ios/qml/Qt/labs/lottieqt/liblottieqtplugin.prl \
 		../../../../Felgo/Felgo/ios/qml/QtQuick/Controls/libqtquickcontrolsplugin.prl \
+		../../../../Felgo/Felgo/ios/qml/QtMultimedia/libdeclarative_multimedia.prl \
 		../../../../Felgo/Felgo/ios/qml/QtQuick/Window.2/libwindowplugin.prl \
 		../../../../Felgo/Felgo/ios/qml/QtQuick/Layouts/libqquicklayoutsplugin.prl \
 		../../../../Felgo/Felgo/ios/qml/QtQuick/Controls.2/libqtquickcontrols2plugin.prl \
@@ -332,7 +333,6 @@ Prankster.xcodeproj/project.pbxproj: Prankster.pro ../../../../Felgo/Felgo/ios/m
 		../../../../Felgo/Felgo/ios/qml/QtDataVisualization/libdatavisualizationqml2.prl \
 		../../../../Felgo/Felgo/ios/qml/Qt/labs/settings/libqmlsettingsplugin.prl \
 		../../../../Felgo/Felgo/ios/qml/QtLocation/libdeclarative_location.prl \
-		../../../../Felgo/Felgo/ios/qml/QtMultimedia/libdeclarative_multimedia.prl \
 		../../../../Felgo/Felgo/ios/qml/QtPositioning/libdeclarative_positioning.prl \
 		../../../../Felgo/Felgo/ios/qml/QtQuick/Controls.2/Material/libqtquickcontrols2materialstyleplugin.prl \
 		../../../../Felgo/Felgo/ios/qml/QtQuick/Dialogs/libdialogplugin.prl \
@@ -659,6 +659,7 @@ Prankster.pro:
 ../../../../Felgo/Felgo/ios/qml/QtQml/WorkerScript.2/libworkerscriptplugin.prl:
 ../../../../Felgo/Felgo/ios/qml/Qt/labs/lottieqt/liblottieqtplugin.prl:
 ../../../../Felgo/Felgo/ios/qml/QtQuick/Controls/libqtquickcontrolsplugin.prl:
+../../../../Felgo/Felgo/ios/qml/QtMultimedia/libdeclarative_multimedia.prl:
 ../../../../Felgo/Felgo/ios/qml/QtQuick/Window.2/libwindowplugin.prl:
 ../../../../Felgo/Felgo/ios/qml/QtQuick/Layouts/libqquicklayoutsplugin.prl:
 ../../../../Felgo/Felgo/ios/qml/QtQuick/Controls.2/libqtquickcontrols2plugin.prl:
@@ -674,7 +675,6 @@ Prankster.pro:
 ../../../../Felgo/Felgo/ios/qml/QtDataVisualization/libdatavisualizationqml2.prl:
 ../../../../Felgo/Felgo/ios/qml/Qt/labs/settings/libqmlsettingsplugin.prl:
 ../../../../Felgo/Felgo/ios/qml/QtLocation/libdeclarative_location.prl:
-../../../../Felgo/Felgo/ios/qml/QtMultimedia/libdeclarative_multimedia.prl:
 ../../../../Felgo/Felgo/ios/qml/QtPositioning/libdeclarative_positioning.prl:
 ../../../../Felgo/Felgo/ios/qml/QtQuick/Controls.2/Material/libqtquickcontrols2materialstyleplugin.prl:
 ../../../../Felgo/Felgo/ios/qml/QtQuick/Dialogs/libdialogplugin.prl:

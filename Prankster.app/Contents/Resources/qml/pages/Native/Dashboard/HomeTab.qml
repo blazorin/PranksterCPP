@@ -6,7 +6,7 @@ import "../../../helper"
 Page {
 
     title: "Inicio"
-    backgroundColor: pagesBackColorGreyExtra
+    backgroundColor: pagesBackColorGrey
 
     navigationBarHidden: true
     backNavigationEnabled: false // important
@@ -20,7 +20,7 @@ Page {
         anchors.fill: parent
 
         contentWidth: parent.width
-        contentHeight: logoColumn.height + topTitleMarginBig + announcementColumn.height + 20 + homeColumn.height + 40 + cardsColumn.height + 20
+        contentHeight: (logoColumn.height) + topTitleMarginBig + announcementColumn.height + 20 + homeColumn.height + 40 + ((c1.height + c2.height) * 1.27) + 20
 
         flickableDirection: Flickable.VerticalFlick
 
@@ -152,88 +152,154 @@ Page {
 
         }
 
-        Rectangle {
 
-            height: 205
-            width: (parent.width / 2) - (!isTablet ? 10 : 50)
+            Rectangle {
+                id: c1
 
-            radius: 15
+                width: (parent.width / 2) - (!isTablet ? 10 : 50)
+                height: 205
 
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: layoutIconColorActive }
-                GradientStop { position: 0.4; color: layoutIconColorActive }
-                GradientStop { position: 0.41; color: "#FFFFFF" }
-                //GradientStop { position: 1.0; color: "green" }
-            }
+                radius: 15
 
-            anchors.right: recPosHelper.left
-            anchors.rightMargin: 7
+                anchors.right: recPosHelper.left
+                anchors.rightMargin: 7
 
-            anchors.top: recPosHelper.top
+                anchors.top: recPosHelper.top
 
-            AppText {
-                font.pixelSize: getTextSize(18, true)
-                //font.bold: true
+                gradient: Gradient {
+                    GradientStop { position: 0.0; color: layoutIconColorActive }
+                    GradientStop { position: 0.4; color: layoutIconColorActive }
+                    GradientStop { position: 0.41; color: "#FFFFFF" }
+                    //GradientStop { position: 1.0; color: "green" }
+                }
 
-                color: "white"
+                MouseArea {
+                    anchors.fill: parent
 
-                anchors.top: parent.top
-                anchors.topMargin: 13
+                    onClicked: {
+                        navBox.currentIndex = 2
+                    }
+                }
 
-                anchors.left: parent.left
-                anchors.leftMargin: 23
-
-                font.family: montserratFont.name
-                font.weight: Font.bold
-
-                text: qsTr("Hacer una")
 
                 AppText {
-                    font.pixelSize: getTextSize(22, true)
-                    font.bold: true
+                    font.pixelSize: getTextSize(18, true)
+                    //font.bold: true
+
+                    color: "white"
+
+                    anchors.top: parent.top
+                    anchors.topMargin: 13
+
+                    anchors.left: parent.left
+                    anchors.leftMargin: 23
 
                     font.family: montserratFont.name
 
-                    //font.wordSpacing: 1
-                    font.letterSpacing: 3
+                    text: qsTr("Hacer una")
 
-                    color: pagesBackColorGreyExtra
+                    AppText {
+                        font.pixelSize: getTextSize(22, true)
+                        font.bold: true
 
-                    anchors.top: parent.top
-                    anchors.topMargin: 27
+                        font.family: montserratFont.name
 
-
-
-                    text: qsTr("BROMA")
-
-                    Icon {
-                        icon: IconType.arrowright
-                        size: (!isTablet ? 10 : 12)
-
-                        anchors.top: parent.bottom
-                        anchors.topMargin: (!isTablet ? 1 : 0)
+                        //font.wordSpacing: 1
+                        font.letterSpacing: 3
 
                         color: "white"
 
-                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.top: parent.top
+                        anchors.topMargin: 27
+
+
+
+                        text: qsTr("BROMA")
+
+                        Icon {
+                            icon: IconType.arrowright
+                            size: (!isTablet ? 10 : 12)
+
+                            anchors.top: parent.bottom
+                            anchors.topMargin: (!isTablet ? 1 : 0)
+
+                            color: "white"
+
+                            anchors.horizontalCenter: parent.horizontalCenter
+                        }
                     }
                 }
-            }
 
-            AppImage {
-                   width: (!isTablet ? (parent.width / 2) : (parent.width / 3))
+                AppText {
+                    text: "*"
+                    color: "black"
+                    visible: false
 
-                   fillMode: Image.PreserveAspectFit
+                    y: parent.height * 0.365 // End of top color
+                    anchors.horizontalCenter: parent.horizontalCenter
 
-                   source: "../../../../assets/home/prankster_icon_final.svg"
 
-                   anchors.bottom: parent.bottom
-                   anchors.bottomMargin: 20
+                    id: imageHelper1
+                }
 
-                   anchors.horizontalCenter: parent.horizontalCenter
+                AppImage {
+                       width: (!isTablet ? (parent.width / 2) : (parent.width / 3))
 
-                   z: 0
-            }
+                       fillMode: Image.PreserveAspectFit
+
+                       source: "../../../../assets/home/prankster_icon_final.svg"
+
+                       anchors.top: imageHelper1.bottom
+                       anchors.topMargin: dp(10)
+
+                       anchors.bottom: parent.bottom
+                       anchors.bottomMargin: dp(10)
+
+                       anchors.horizontalCenter: parent.horizontalCenter
+
+                       z: 0
+                }
+
+                Rectangle {
+                    property real offset: Math.min(parent.width*0.045, parent.height*0.045)
+                    color: layoutIconColorActive
+                    width: parent.width
+                    height: parent.height
+                    z: -1
+                    opacity: 0.75
+                    radius: parent.radius + 2
+                    anchors.left: parent.left
+                    anchors.leftMargin: -offset
+                    anchors.top: parent.top
+                    anchors.topMargin: offset
+
+                    SequentialAnimation on color
+                    {
+                        loops: Animation.Infinite
+
+                        ColorAnimation
+                        {
+                            from: layoutIconColorActive
+                            to: layoutIconColorActive
+                            duration: 1450
+                        }
+
+                        ColorAnimation
+                        {
+                            from: layoutIconColorActive
+                            to: pagesBackColorGrey
+                            duration: 2000
+                        }
+                        ColorAnimation
+                        {
+                            from: pagesBackColorGrey
+                            to: layoutIconColorActive
+                            duration: 1250
+                        }
+
+                    }
+                }
+
         }
 
         Rectangle {
@@ -255,6 +321,14 @@ Page {
 
             anchors.top: recPosHelper.top
 
+            MouseArea {
+                anchors.fill: parent
+
+                onClicked: {
+                    navBox.currentIndex = 1
+                }
+            }
+
             AppText {
                 font.pixelSize: getTextSize(18, true)
                 //font.bold: true
@@ -268,7 +342,6 @@ Page {
                 anchors.leftMargin: 23
 
                 font.family: montserratFont.name
-                font.weight: Font.bold
 
                 text: qsTr("Ir a la")
 
@@ -281,7 +354,7 @@ Page {
                     //font.wordSpacing: 1
                     font.letterSpacing: 3
 
-                    color: pagesBackColorGreyExtra
+                    color: "white"
 
                     anchors.top: parent.top
                     anchors.topMargin: 27
@@ -304,20 +377,51 @@ Page {
                 }
             }
 
+            AppText {
+                text: "*"
+                color: "black"
+                visible: false
+
+                y: parent.height * 0.365 // End of top color
+                anchors.horizontalCenter: parent.horizontalCenter
+
+
+                id: imageHelper2
+            }
+
             AppImage {
-                   width: (!isTablet ? (parent.width / 2) : (parent.width / 3))
+                   width: (!isTablet ? (parent.width * 1.1) : (parent.width  / 1.3))
 
                    fillMode: Image.PreserveAspectFit
 
-                   source: "../../../../assets/home/woman.svg"
+                   source: "../../../../assets/home/woman_2.svg"
+
+                   anchors.top: imageHelper1.bottom
+                   anchors.topMargin: dp(5)
 
                    anchors.bottom: parent.bottom
-                   anchors.bottomMargin: 14
+                   //anchors.bott
+
 
                    anchors.horizontalCenter: parent.horizontalCenter
 
                    z: 0
             }
+
+            Rectangle {
+                property real offset: Math.min(parent.width*0.045, parent.height*0.045)
+                color: "#FFBC4F"
+                width: parent.width
+                height: parent.height
+                z: -1
+                opacity: 0.75
+                radius: parent.radius + 2
+                anchors.right: parent.right
+                anchors.rightMargin: -offset
+                anchors.top: parent.top
+                anchors.topMargin: offset
+            }
+
         }
 
 
@@ -335,14 +439,14 @@ Page {
             visible: false
 
             anchors.top: recPosHelper.bottom
-            anchors.topMargin: parent.spacing * 1.5
+            anchors.topMargin: parent.spacing * 2
 
             anchors.horizontalCenter: parent.horizontalCenter
 
         }
 
         Rectangle {
-            id: communityRec
+            id: c2
 
             height: 205
             width: (parent.width / 2) - (!isTablet ? 10 : 50)
@@ -361,6 +465,14 @@ Page {
 
             anchors.top: recPosHelperSecond.top
 
+            MouseArea {
+                anchors.fill: parent
+
+                onClicked: {
+                    navBox.currentIndex = 3
+                }
+            }
+
             AppText {
                 font.pixelSize: getTextSize(18, true)
                 //font.bold: true
@@ -374,7 +486,6 @@ Page {
                 anchors.leftMargin: 23
 
                 font.family: montserratFont.name
-                font.weight: Font.bold
 
                 text: qsTr("Ir a la")
 
@@ -387,7 +498,7 @@ Page {
                     //font.wordSpacing: 1
                     font.letterSpacing: 2
 
-                    color: pagesBackColorGreyExtra
+                    color: "white"
 
                     anchors.top: parent.top
                     anchors.topMargin: 27
@@ -398,10 +509,10 @@ Page {
 
                     Icon {
                         icon: IconType.arrowright
-                        size: (!isTablet ? 10 : 12)
+                        size: (!isTablet ? 11 : 12)
 
                         anchors.top: parent.bottom
-                        anchors.topMargin: (!isTablet ? 1 : 0)
+                        anchors.topMargin: 8.5
 
                         color: "white"
 
@@ -418,24 +529,27 @@ Page {
                    source: "../../../../assets/home/social_2.svg"
 
                    anchors.bottom: parent.bottom
-                   anchors.bottomMargin: 14
+                   anchors.bottomMargin: ((height / width) * (!isTablet ? 7 : 13))
 
                    anchors.horizontalCenter: parent.horizontalCenter
 
                    z: 0
             }
 
-        }
+            Rectangle {
+                property real offset: Math.min(parent.width*0.045, parent.height*0.045)
+                color: "#31ddff"
+                width: parent.width
+                height: parent.height
+                z: -1
+                opacity: 0.75
+                radius: parent.radius + 2
+                anchors.left: parent.left
+                anchors.leftMargin: -offset
+                anchors.top: parent.top
+                anchors.topMargin: offset
+            }
 
-        DropShadow {
-            anchors.fill: communityRec
-            cached: true
-            horizontalOffset: 1
-            verticalOffset: 1
-            radius: 8.0
-            samples: 16
-            color: "#31ddff"
-            source: communityRec
         }
 
 
@@ -458,6 +572,14 @@ Page {
 
             anchors.top: recPosHelperSecond.top
 
+            MouseArea {
+                anchors.fill: parent
+
+                onClicked: {
+                    // Navigate to Rewards Page
+                }
+            }
+
             AppText {
                 font.pixelSize: getTextSize(18, true)
                 //font.bold: true
@@ -471,7 +593,6 @@ Page {
                 anchors.leftMargin: 23
 
                 font.family: montserratFont.name
-                font.weight: Font.bold
 
                 text: qsTr("Bromas")
 
@@ -484,7 +605,7 @@ Page {
                     //font.wordSpacing: 1
                     font.letterSpacing: 3
 
-                    color: pagesBackColorGreyExtra
+                    color: "white"
 
                     anchors.top: parent.top
                     anchors.topMargin: 27
@@ -515,17 +636,115 @@ Page {
                    source: "../../../../assets/home/rewards.svg"
 
                    anchors.bottom: parent.bottom
-                   anchors.bottomMargin: 14
+                   anchors.bottomMargin: ((height / width) * (!isTablet ? 10 : 13))
 
                    anchors.horizontalCenter: parent.horizontalCenter
 
                    z: 0
             }
+
+            Rectangle {
+                property real offset: Math.min(parent.width*0.045, parent.height*0.045)
+                color: "#35e27d"
+                width: parent.width
+                height: parent.height
+                z: -1
+                opacity: 0.75
+                radius: parent.radius + 2
+                anchors.right: parent.right
+                anchors.rightMargin: -offset
+                anchors.top: parent.top
+                anchors.topMargin: offset
+            }
         }
 
         // END SECOND ROW
 
+        // Settings Rectangle
+
+ Rectangle {
+     anchors.top: recPosHelperSecond.bottom
+     anchors.topMargin: 20
+
+     anchors.horizontalCenter: parent.horizontalCenter
+
+     width: childSetsRec.width + 4
+     height: childSetsRec.height + 4
+     radius: 17
+
+     color: layoutIconColorActive
+
+     MouseArea {
+         anchors.fill: parent
+
+         onClicked: {
+             navBox.currentIndex = 4
+         }
+     }
+
+            Rectangle {
+                id: childSetsRec
+
+                color: "white"
+
+
+                width: freePrankText.width + 15 + setsIcon.width + 3
+                height: setsIcon.height + 10
+
+                anchors.centerIn: parent
+
+                radius: 15
+
+                AppImage {
+                    id: setsIcon
+
+                    source: "../../../../assets/icons/settings_final.svg"
+                    width: 28
+                    height: 28
+
+                    anchors.left: parent.left
+                    anchors.leftMargin: 5
+
+                    anchors.verticalCenter: parent.verticalCenter
+
+
+                    AppText {
+                        id: freePrankText
+
+                        text: qsTr("Ir a Ajustes")
+                        color: "#1F1E1E"
+
+                        anchors.left: parent.right
+                        anchors.leftMargin: 5
+
+                        anchors.verticalCenter: parent.verticalCenter
+
+                        font.pixelSize: getTextSize(15)
+                        font.family: montserratFont.name
+                        font.weight: Font.Medium
+
+                        //font.bold: bold
+
+                    }
+
+                    ColorOverlay{
+                        anchors.fill: parent
+                        source: parent
+                        color: layoutIconColorActive
+                        transform:rotation
+                        antialiasing: true
+                    }
+                }
+
+            }
+
     }
+
+    }
+  }
+
+  ScrollIndicator {
+      flickable: scroller
   }
 
   DashLineColocator {

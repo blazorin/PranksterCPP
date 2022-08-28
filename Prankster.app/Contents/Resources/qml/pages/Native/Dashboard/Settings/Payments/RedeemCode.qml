@@ -21,7 +21,7 @@ Page {
           anchors.fill: parent
 
           contentWidth: parent.width
-          contentHeight: contentColumn.height + imageColumn.height + marginCol
+          contentHeight: contentColumn.height + imageColumn.height + (marginCol * 3)
 
           flickableDirection: Flickable.VerticalFlick
 
@@ -362,5 +362,9 @@ Page {
 
 
       }
+    }
+
+    ScrollIndicator {
+        flickable: scroller
     }
 }

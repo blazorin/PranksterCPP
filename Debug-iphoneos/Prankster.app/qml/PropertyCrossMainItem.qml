@@ -15,10 +15,14 @@ Item {
     property string bearerToken: ""
     property string serverUserId: ""
 
+    property int accountId: 0
+
     property string username: ""
 
-    property int subscriptionKind: 0
+    property int subscriptionKind: 1
     property string subscriptionEndDate: (new Date().toLocaleDateString('es-ES'))
+
+    property int callBalance: 4
 
     property int avatarColorIndex: 0
     property int avatarIconIndex: 0
@@ -46,8 +50,26 @@ Item {
         // Linking
         property bool isThisDeviceLinked: false
 
+    // Pranks
+
+        // Preferences
+        property bool sharePranksAuto: false
+
+        // Outgoing Number
+        property string outgoingNumber: ""
+
 
 // END SETTINGS
+
+
+// Home Properties:
+
+    property string announcementText: "¡La nueva App de bromas telefónicas ya está aquí!"
+    property string announcemenTextColor: "#FF594B"
+    property string announcementTextUrl: ""
+
+// END Home Properties
+
 
     anchors.fill: parent
 

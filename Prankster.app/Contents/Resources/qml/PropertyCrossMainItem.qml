@@ -22,7 +22,7 @@ Item {
     property int subscriptionKind: 1
     property string subscriptionEndDate: (new Date().toLocaleDateString('es-ES'))
 
-    property int callBalance: 4
+    property int callBalance: 7
 
     property int avatarColorIndex: 0
     property int avatarIconIndex: 0
