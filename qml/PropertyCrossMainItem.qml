@@ -19,7 +19,7 @@ Item {
 
     property string username: ""
 
-    property int subscriptionKind: 2
+    property int subscriptionKind: 0
     property string subscriptionEndDate: (new Date().toLocaleDateString('es-ES'))
 
     property int callBalance: 7
@@ -33,6 +33,8 @@ Item {
 
 
     // Community
+
+        property bool communityWelcomeDone: false
 
         // Visibility
         property bool hideExplicit: false
@@ -63,6 +65,8 @@ Item {
 
 // END SETTINGS
 
+    // Layout
+    property int previousSelectedTab: 0
 
 // Server Properties:
 
@@ -71,6 +75,9 @@ Item {
     property string announcementTextUrl: ""
 
     property bool doubleOfferEnabled: true
+
+    property var prankPricesDouble: ["0.89", "1.40", "2.49", "4.32", "8.59", "14.9", "19.8"]
+    property var prankPricesStandard: ["1.89", "2.40", "4.49", "8.32", "16.59", "35.9", "39.5"]
 
 // END Server Properties
 

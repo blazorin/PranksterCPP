@@ -14,6 +14,7 @@ Page {
     backgroundColor: (!onGreyExtraTab ? pagesBackColorGrey : pagesBackColorGreyExtra)
 
     property bool fromWelcome: false
+    property alias selectedTab: navBox.currentIndex
 
     property bool onGreyExtraTab: false
 
@@ -63,6 +64,8 @@ Page {
                 visible: navBox.currentIndex == 0
             }
         }
+
+
 
     }
 
@@ -152,6 +155,7 @@ Page {
           onSelected: {
               //onGreyExtraTab = true
               console.debug("[Dash Layout] Tab changed to " + title)
+              previousSelectedTab = navBox.currentIndex
           }
         }
 
@@ -159,6 +163,10 @@ Page {
           iconComponent: storeIconComponent
 
           StoreTab {}
+
+          onSelected: {
+              previousSelectedTab = navBox.currentIndex
+          }
         }
 
         NavigationItem {
@@ -167,6 +175,10 @@ Page {
 
           // Call Tab
           SettingsTab {}
+
+          onSelected: {
+              previousSelectedTab = navBox.currentIndex
+          }
         }
 
         NavigationItem {           
@@ -174,7 +186,27 @@ Page {
 
           enabled: !disableCommunity
 
-          SettingsTab {}
+          CommunityTab {
+            //visible: communityWelcomeDone // looks weird
+
+          }
+
+          onSelected: {
+              if (!communityWelcomeDone) {
+                  navBox.currentIndex = previousSelectedTab
+                  navStack.push(communityWelcomePageComponent)
+
+                  previousTabTimer.running = true
+              }
+          }
+
+          MouseArea {
+              anchors.fill: parent
+
+              onClicked: {
+                  console.debug("HEY!!")
+              }
+          }
         }
 
         NavigationItem {
@@ -185,6 +217,8 @@ Page {
           onSelected: {
               onGreyExtraTab = false
               console.debug("[Dash Layout] Tab changed to " + title)
+
+              previousSelectedTab = navBox.currentIndex
           }
 
         }
@@ -291,6 +325,7 @@ Page {
 
 
     Component.onCompleted: {
+
         disableBottomToTopTimer.running = true
     }
 
@@ -326,5 +361,20 @@ Page {
         }
     }
 
+    Timer {
+        id: previousTabTimer
+
+        running: false
+        repeat: false
+
+        interval: 200
+
+        onTriggered: {
+             dashLayout.selectedTab = previousSelectedTab
+              console.debug("previus tab " + previousSelectedTab)
+
+             previousTabTimer.running = false
+        }
+    }
 
 }

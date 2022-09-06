@@ -306,8 +306,8 @@ Page {
 
           textColor: "#FFFFFF"
           textColorDisabled: "#ECEFF2"
-          backgroundColor: "#047AFF"
-          backgroundColorPressed: "#086CDC" // Pressed/disabled background color
+          backgroundColor: "#258DFD"
+          backgroundColorPressed: "#1183FD" // Pressed/disabled background color
 
 
           anchors.horizontalCenter: parent.horizontalCenter

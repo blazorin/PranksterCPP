@@ -235,7 +235,7 @@ Page {
                     color: "black"
                     visible: false
 
-                    y: parent.height * 0.365 // End of top color
+                    y: parent.height * (!isTablet ? 0.66 : 0.68) // End of top color
                     anchors.horizontalCenter: parent.horizontalCenter
 
 
@@ -249,12 +249,7 @@ Page {
 
                        source: "../../../../assets/home/prankster_icon_final.svg"
 
-                       anchors.top: imageHelper1.bottom
-                       anchors.topMargin: dp(10)
-
-                       anchors.bottom: parent.bottom
-                       anchors.bottomMargin: dp(10)
-
+                       anchors.centerIn: imageHelper1
                        anchors.horizontalCenter: parent.horizontalCenter
 
                        z: 0
@@ -380,9 +375,9 @@ Page {
             AppText {
                 text: "*"
                 color: "black"
-                visible: false
+                visible: true
 
-                y: parent.height * 0.365 // End of top color
+                y: parent.height * (!isTablet ? 0.66 : 0.68) // End of top color
                 anchors.horizontalCenter: parent.horizontalCenter
 
 
@@ -396,11 +391,7 @@ Page {
 
                    source: "../../../../assets/home/woman_2.svg"
 
-                   anchors.top: imageHelper1.bottom
-                   anchors.topMargin: dp(5)
-
-                   anchors.bottom: parent.bottom
-                   //anchors.bott
+                   anchors.centerIn: imageHelper2
 
 
                    anchors.horizontalCenter: parent.horizontalCenter
@@ -454,8 +445,8 @@ Page {
             radius: 15
 
             gradient: Gradient {
-                GradientStop { position: 0.0; color: "#31ddff"}
-                GradientStop { position: 0.4; color: "#31ddff" }
+                GradientStop { position: 0.0; color: "#63A4FF"}
+                GradientStop { position: 0.4; color: "#09C6F9" }
                 GradientStop { position: 0.41; color: "#FFFFFF" }
                 //GradientStop { position: 1.0; color: "green" }
             }
@@ -521,6 +512,19 @@ Page {
                 }
             }
 
+
+            AppText {
+                text: "*"
+                color: "black"
+                visible: false
+
+                y: parent.height * (!isTablet ? 0.66 : 0.68) // End of top color
+                anchors.horizontalCenter: parent.horizontalCenter
+
+
+                id: imageHelper3
+            }
+
             AppImage {
                    width: (!isTablet ? (parent.width / 1.7) : (parent.width / 2.5))
 
@@ -528,8 +532,7 @@ Page {
 
                    source: "../../../../assets/home/social_2.svg"
 
-                   anchors.bottom: parent.bottom
-                   anchors.bottomMargin: ((height / width) * (!isTablet ? 7 : 13))
+                   anchors.centerIn: imageHelper3
 
                    anchors.horizontalCenter: parent.horizontalCenter
 
@@ -538,7 +541,7 @@ Page {
 
             Rectangle {
                 property real offset: Math.min(parent.width*0.045, parent.height*0.045)
-                color: "#31ddff"
+                color: "#35B0FE"
                 width: parent.width
                 height: parent.height
                 z: -1
@@ -561,8 +564,8 @@ Page {
             radius: 15
 
             gradient: Gradient {
-                GradientStop { position: 0.0; color: "#35e27d"}
-                GradientStop { position: 0.4; color: "#35e27d" }
+                GradientStop { position: 0.0; color: "#0FCC70"}
+                GradientStop { position: 0.4; color: "#38ef7d" }
                 GradientStop { position: 0.41; color: "#FFFFFF" }
                 //GradientStop { position: 1.0; color: "green" }
             }
@@ -628,6 +631,18 @@ Page {
                 }
             }
 
+            AppText {
+                text: "*"
+                color: "black"
+                visible: false
+
+                y: parent.height * (!isTablet ? 0.66 : 0.68) // End of top color
+                anchors.horizontalCenter: parent.horizontalCenter
+
+
+                id: imageHelper4
+            }
+
             AppImage {
                    width: (!isTablet ? (parent.width) : (parent.width / 1.5))
 
@@ -635,8 +650,7 @@ Page {
 
                    source: "../../../../assets/home/rewards.svg"
 
-                   anchors.bottom: parent.bottom
-                   anchors.bottomMargin: ((height / width) * (!isTablet ? 10 : 13))
+                   anchors.centerIn: imageHelper4
 
                    anchors.horizontalCenter: parent.horizontalCenter
 

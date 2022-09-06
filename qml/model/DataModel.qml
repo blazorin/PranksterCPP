@@ -17,7 +17,7 @@ Item {
     //property int cachedWelcomTextY: 0
 
     // ProfileColors
-    property var profileColors: ["#F08080", "#FA8072", "#E74C3C", "#DC143C", "#FF7F50", "#FF8C00", "#FFA500", "#FFD700",
+    property var profileColors: ["#FA8072", "#F08080", "#E74C3C", "#DC143C", "#FF7F50", "#FF8C00", "#FFA500", "#FFD700",
         "#9370DB", "#8A2BE2", "#6A5ACD", "#EE82EE", "#FF00FF", "#3CB371", "#32CD32", "#00FF7F", "#00FA9A",
         "#98FB98", "#00BFFF", "#1E90FF", "#40E0D0", "#808080", "#696969"]
 
@@ -70,6 +70,8 @@ Item {
         }
 
     ]
+
+    property var communityFeatures: ["¡Bienvenido a la Comunidad!", "¡Escucha bromas de otros y comparte las tuyas!", "Prankster es algo más\n que otra app de bromas.\n\nYa te lo habíamos dicho."]
 
     // Conectar signals
     Connections {

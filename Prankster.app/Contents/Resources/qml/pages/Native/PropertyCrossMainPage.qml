@@ -3,6 +3,7 @@ import QtQuick.Controls 1.2
 import QtMultimedia 5.15
 import Felgo 3.0
 import "Dashboard/Settings/Payments"
+import "Dashboard"
 
 Page {
 
@@ -252,6 +253,12 @@ Page {
     FontLoader {
         id: blackjackFont
         source: "../../../assets/fonts/BlackJack.ttf"
+    }
+
+    Component {
+        id: communityWelcomePageComponent
+
+        CommunityWelcome {}
     }
 
 }

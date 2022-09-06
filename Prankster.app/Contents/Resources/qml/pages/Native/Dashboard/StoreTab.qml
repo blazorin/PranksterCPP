@@ -18,7 +18,7 @@ Page {
         anchors.fill: parent
 
         contentWidth: parent.width
-        contentHeight: (logoColumn.height) + topTitleMarginBig + storeColumn.height + 40 + ((c1.height) * 1.27) + 20
+        contentHeight: (logoColumn.height) + topTitleMarginBig + storeColumn.height + 40 + ((c1.height) * 1.75) + 20
 
         flickableDirection: Flickable.VerticalFlick
 
@@ -144,7 +144,7 @@ Page {
                     anchors.fill: parent
 
                     onClicked: {
-                        navBox.currentIndex = 2
+                        navStack.push(storeInAppComponent)
                     }
                 }
 
@@ -214,6 +214,61 @@ Page {
 
                         text: qsTr("BROMAS")
 
+
+                        AppText {
+                            font.pixelSize: getTextSize(14)
+                            font.bold: true
+                            color: pagesBackColorGrey
+
+                            anchors.bottom: parent.top
+                            anchors.bottomMargin: 2
+
+
+                            text: "2 X 1"
+                            visible: root.doubleOfferEnabled
+
+                            anchors.horizontalCenter: parent.horizontalCenter
+
+                            SequentialAnimation on color
+                            {
+                                loops: Animation.Infinite
+
+                                ColorAnimation
+                                {
+                                    from: "white"
+                                    to: "white"
+                                    duration: 1000
+                                }
+
+                                ColorAnimation
+                                {
+                                    from: "white"
+                                    to: layoutIconColorActive
+                                    duration: 500
+                                }
+                                ColorAnimation
+                                {
+                                    from: layoutIconColorActive
+                                    to: "white"
+                                    duration: 500
+                                }
+
+                            }
+
+                            Icon {
+                                color: "#FCCE69"
+
+                                anchors.right: parent.left
+                                anchors.rightMargin: 5
+
+                                size: 14
+
+                                icon: IconType.star
+                                anchors.verticalCenter: parent.verticalCenter
+                            }
+                        }
+
+
                         Icon {
                             icon: IconType.arrowright
                             size: (!isTablet ? 13 : 14)
@@ -255,6 +310,7 @@ Page {
                     anchors.top: parent.top
                     anchors.topMargin: offset
 
+                    /*
                     SequentialAnimation on color
                     {
                         loops: Animation.Infinite
@@ -280,6 +336,7 @@ Page {
                         }
 
                     }
+                    */
                 }
 
         }
@@ -292,8 +349,8 @@ Page {
             radius: 15
 
             gradient: Gradient {
-                GradientStop { position: 0.0; color: "#FFBC4F"}
-                GradientStop { position: 0.4; color: "#FFBC4F" }
+                GradientStop { position: 0.0; color: "#FBB034"}
+                GradientStop { position: 0.4; color: "#F9B54B" }
                 GradientStop { position: 0.41; color: "#FFFFFF" }
                 //GradientStop { position: 1.0; color: "green" }
             }
@@ -307,7 +364,7 @@ Page {
                 anchors.fill: parent
 
                 onClicked: {
-                    navBox.currentIndex = 1
+                    navStack.push(subscriptionsStoreExternalComponent)
                 }
             }
 
@@ -369,13 +426,15 @@ Page {
             }
 
             AppText {
-                id: posHelperImage
-
                 text: "*"
-                anchors.verticalCenter: parent.verticalCenter
+                color: "black"
+                visible: false
+
+                y: parent.height * (!isTablet ? 0.613 : 0.63) // End of top color
                 anchors.horizontalCenter: parent.horizontalCenter
 
-                visible: false
+
+                id: imageHelper2
             }
 
             AppImage {
@@ -383,10 +442,11 @@ Page {
 
                    fillMode: Image.PreserveAspectFit
 
-                   source: "../../../../assets/store/globe_v3.svg"
+                   source: "../../../../assets/store/globe_v4.svg"
 
-                   y: posHelperImage.y / 1.15
-                   x: (!isTablet ? ( posHelperImage.x / 3 ) : (posHelperImage.x / 1.8))
+                   anchors.centerIn: imageHelper2
+
+                   anchors.horizontalCenter: parent.horizontalCenter
 
                    z: 0
             }
@@ -412,14 +472,14 @@ Page {
 
                     ColorAnimation
                     {
-                        from: "#FDBA23"
-                        to: "#FDBA23"
+                        from: "#FBB034"
+                        to: "#FBB034"
                         duration: 1450
                     }
 
                     ColorAnimation
                     {
-                        from: "#FDBA23"
+                        from: "#FBB034"
                         to: pagesBackColorGrey
                         duration: 2000
                     }
@@ -448,7 +508,7 @@ Page {
                     ColorAnimation
                     {
                         from: pagesBackColorGrey
-                        to: "#FDBA23"
+                        to: "#FBB034"
                         duration: 1250
                     }
 
@@ -463,13 +523,15 @@ Page {
         // Subscriptions Rectangle
 
  Rectangle {
+     id: parentSubsRec
+
      anchors.top: recPosHelper.bottom
      anchors.topMargin: 20
 
      anchors.horizontalCenter: parent.horizontalCenter
 
-     width: childSetsRec.width + 4
-     height: childSetsRec.height + 4
+     width: childSubsRec.width + 4
+     height: childSubsRec.height + 4
      radius: 17
 
      color: layoutIconColorActive
@@ -478,12 +540,12 @@ Page {
          anchors.fill: parent
 
          onClicked: {
-             navBox.currentIndex = 4
+             navStack.push(subscriptionsSettingsExternalComponent)
          }
      }
 
             Rectangle {
-                id: childSetsRec
+                id: childSubsRec
 
                 color: "white"
 
@@ -540,15 +602,38 @@ Page {
 
     }
 
+         CuteText {
+             width: parent.width
+
+             anchors.top: parentSubsRec.bottom
+             anchors.topMargin: 15
+
+             anchors.horizontalCenter: parent.horizontalCenter
+
+             horizontalAlignment: Text.AlignHCenter
+             color: cuteColorSecondary
+
+             text: qsTr("¡Subscríbete o realiza tu primera compra y no volverás a ver publicidad!")
+             font.pixelSize: getTextSize(17, true)
+
+             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+             bottomPadding: dp(10)
+
+             visible: !hasMadeAnyPurchase
+         }
+
     }
   }
 
-  ScrollIndicator {
-      flickable: scroller
-  }
 
   DashLineColocator {
       anchors.bottom: parent.bottom
+  }
+
+  Component {
+      id: storeInAppComponent
+
+      StoreInApp {}
   }
 
 }

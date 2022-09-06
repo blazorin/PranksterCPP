@@ -26,6 +26,7 @@
 #include "qtlottiedrawengine.h"
 #include "qtlottiedrawenginefactory.h"
 #include <QtCore/qdebug.h>
+//#include <iostream>
 
 QtLottieItem::QtLottieItem(QQuickItem *parent) : QQuickPaintedItem(parent)
 {
@@ -42,6 +43,9 @@ QtLottieItem::QtLottieItem(QQuickItem *parent) : QQuickPaintedItem(parent)
     // Use "Qt::PreciseTimer" to get the best appearance, however, it
     // will have a performance impact.
     m_timer.setTimerType(Qt::CoarseTimer);
+
+    //qDebug() << "DRE: \n FRAMES: " << m_drawEngine->frameRate() << "\n Playing: " << m_drawEngine->playing() ;
+
     connect(&m_timer, &QTimer::timeout, this, [this](){
         if (m_drawEngine->playing()) {
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 10, 0))

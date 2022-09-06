@@ -127,6 +127,9 @@ win32 {
 
 macx {
 
+    # Rosetta 2
+    QMAKE_APPLE_DEVICE_ARCHS = x86_64
+
     CONFIG += felgo-live
 
     ICON = macx/app_icon.icns
@@ -156,6 +159,7 @@ DISTFILES += \
     qml/helper/DashLineColocator.qml \
     qml/helper/FeatureRow.qml \
     qml/helper/GoBackButtonBarItem.qml \
+    qml/helper/Hexagon.qml \
     qml/helper/ListSeparator.qml \
     qml/helper/PromoRectangle.qml \
     qml/helper/RedBubble.qml \
@@ -164,6 +168,8 @@ DISTFILES += \
     qml/model/DataModel.qml \
     qml/model/Logic.qml \
     qml/pages/Native/Auth.qml \
+    qml/pages/Native/Dashboard/CommunityTab.qml \
+    qml/pages/Native/Dashboard/CommunityWelcome.qml \
     qml/pages/Native/Dashboard/DashLayoutTab.qml \
     qml/pages/Native/Dashboard/HomeTab.qml \
     qml/pages/Native/Dashboard/Settings/Account/AccountData.qml \
@@ -183,6 +189,7 @@ DISTFILES += \
     qml/pages/Native/Dashboard/Settings/Profile/AvatarSelection.qml \
     qml/pages/Native/Dashboard/Settings/Profile/MyProfile.qml \
     qml/pages/Native/Dashboard/SettingsTab.qml \
+    qml/pages/Native/Dashboard/StoreInApp.qml \
     qml/pages/Native/Dashboard/StoreTab.qml \
     qml/pages/Native/ListingDetailPage.qml \
     qml/pages/Native/ListingsListPage.qml \

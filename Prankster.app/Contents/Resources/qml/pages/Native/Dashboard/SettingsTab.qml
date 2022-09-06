@@ -327,7 +327,7 @@ Page {
          }
 
          AppListItem {
-              text: qsTr("Subscripción store")
+              text: qsTr("Subscripción Store")
               textFontSize: getTextSize(15)
 
 
